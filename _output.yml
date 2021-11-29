@@ -1,0 +1,42 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Finding blind spots</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+    download: ["pdf", "epub"]
+bookdown::markdown_document2:
+  fig_caption: yes
+  base_format: officedown::rdocx_document
+  reference_docx: "style/template.docx"
+  number_sections: false
+  lists:
+    ol.style: Default ol
+    ul.style: Default ul
+  tables:
+    conditional:
+      first_row: true
+      first_column: true
+      last_row: false
+      last_column: false
+      no_hband: false
+      no_vband: true
+bookdown::word_document2:
+  toc: false
+  fig_caption: yes
+  reference_docx: "style/template.docx"
+  keep_tex: no
+bookdown::pdf_book:
+  fig_caption: yes
+  toc: false
+  includes:
+    in_header: "latex/preamble.tex"
+    before_body: "latex/before_body.tex"
+  pandoc_args: --top-level-division=section
+  highlight_bw: yes
+  keep_tex: no
+bookdown::epub_book: default
+bookdown::bs4_book: default

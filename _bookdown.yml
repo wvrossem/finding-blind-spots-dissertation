@@ -1,0 +1,15 @@
+book_filename: "finding-blind-spots"
+language:
+  ui:
+    chapter_name: "Chapter "
+delete_merged_file: true
+rmd_files: [
+  "index.Rmd",
+  "chapters/01-introduction.Rmd", 
+  "chapters/02-literature.Rmd", 
+  "chapters/03-method.Rmd", 
+  "chapters/04-matching-data-models.Rmd", 
+  "chapters/05-data-matching-within-org.Rmd", 
+  "chapters/06-data-matching-across-org.Rmd", 
+  "chapters/07-conclusions.Rmd", 
+  "chapters/08-references.Rmd"]

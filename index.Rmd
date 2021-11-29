@@ -1,0 +1,24 @@
+--- 
+title: "Finding blind spots"
+author: "Wouter Van Rossem, University of Twente"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: apa6
+classoption:
+  - man
+  - a4paper
+  - natbib
+bibliography: /Users/woutervanrossem/surfdrive/ZoteroBibtex.bib
+biblio-style: "style/sage/sageh"
+link-citations: yes
+description: ""
+
+---
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
