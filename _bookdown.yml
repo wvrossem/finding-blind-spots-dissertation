@@ -13,3 +13,4 @@ rmd_files: [
   "chapters/06-data-matching-across-org.Rmd", 
   "chapters/07-conclusions.Rmd", 
   "chapters/08-references.Rmd"]
+clean: ["finding-blind-spots.fff"]
