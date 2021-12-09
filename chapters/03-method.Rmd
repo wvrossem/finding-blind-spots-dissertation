@@ -16,6 +16,19 @@
 
 ### Interviews
 
-### Events and other observations
+### Events
+
+I collected various relevant publications and participated in events which were organized and attended by a variety of representatives of industry, academia, Member States' authorities, and EU institutions. Table \@ref(tab:fieldwork-events) gives an overview and description of events I participated in, either in person or digitally. The purpose of attending such meetings was to understand how these various actors define and frame the problems and solutions of data quality of personal data in their systems. On one hand, I hypothesized that the presentations and discussions would include useful examples which could help understand the problems actual practitioners are facing. For example, during the Q&A of a panel on the implementation of interoperability at the eu-LISA conference in 2018 a member of the audience asked a question about how they would manage the large amount of false positives which might be triggered when the different databases are connected that contain sometimes old data. The answer given by one of the panellists was that, indeed, a large amount of man-hours will be needed to check all those false positives. This example is revealing of the otherwise background work that is needed to integrate distinct systems.
+
+On the other hand, I hypothesized that the solutions proposed by industry representatives would make evident the kinds of imaginaries related to connecting and using data from different sources. For example, a common trope used to highlight the importance of tools for searching and matching data spread across different databases is based on presumed threats of terrorism. In one presentation, a software company used the real-life example of the Boston bombers who was, prior to the attack, added to police watch lists but with variations in his name and other personal information. The premise of these examples is that having such divergent information across databases makes investigations more difficult for officers, and could be potential blind spots.
+
+During these events I made notes to capture such discussions and problems and solutions of data quality of people's data. In addition, I collected screenshots and other publicly available materials related to these events such as video recordings and handouts. From these notes and pieces of observations and others materials I selected the most relevant to be coded and used in the data analyses.
+
+```{r fieldwork-events, echo=FALSE, ft.align="center"}
+path = file.path(TABLES_PATH, "fieldwork-events.csv")
+data = read.csv(path, header = TRUE)
+
+block_table(data, header = TRUE, properties = pt)
+```
 
 ## Techniques of data analysis
