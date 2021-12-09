@@ -1,1 +1,21 @@
 # Research design and methods {#ch-method}
+
+## Research objectives: Applying and testing the conceptual framework for tracing data matching in transnational security data infrastructures
+
+## Fieldwork site and access
+
+### WCC ELISE — A technology for matching identity data
+
+### Deployments at the IND and EU-VIS
+
+## Methods for data collection
+
+### Traces of data models
+
+### Document analysis
+
+### Interviews
+
+### Events and other observations
+
+## Techniques of data analysis
