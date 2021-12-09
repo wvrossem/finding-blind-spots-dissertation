@@ -31,4 +31,12 @@ data = read.csv(path, header = TRUE)
 block_table(data, header = TRUE, properties = pt)
 ```
 
+### Other observations
+
+Other observations I use in the analysis are from news articles, press releases, and other articles which I collected to provide additional context and help me understand important moments in the biography of the WCC search and match tool and its deployment at the IND and EU-VIS. Generally, I collected articles which mention the company WCC and/or the of its software in the INDIGO system of the IND or the EU-VIS system. To do these queries I used the LexisNexis database and tool — which aggregates and makes it possible to query all major English and Dutch-speaking newspapers, online business news, and other related publications. For example, I found several articles detailing the progress of the implementation of the INDIGO system that were published in IT business news outlines.
+
+What is not included in the LexisNexis database are some blog posts and announcements by companies publishing information related to the design, development, deployment, and use of the systems. To access such material, I relied on more conventional search engines. For example, I found that a competitor of WCC publishes frequent blog posts on Natural Language Processing such one titled "Understanding Dari and Pashto Names: A Challenge to Intelligence Gathering in Afghanistan" [@rosetteUnderstandingDariPashto2012]. From all such material I selected only the most relevant to be further coded and analyses. This means that, for the analysis, I included only those articles which either directly deal with topics of data quality, data matching, or other relevant discussing surrounding the functioning of the technical systems.
+
+Together these different kinds of materials — news articles, blog posts, press releases — can assist in making a more finished picture of the biography of the software artefacts for searching and matching identity data.
+
 ## Techniques of data analysis
