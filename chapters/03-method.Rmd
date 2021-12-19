@@ -12,6 +12,30 @@
 
 ### Traces of data models
 
+An important aspect of investigating the matching of identity data across organizations is how data models of different systems correspond to one another. For matching persons' data within and between organizations some correspondences and similarities in the types of information stored in the respective databases need to be found. For example, two systems may store a combination of persons' last name, date of birth, nationality and used to match separate identity records; but with distinct data models and variations in attribute labels, types, formats. Such data models and their categories of data, i.e. the labels describing a state that can assume different values, can be described in various kinds of documents: from database schemas to design documents, or even in regulations. In this section, I will describe the processes of collecting such traces of data models that were used for the analysis. In general, such traces of data models can be collected through desk research or fieldwork. However, to make such diverse descriptions of data models comparable additional steps were needed to code, harmonize, and group all documents, categories, and values.
+
+All those steps contributed to the development of a method and tool to compare data models utilized in national and international information systems that jointly work to support registration and identification practices at border zones in Europe. Regarding the traces of those data models I draw on data which were collected during fieldwork conducted in the context of the Processing Citizenship project at border zones in Europe. Given linguistic constraints and the Project's task plan organized as a matrix, some documents were collected by other researchers employed as collaborators in the Processing Citizenship project.[^pc-team] Overall, the data collection efforts included desk research of European regulations, technical documents made available by European and German authorities, systems screenshots collected at border zones in the Hellenic Republic, and technical documents collected during fieldwork in The Netherlands. My own efforts included the desk research and fieldwork in The Netherlands.
+
+[^pc-team]: These researchers include: A. Bacchi, E. Frezouli, Y. Lausberg, C. Loschi, L. Olivieri, A. Pelizza, A. Pettrachin, S. Scheel.
+
+For transnational security infrastructures such as the information systems developed by European Commission agencies in the Area of Freedom, Security and Justice (AFSJ), the issue of data matching is becoming increasingly important. Ongoing projects to increase information-sharing and interoperability of information systems in this area necessarily demands various new forms of data matching. Broadly speaking, various international actors are developing a central infrastructure to store links and references to EU information systems. In this new architecture, identity data from previously separate systems will be matched against each other to link them and with the aim of facilitating identity checks and detecting identity fraud. Besides these new types of data matching under development, the existing systems already do real-time data matching such as when searching for personal details of a person by a police officer. To understand relations between the categories of data recorded in these three EU systems I draw upon the regulations establishing each system.
+
+Data collection therefore includes documents of the regulation of the three international information systems developed by European Commission agencies: Eurodac, the Schengen Information System (SIS) and the Visa Information System (VIS). All three systems have specific aims in supporting policing tasks related to travel, cross-border crime and irregular migration. Eurodac (_European Dactyloscopy_) aims to support the identification of asylum seekers through fingerprints, and to determine the Member State which is responsible for processing their asylum applications in the context of the Dublin System.[^dublin] The database was established in 2003 to store fingerprint and other basic data of asylum seekers. It is currently operational in the Member States of the European Union (plus Norway, Iceland, Switzerland, and Liechtenstein). Since its original inception, the use of the system has been extended to law enforcement authorities and Europol [@ajanaAsylumIdentityManagement2013]. New proposals aim to include more biographic data and additional biometric data, and a facial image.[^recast]
+
+[^dublin]: The Dublin System (Regulation No. 604/2013; also known as the Dublin III Regulation) establishes the criteria and mechanisms for determining which EU Member State is responsible for examining an asylum application.
+
+[^recast]: Procedure 2016/0132/COD, recast of the Eurodac Regulation.
+
+The purpose of the Schengen Information System (SIS II) is to support external border control and law enforcement cooperation in the European Union. It supports this task by storing alerts which contain information on persons and objects, and information/instructions on what to do when such persons or objects are encountered. This information can then be exchanged between law and border enforcement authorities through the SIRENE network. Finally, the Visa Information System (VIS) allows for exchange of visa data (including personal data and biometrics) and in this way it aims to maintain a common EU visa policy. Checks on the VIS data are done in the context of identification procedures at the borders. This kind of access is different from the previous systems, as the data can only be accessed on a case by case basis. Authorities at the external border of the European Union also have access for purposes such as "verifying the identity of the person, the authenticity of the visa or whether the person meets the requirements for entering, staying in or residing within the national territories" [@europeancommissionVisaInformationSystem]. Furthermore, data in VIS can be used by asylum authorities to determine which EU Member State is responsible for examining the asylum application.
+
+Concerning national systems, the analysis includes the systems of the Dutch (DRF), Hellenic (HRF) and German (GRF) Register of Foreigners (GRF). The DRF is an information system stores all basic data of people who have a relation with the Dutch government in the context of the "Vreemdelingenwet". The system allows digital exchange of identity data, information about travel and identity documents, biometric characteristics and status data between the partners. Various ministries and organizations in The Netherlands use this system to share and consult information about foreign nationals. As such, it acts as a kind of single source of truth. That is, although other partners may have their database and information about a person, the data needs to be kept aligned [@InformatievoorzieningVreemdelingenketen2015]. This can also be seen due to the fact that through the BVV all foreigners receive a unique identification number — the v-number. In practice then, processes of establishing identity involves an interplay of multiple systems. For example, IND users searching for person matches always need to consider result from this system as well.
+
+The HRF is the main system used at border zones in Greece to identify and register persons who arrive at the border without the required documents. The system is used to support different tasks during the identification and asylum procedures: from retrieving migrants' biographic and biometric data, to conducting screening and asylum interviews, to assessing health conditions. Users of the systems therefore include police, administrative personnel, and asylum officers.
+
+The GRF is a German database which contains a large amount of personal information of foreigners in Germany who have or had a residence permit, as well as those who seek or have sought asylum or are recognized asylum seekers [@bundesverwaltungsamtbvaAuslanderzentralregister]. This central register is accessed by various partner authorities and organisations in fields such as asylum, migration, border control. The data sent to the GRF during the first registration is described in the XAusländer standard, a data exchange format which formalizes and enables data exchange between the immigration authorities in Germany [@StandardXAuslaender]. According to the description of the standard's motivation, it aims to facilitate exchange of such data between authorities in Germany, in order to reduce data re-entry, and to enable reuse of such data by the authorities.
+
+All the information systems described above define their own data models and the kinds of people they aim to represent, in ways that are not immediately comparable. In subsequent sections I will therefore introduce the method developed for extracting, analysing, comparing and visualizing diverse data models.
+
 ### Document analysis
 
 My analysis of documents related to the deployment of ELISE is grounded in understandings developed by STS of documents and practices of documenting as objects of study. As @shankarRethinkingDocuments2016 explain, different STS scholars broadened the understanding of documents as artefacts that don't just document and stand for something in the world. Rather, documents play a role in social contexts — such as accounting for and coordinating of workplace activities — and cannot be separated from the practices through which they are produced. For this document analysis, I therefore looked not only as documents that help explain how the software packages function and how they were configured and deployed. Instead, the documents also "refer to the practices, objects, rules, knowledge, and organizational forms that produced them" (ibid., p. 62). Such a document analysis can thus contribute an understanding of the key biographical moments in the life of this software package.
@@ -29,14 +53,13 @@ Finally, an important — but less visible — as aspect of documentation is mis
 In short, studying the documents allowed me to, on one hand, form a first picture of the technical functioning of the search and match solution and the specific context of its deployment at the IND. On the other hand, the documents give insights in the genealogy of the package and the practices of configuring, deploying, designing the software. Table \@ref(tab:documents) gives an overview of some these most important documents. In addition to the more technical documents, public communications and reports helped me gain contributory insights into the specific context of developments of the IND information systems. The outcome of the document analysis served as input for developing the interview protocols.
 
 ```{r documents, echo=FALSE, ft.align="center"}
-path = file.path(DATA_PATH, "documents.csv")
+path = file.path(TABLES_PATH, "documents.csv")
 data = read.csv(path, header = TRUE)
 
 data = data[]
 
 block_table(data[,c("Document", "Author", "Year", "Description")], header = TRUE, properties = pt)
 ```
-
 
 ### Interviews
 
@@ -51,7 +74,7 @@ The need to conduct the research digitally was due to the Covid-19 pandemic rela
 Another hypothesis was that users involved with different tasks at the IND would use the tools for searching and matching identities in different ways. For this reason, I reached out to users of different organizational units at the IND (see Table \@ref(tab:ind-departments) for an overview of these units). Indeed, the interviews clearly showed that there are distinct uses and knowledge of the tools. Unfortunately it was not possible to conduct interviews with users from all units. Information about the use of the search and match tools in the other units did however emerge during other interviews. In total, I conducted five interviews regarding the use of the search and match tools at the IND, each lasting around one hour. The "Yes" or "No" values in the fourth column of the Table indicate if a user from this unit was included or not.
 
 ```{r ind-departments, echo=FALSE, ft.align="center"}
-path = file.path(DATA_PATH, "ind-departments.csv")
+path = file.path(TABLES_PATH, "ind-departments.csv")
 data = read.csv(path, header = TRUE)
 
 data = data[]
@@ -64,7 +87,7 @@ In parallel and following the IND interviews, I interviewed people from the comp
 For all interviews, I requested permission to record the sessions using the informed consent form established by the Processing Citizenship project. The form guarantees anonymity and confidentiality for the participants, informs them of the project, and allowed them to specify how collected data may be used in the research. As per the protocol, I recorded only the audio with voice distortion. Furthermore, interviews were transcribed manually to ensure that no confidential data would be leaked via the use of automated transcription platforms. Table \@ref(tab:interviews) gives an overview of all interviews.
 
 ```{r interviews, echo=FALSE, ft.align="center"}
-path = file.path(DATA_PATH, "interviews.csv")
+path = file.path(TABLES_PATH, "interviews.csv")
 data = read.csv(path, header = TRUE)
 
 data = data[]
@@ -80,12 +103,14 @@ On the other hand, I hypothesized that the solutions proposed by industry repres
 
 During these events I made notes to capture such discussions and problems and solutions of data quality of people's data. In addition, I collected screenshots and other publicly available materials related to these events such as video recordings and handouts. From these notes and pieces of observations and others materials I selected the most relevant to be coded and used in the data analyses.
 
-```{r fieldwork-events, echo=FALSE, ft.align="center"}
+<!-- ```{r fieldwork-events, echo=FALSE, ft.align="center"}
 path = file.path(TABLES_PATH, "fieldwork-events.csv")
 data = read.csv(path, header = TRUE)
 
-block_table(data, header = TRUE, properties = pt)
-```
+data = data[]
+
+block_table(data[,c("Date", "Event name", "Location", "Audience", "Description")], header = TRUE, properties = pt)
+``` -->
 
 ### Other observations
 
