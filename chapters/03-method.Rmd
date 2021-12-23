@@ -71,7 +71,7 @@ data = data[]
 block_table(data[,c("Document", "Author", "Year", "Description")], header = TRUE, properties = pt)
 ```
 
-### Interviews
+### Interviews {#interviews}
 
 In order to learn more about the design and use of the search and match tools, I conducted semi-structured interviews with a diverse set of actors. Overall, my interview approach revolved around two main groups of themes and participants. The first group resolved around people at the IND whose tasks involve the searching and matching of identities in their databases — and which thus involves the use of the ELISE ID platform. The second group centred around people at WCC who are, more generally, involved in some way or another in the development, deployment, sales of their software package for identity matching in the security and identity market segment.
 
@@ -105,7 +105,7 @@ data = data[]
 block_table(data[,c("Number", "Organization", "Date", "Format", "Language", "Description")], header = TRUE, properties = pt)
 ```
 
-### Events
+### Events {#events}
 
 I collected various relevant publications and participated in events which were organized and attended by a variety of representatives of industry, academia, Member States' authorities, and EU institutions. Table \@ref(tab:fieldwork-events) gives an overview and description of events I participated in, either in person or digitally. The purpose of attending such meetings was to understand how these various actors define and frame the problems and solutions of data quality of personal data in their systems. On one hand, I hypothesized that the presentations and discussions would include useful examples which could help understand the problems actual practitioners are facing. For example, during the Q&A of a panel on the implementation of interoperability at the eu-LISA conference in 2018 a member of the audience asked a question about how they would manage the large amount of false positives which might be triggered when the different databases are connected that contain sometimes old data. The answer given by one of the panellists was that, indeed, a large amount of man-hours will be needed to check all those false positives. This example is revealing of the otherwise background work that is needed to integrate distinct systems.
 
@@ -122,7 +122,7 @@ data = data[]
 block_table(data[,c("Date", "Event name", "Location", "Audience", "Description")], header = TRUE, properties = pt)
 ``` -->
 
-### Other observations
+### Other observations {#other-observations}
 
 Other observations I use in the analysis are from news articles, press releases, and other articles which I collected to provide additional context and help me understand important moments in the biography of the WCC search and match tool and its deployment at the IND and EU-VIS. Generally, I collected articles which mention the company WCC and/or the of its software in the INDIGO system of the IND or the EU-VIS system. To do these queries I used the LexisNexis database and tool — which aggregates and makes it possible to query all major English and Dutch-speaking newspapers, online business news, and other related publications. For example, I found several articles detailing the progress of the implementation of the INDIGO system that were published in IT business news outlines.
 
