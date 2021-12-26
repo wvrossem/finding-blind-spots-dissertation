@@ -1,1 +1,18 @@
 # Matching identity data in transnational security infrastructures and beyond {#ch-literature}
+
+## Literature 1 — data and classification studies
+
+## Literature 2 — collaborative work in information infrastructures
+
+## Literature 3 — nexus of user-designer-technology
+
+## A conceptual framework for analysing data matching in distributed settings
+
+### Matching data models
+
+### Data matching within organizations
+
+### Data matching across organizations
+
+### Travelling data matching software
+
