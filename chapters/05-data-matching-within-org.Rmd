@@ -1,1 +1,39 @@
 # Data matching within organizations {#ch-dm-within-org}
+
+## Introduction
+
+## Background and related work
+
+### Uncertainties in sharing and connecting data
+
+### Identifying and linking matching records
+
+### The visibility of data management work
+
+### Separating the work of data management
+
+### Configurations
+
+## Empirical case and methods
+
+### ELISE smart search & match
+
+### Research approach
+
+## Findings
+
+### Systems supporting the work of IND
+
+<!-- ### Interfacing with other partners -->
+
+### Different types of uses
+
+### Use and understanding of search functionalities
+
+### Interpreting the search results and search strategies
+
+### Duplicates and deduplication
+
+## Discussion
+
+## Conclusion

@@ -1,1 +1,19 @@
 # Data matching across organizations and agencies {#ch-dm-across-org}
+
+## Introduction
+
+## Background
+
+### Literature nexus of user-designer-technology
+
+### Biography of Artefacts and Practices
+
+## Research questions & research approach
+
+## Empirical findings
+
+### The MITRE Multi-cultural Name Matching Challenge
+
+### Nexus between technology suppliers and integrators (EU-VIS)
+
+## Discussion

@@ -17,8 +17,20 @@ description: ""
 ---
 
 ```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
+# Load dependencies
+library(officer)
+
+# Set global variables
+DATA_PATH = file.path(getwd(), "data")
+TABLES_PATH = file.path(getwd(), "tables")
+
+# Set Knitr options
+knitr::opts_chunk$set(echo = FALSE)
+
+# Default properties for officer tables
+pt <- prop_table(
+  width = table_width(),
+  style = "Table",
+  align = "center", 
+)
 ```
