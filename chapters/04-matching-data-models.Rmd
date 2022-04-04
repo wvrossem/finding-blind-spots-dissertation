@@ -1,37 +1,393 @@
 # Matching data models of organizations collecting information about people-on-the-move {#ch-data-model-matching}
 
+\chaptermark{Matching data models}
+
+__Abstract__
+
+\noindent 
+This article details the methodology of the 'Ontology Explorer', a method and a tool to analyse data models underpinning information systems. The Ontology Explorer (OE) is a semantic method and javascript-based open-source tool thought to compare data models collected in different formats and used by diverse systems. It's distinctive in two respects. First, it supports analyses of information systems which are not immediately comparable. Second, it systematically and quantitatively supports discursive analysis of 'thin' data models, also by detecting differences and absences through comparison. Used with data models underpinning systems for population management, the OE allows apprehending how people are 'inscribed' in information systems; which assumptions are made about them, which possibilities are excluded by design. The OE thus constitutes a methodology to capture authorities' own imaginaries of populations, and the 'scripts' through which they enact actual people as such. Furthermore, the method allows comparing diverse authorities' scripts, as this article shows by illustrating its functioning with information systems for population management deployed at the European borders. Our approach integrates a number of insights from early infrastructure studies and extends their methods and analytical depth to account for contemporary data infrastructures. By so doing, we hope to trigger a systematic discussion on how to extend those early methodical innovations at the semantic level to contemporary developments in digital methods.
+
+---
+
+\vspace*{\fill}
+\noindent
+_This chapter draws from: Van Rossem, W., & Pelizza, A. (Forthcoming). The ontology explorer: A method to make visible data infrastructures for border crossers’ identification. Big Data & Society._
+\newpage
+
 ## Introduction
 
-## Background
+This article details the methodology of the 'Ontology Explorer', a method and a tool to analyse data models which underpin information systems.[^terminology] The Ontology Explorer (OE) is a semantic method and javascript-based open-source tool thought to compare data models collected in different formats and used by diverse systems. The OE is distinctive in two respects. First, it supports analyses of information systems which define their own data models, even if these systems are not immediately comparable. Second, it systematically and quantitatively supports discursive analysis of 'thin' data models, also by detecting differences and absences between systems. To achieve this, the method extracts, analyses, compares and visualizes heterogeneous data models at once. Applying this structured approach to the data models used by diverse organizations eventually makes it possible to observe differences and similarities in the data models of diverse data infrastructures.[^field]
 
-<!-- ### Classification and its consequences
+[^field]: To provide an example, such comparison can support the analysis of information systems run by diverse national and transnational institutions to manage mobile populations. This is indeed one of the goals of the "`r anonymize("Processing Citizenship")`" research program funded by `r anonymize("the European Research Council (ERC), PI prof. A.Pelizza (2017-2022)")`. This paper is written as part of this program and presents the methodological solutions devised to answer some of its research questions. While the proposed methodology is already utilized by researchers in the program, it is also openly released for the public domain at `r anonymize("<http://processingcitizenship.eu>")`.
+
+[^terminology]: In this article the term 'ontology' is used to refer to an abstract set of concepts, categories, and relations. Drawing on computer science's jargon, the term 'data model' is used to refer to the material instances of those ontologies which are embedded in information systems. The distinction between the two terms is similar to difference made by Ferdinand de Saussure between _langue_ and _parole_, and his ideas on making evident the structures of language as an abstract system (langue) by studying the actual use of language (parole). In a similar vein, we can study the ontologies of migration and border control (langue) by looking at actual, materialized data models (parole).
+
+The OE integrates a number of insights from early infrastructure studies and extends their methods and analytical depth to account for data infrastructures. For a long time, infrastructure studies have paid close analytical attention to classifications as an important force in shaping and ordering our relations — as well as to how categories may become contested or invisible. At the same time, these studies have noted how classifications are sunk into infrastructures, where they have a tendency to become taken for granted. More recent forms of data-oriented activism are by now well aware of the need to contest and intervene into the politics of data [@beraldoDataPoliticsContentious2019; @iliadisAlgorithmsOntologySocial2018]. Yet, in order to challenge such prescriptive representations, it is first necessary to have methods that can systematically analyse them.
+
+Compared with existing digital methods, the OE features some unique characteristics that make such analysis possible. The method surely bares a resemblance to approaches that, for example, employ web scraping and correlation techniques to examine traces of data to find structures and patterns that may otherwise be hard to discern. Yet OE is distinctive in its attention to the technical details of systems — rather than the generated data — and in its ability to make non-homogeneous data formats comparable. Like this, the OE supports discursive analysis, including analysis of differences and absences, and makes it possible to compare the expectations and imaginaries of diverse social actors, and forms of resistance to them.
+
+Our methodological proposal aims to answer a broad set of research questions about how populations are enacted, and how authorities and countries differ in the way they enact them. In this way, the OE constitutes a methodology to capture authorities' own imaginaries of intended people, and the 'scripts' through which authorities enact actual people as such `r anonymizeQuotation("(Pelizza and Van Rossem under review)")`. It thus allows apprehending how people are 'inscribed' in information systems: which assumptions are made about them, which possibilities are excluded by design. An illustrative use of the method to analyse information systems for population management deployed at the European borders shows that the method allows comparing diverse authorities through their scripts.
+
+The paper proceeds as follows. In the following section we review the methodological approaches which inspired our work. Next, we discuss the design principles of the OE as a methodology to be, in a first instance, deployed in the field of population management. After a brief excursus on the methods for data model collection, we describe the OE method and tool for data models analysis. We then illustrate its actual functioning by analysing the data models underpinning some information systems for border management. Finally, these illustrative uses help us reflect on the OE's contribution to a discussion on how to extend infrastructure studies' early methodical innovations at the semantic level to contemporary developments in digital methods for population management.
+
+<!--chapter:end:sections/01-intro.Rmd-->
+
+## Review of methodological approaches {#review}
+
+It is well known from critical studies of classifications that information systems' categories shape and advantage some forms of knowing, valuing and doing [@bowkerSortingThingsOut1999]. This capability goes hand in hand with categories' ability to make other forms undocumentable — and, consequently, invisible. Data models embodied in digital information systems are moreover embedded in complex arrangements of and relations between actors. As a result, formalized representations of knowledge tend to become transparent even to actors who interact with the systems. Unsurprisingly then, invisibility and transparency of data models and their information systems have inspired various strands of research to propose methods to make visible the politics of designing such models and systems, and their world-making effects when deployed [@kitchinCodeSpaceSoftware2011]. This section reviews some of these related strands of research. We do not intend to comprehensively review all such methodological approaches. Rather, to structure the discussion, we grouped together some of these strands according to similarities in their approach and in their characteristics which inspired our own method.
+
+### Classification and its consequences
+
+To begin, our method and tool draw on studies about classification which thrived in the late 1990s, epitomized by the well-known study by Bowker and Star [-@bowkerSortingThingsOut1999] about the processes of creating classification systems, and their effects on social organization. This early work is still enjoying great diffusion, something that speaks for its enduring topicality. Scholars in this field have shown how the politics of designing systems that standardize and classify parts of the world — people, objects, work, etc. — into discrete categories do not only shape how information is represented, but also affect what becomes visible and, consequently, what becomes invisible [@suchmanCategoriesHavePolitics1993; @hansethInscribingBehaviourInformation1997; @bowkerSortingThingsOut1999]. On top of that, most options that are objects of choices made during design processes easily become invisible, as only what is in the systems is usually (and at best) documented. It is thus not surprising that these studies have mainly used discursive methods, drawing on interviews, ethnographic observation, historical and narrative accounts, textual analysis, also with the aim to retrieve what is missing in the data [@clarkeSituationalAnalysisGrounded2005a]. Absences have become as much meaningful as presences: this is a key insight that the OE has crucially inherited from classification studies of infrastructures.
+
+Another insight that has been further developed by the OE concerns the design and standardization essential to information systems that link together actors and their imprints [@hansethInscribingBehaviourInformation1997]. People, objects, relations, actions must all fit into the categories and categorical values foreseen by information systems. In this way, categories used, for example, by states to classify peoples shape relations between states and individuals — such as facilitating or restricting access to benefits [@ruppertCategory2014]. These influences are made durable and can have long-lasting effects. Specialists involved in the development of systems are therefore not only designing technical systems but making (im)possible certain actions, practices, and relations [@suchmanCategoriesHavePolitics1993] — although the role of designers shouldn't be overplayed either [@hyysaloMethodMattersSocial2019].
+
+Overall, methods developed in this tradition have addressed the question of how to retrace the ethical and political work of otherwise mundane devices of representations. Researchers have used and combined various makeshift methods — from narrative interviews [@gazanImposingStructuresNarrative2005] to discursive textual analysis [@caswellUsingClassificationConvict2012], from participant observation [@meershoekConstructionEthnicDifferences2011] to archival and genealogical research [@gassonGenealogicalStudyBoundaryspanning2006] — for the ethnographic and historical studies of information systems [@starStepsEcologyInfrastructure1996] and their classifications. It is altogether necessary to take an interdisciplinary approach and pay close attention to the technical details of classification, as to avoid only taking into account the effects of classification [@kitchinCodeSpaceSoftware2011].
 
 ### Representing and intervening
 
+The rise of Big Data (and its effects on the volume, variety, and uses of data) has prompted research fields such as Critical Data Studies (CDS) to renew calls to make further visible the ways in which data is generated, circulated and deployed [@iliadisCriticalDataStudies2016; @kitchinCriticalDataStudies2018]. While researchers investigating classifications and infrastructures mainly take a relational approach to study infrastructures and social order, researchers associated with CDS prefer different approaches to examine power structures of data. They emphasize how data are never 'raw', but always constituted by different choices and constraints [@gitelmanRawDataOxymoron2013]. The two strands of research are thus in many ways complementary. Even so, novel important questions have been raised by CDS on how the links between different mechanisms and elements that constitute data shape power relations. For example, which aspects of everyday experience are datafied, which ones are made invisible — and, who benefits?
+
+Understanding the ways in which data is constituted therefore becomes especially important for critical approaches that aim to intervene into the 'data politics' [@ruppertDataPolitics2017] of how subjectivities come into being. For example, analyses of information systems and their data models and standards in other fields have shown how such systems can enact young people as young offenders through various relations [@ruppertNotJustAnother2013], how different systems and standards enact family relations in distinct ways [@cornfordRepresentingFamilyHow2013], or how data models translating a city into data can reshape the city [@lauriaultOntologizingCity2017]. The goal here is, to a greater extent, normative for more equality and justice: to examine unequal power relations and ask who benefits and, next, challenge these power relations using data [@dignazioDataFeminism2020]. However, the field emerged 'as a loose knit group of frameworks, proposals, questions, and manifestos' [@iliadisCriticalDataStudies2016, p.3] and is still settling on its theories and methods. Systematizing methods to examine data models can therefore serve as an important step to make possible interventions into data politics.
+
 ### Distributed systems and infrastructures
+
+Information systems are moreover entwined in digital infrastructures and practices, instituting certain ways of knowing and working among distributed locales [see e.g. @bowkerSortingThingsOut1999]. Data models designed to represent phenomena can thus be considered as a technology that enact particular kinds of knowledge, organizations and practices at different times and places [@bloomfieldVisionsOrganizationOrganizations1997]. In other words, data models underpinning information systems can be understood as part of infrastructures that connect and coordinate geographically distributed actors and practices.
+
+Scholars studying infrastructures have provided different methodological strategies to make visible the distributed interconnections between technical minutiae and the politics of knowledge production [e.g. @bowkerSortingThingsOut1999; @edwardsIntroductionAgendaInfrastructure2009; @monteiroArtefactsInfrastructures2013]. Investigating distributed infrastructures has primarily been addressed by approaching infrastructures as a 'relational concept' [@starStepsEcologyInfrastructure1996]. Such relational approaches maintain that infrastructures are not objects of study by itself, but show preference for ethnographic methods to study how infrastructures emerge through interactive processes and practices [@starEthnographyInfrastructure1999; @karastiStudyingInfrastructuringEthnographically2018]. Methods include looking at, among others, moments of breakdown [@starEthnographyInfrastructure1999; @latourReassemblingSocialIntroduction2005], tensions in the emergence and growth of infrastructure [@hansethReflexiveStandardizationSide2006], and material aspects [@ribesMaterialityMethodologyTricks2019].
+
+Debates still abound on where to situate ethnographic and historical investigations of distributed infrastructures. Opinions diverge on how to demarcate the site of where and how to investigate dispersed and distributed activities [@karastiStudyingInfrastructuringEthnographically2018]. At a single site? Or, by comparing and connecting multiple sites? And at which (temporal) scale? An alternative approach to deal with these issues of scale is to take advantage of information which is produced by systems and members during their activities. Geiger and Ribes [-@geigerTraceEthnographyFollowing2011], for instance, proposed to make use of various documentary traces, such as computer logging data that capture interactions between users and systems, to understand how distributed communities collaborate and coordinate. Their ethnographic approach turns these 'thin documentary traces' into 'thick descriptions' of communities and their activities. These approaches, however, do not specifically take into account the actual formats of data, and the possibilities and constraints they entail: this is an issue that our method should instead consider.
+
+Similarly to concerns raised by Geiger and Ribes [-@geigerTraceEthnographyFollowing2011], data models can be considered 'thin' traces: being rather standardized schemas made of categories and values, they are hardly meaningful in themselves `r anonymizeQuotation("(Pelizza and Van Rossem under review)")`. A method to analyse them should therefore consider how to turn them into 'thick' data. On the other hand, given their implementation in diverse infrastructures, data models can be an excellent starting point to understand how geographically distributed sites are connected [@latourReassemblingSocialIntroduction2005]. Burns and Wark [@burnsWhereDatabaseDigital2020] have dubbed such approach 'database ethnography' and used traces left behind of a database as a site to analyze how social meanings of phenomena change over time — but, again, only using their own ad-hoc mix of methods.
+
+So while data models such as those implemented in databases are not always openly available for analysis, the use of documentary evidence can serve as a way to follow distributed phenomena. However, we should avoid a too deterministic view on these abilities to enact particular kinds of knowledge [@hansethReflexiveStandardizationSide2006]. The strength to institute ways of knowing and acting depends also on their capacity to adapt to local circumstances and forms of resistance.
 
 ### Script analyses
 
-### Digital methods -->
+The prescriptive representations of data models can thus be understood as _scripts_ that inscribe and enact certain expectations of their designers. The notion of script was originally introduced in social studies of technology to refer to the implicit instructions to users or affordances that are embedded in artefacts [@akrichDescriptionTechnicalObjects1992; @latourWhereAreMissing1992]. A script requires users to adopt standard recommended behaviours, like grasping a coffee pot by the handle or fasten a seat belt. As such, they assume skills, conditions and interests in users. In our examples, they are interested in not burning their hand when grasping the pot, they are expected not to be pregnant when fastening the seat belt. To some extent, data models can be conceived of as scripts, as they require system users to adopt well-defined behaviours to sort and select phenomena into standardized categorizations. As such, studying data models that inscribe and enact expectations in the materiality of information systems can provide insights about designers' expectations and their linked imaginaries `r anonymizeQuotation("[@pelizzaSensingEuropeanAlterity2021]")`.
 
-## Design principles of the OE as a methodology: Script, comparison and resistance
+Furthermore, the conceptualization of script introduces the possibility to account for resistance to technological artefacts in the form of a gap between expected uses, skills and abilities of intended users as they are assumed by artefact designers, and the actual uses and practices of empirical users. When intended and actual uses and skills correspond, we have — in the script jargon — 'subscriptions', when instead they do not overlap, we talk of 'dis-inscriptions' [@akrichSummaryConvenientVocabulary1992]. Usually the gap is investigated by comparing artefact analyses with ethnographic observation of actual use. Also in the case of data models, the expectations and imaginaries that they entail may be resisted, and new ones may be proposed. Our methodology should thus systematically support an analysis of subscriptions, as well as dis-inscriptions.
 
-## The OE as a method and a tool
+The scripts may also show how the material properties of information — data records, data models, databases — shape and structure how data is created and circulates, and shapes organizations and practices [@dourishStuffBitsEssay2017]. Paradigms and approaches for thinking about, modelling, and managing data all influence the creation of a data model [@thomerRelationalDataParadigms2020]. A data model will invariably vary depending on the kind of database that is employed, whether it be relational, object-oriented, or graph based. And it too will need to subscribe to the expectations of the chosen database system. In the widely-used relational model, for example, data is organized in tables with columns indicating data values (such as a surname) to be stored, and each row representing a relationship between these data values (for example, a link between a surname, date of birth, nationality, or between a passport ID and a date of entry). In this way the paradigms and technologies underlying data models influences what counts as data, how data can be used — and, for whom.
+
+Scripts and their material properties thus shapes how informational representations inscribe and enact certain expectations for both categories and entities. The granularity of categories of data and their possible values, for example, will allow capturing only certain kinds of information about someone or something. To our knowledge, however, such a script approach has not yet been employed for digital methods that analyse technicalities of information infrastructures.
+
+### Digital methods
+
+Drawing on a sociotechnical background similar to the one in which script analysis originally emerged, more recent developments have instead moved away from the technicalities of information infrastructures and prompted issue analysis as a field in need of innovative methodological solutions [@rogersIssueMappingAgeing2015]. Issue analysis mainly relies on social media and web scraping techniques to analyse emerging topics, sentiments, and imaginaries on the web. However, interventions into data also need to examine structures of data such as the data models underlying the information representations of various systems.
+
+While foregrounding the epistemic and methodological challenges brought about by digitization of social life is not among the goals of this article [for a thorough analysis see @marresDigitalSociologyReinvention2017], it is worth noticing that most common techniques adopted in burgeoning digital sociology combine scraping techniques of homogeneous web data, co-occurrence analysis of their lexicon and some form of result comparison, usually through visualizations. Yet a number of research goals — like in analyses of information systems for population management — require methods that go back to the technicalities of information infrastructures rather than focusing on user-generated contents, that systematically compare them across diverse information systems, also by harmonizing non-homogeneous data formats, that support discursive analysis, including analysis of differences and absences, and that compare the expectations and imaginaries of diverse social actors, and forms of resistance to them. This is what the OE is meant to achieve and makes it distinctive with respect to most current developments in digital sociology.
+
+<!--chapter:end:sections/02-review.Rmd-->
+
+## Design principles of the OE as a methodology: Script, comparison and resistance {#principles}
+
+Following the previous review of methodological approaches, in this section we describe three principles that have guided the development of the OE. In order to avoid claiming paternity (or maternity) on well-established achievements, it should preliminarily be noted that OE is only novel as an integration of insights from classification and infrastructure studies, discourse analysis and other strands described in the previous section. Yet the extension of their analytical depth to data infrastructures for population management, and the ad hoc combination of principles, requirements, and solutions makes up for the OE's distinctiveness.
+
+The first principle followed in the development of the OE assumes that data models, as the actual encoding of an ontology in an information system, can allow reconstructing the discursive model of a domain which is operative in that system. For what we discussed in Section \@ref(review) about data models as scripts, through 'infrastructural inversions' [@bowkerSortingThingsOut1999] it is possible to retroactively reconstruct not only the discourse that informed the design of a system, but also expectations and imaginaries about the object of knowledge. In the case of data models underpinning information systems for population management, this means that the way populations are endogenously ordered and classified provides a 'meta layer' of data for the observer. By looking at the _assumptions_ that are made about people, and at the possibilities that are excluded by design, the analysis of data models can apprehend how people are 'inscribed' in information systems.
+
+In the case of information systems for population management run by authorities, an analysis of data models can capture authorities' own imaginaries about populations: their expectations, assumptions and patterns of exclusion. Such imaginaries can be assimilated to scripts, as they inscribe such expectations about people in the materiality of data models `r anonymizeQuotation("(Pelizza and Van Rossem under review)")`. Our methodology should therefore systematically support discursive analysis of data models to single out the scripts about people.
+
+The second principle followed in the development of the OE requires that such analytical support should proceed by comparison. Data models can be extremely 'thin': by themselves, categories and values do not appear to reveal much evidence about the scripts they embed. Knowing the list of countries that work as values of the category 'nationality' might not lead to substantive outcomes. Yet as semiotics has thought, meaning emerges from comparison [see also @latourReassemblingSocialIntroduction2005 and the methodological use that he makes of controversies]. Meaning stems from the presence of (a set of) categories in some data models, and absence in some others. It is thanks to the ability to see that a thin category like 'profession' is included in a system but not in another one that authorities' idiosyncratic imaginaries about people can be revealed. Think for example at an information system for migrant registration at the border that includes only the category 'language', while another distinguishes between 'native language' and 'spoken languages'. In the first case, people are enacted as monolingual, in the second case as polyglots.
+
+A method that wishes to capture the scripts embedded in data models should therefore proceed by comparison of those data models, in order to detect meaningful differences and absences. Furthermore, such principle is also relevant when it comes to analyse 'geographies of responsibility' [@akrichDescriptionTechnicalObjects1992; @oudshoornHowPlacesMatter2012], that is, the division of labour between authorities involved in population management. As `r anonymizeQuotation("@pelizzaSensingEuropeanAlterity2021")` have shown, collecting some categories of data about border crossers at the European border can profile some Member States as asylum states, while not collecting them can impede by design the possibility for EU agencies and other Member States to host and integrate people.
+
+The third principle followed in the development of the OE requires that the new methodology can account for resistance to the scripts identified. The original formulation of script indeed foresees cases of 'dis-inscription' in which users do not comply with their intended representation, adopt unforeseen uses of artefacts and act in unexpected ways [@akrichSummaryConvenientVocabulary1992]. What could be unforeseen uses of data models? Again, examples come from the field of migration management. 'Categorical stretching', for instance, has been defined by `r anonymizeQuotation("Pelizza [-@pelizzaProcessingAlterityEnacting2019]")` as the behaviour of border crossers who refuse to comply with Western categorical definitions of family, work, nationality, etc. In such cases, actual people resist the script embedded in data models and propose alternative ones. Similarly, our method should be able to conduct script analyses of intended people, while at the same time accounting for the possibility of practices of resistance exerted by actual people, to be further investigated through ethnographic research.
+
+<!--chapter:end:sections/03-design-principles.Rmd-->
+
+## The OE as a method and a tool {#method}
+
+Information systems define their data models in ways that are not immediately comparable. We therefore needed a method which would allow extracting, analysing, comparing and visualizing data models from heterogeneous sources. This section describes the different steps that we undertook to systematically and quantitatively analyse data models.
 
 ### Data coding
 
-### Data analysis
+As previously stated, documents reporting data models and their categories of data, i.e. the labels describing a state that can assume different values, can be very diverse: from regulations to design documents, from screenshots to interview. Such documents can be collected through desk research or fieldwork. However, to make such diverse descriptions of data models comparable we introduced a systematic approach to code, harmonize, and group all documents, categories, and values.
+
+Data coding consisted of three phases: preliminary in vivo coding, code harmonization, document grouping. All phases of data coding were conducted using computer assisted qualitative data analysis software (CAQDAS). Preliminary in vivo coding consisted in coding each category 'in vivo', that is, using the category name as code. Code harmonization was then necessary to allow grouping of codes which refer to the same category of data, but with minor variations among data models reported in different documents — or, when categories are in different languages. Each such code group (e.g., 'language', see Figure \@ref(fig:coding)) gathers together similar categorical codes (e.g., 'mother tongue', 'native language', 'communication language'). Values of categories were coded with the category name added as metadata in the code name and an additional meta-code. For example, for the category 'nationality' we coded values that can be assigned such as 'Belgian' as 'nationality: Belgian'.
+
+Document grouping was meant to identify data models and their source as independent variables. As one system's data model might be spread over several separately collected documents, grouping those documents together in a document group was necessary (Figure \@ref(fig:coding)). This approach allows running co-occurrence analysis between data models (i.e., document groups) and codes or code groups, in order to obtain the frequency of a category in a data model.
+
+```{r echo=FALSE}
+capFigCoding <- ifelse(usePlaceholderFigures, placeholderCaption, "An example of the technique for coding data. From top to bottom there are four levels, one for each type of element: document group, document, quote, code, code group.")
+```
+
+```{r coding, echo=FALSE, fig.cap=capFigCoding}
+if (usePlaceholderFigures) {
+  knitr::include_graphics("figures/placeholder.eps")
+} else {
+  knitr::include_graphics("figures/coding-structure.png")
+}
+```
+
+Figure \@ref(fig:coding) sketches a use of the data coding technique for a hypothetical information system. Moving from top to bottom, first a document group gathers three different types of documents that describe a data model. In these documents occurrences appear of the categories and values that are coded in vivo. Values are distinguished through metadata in the code and an additional meta-code. Finally, these categories and values are grouped in code groups.
+
+### Data analysis {#data-analysis}
+
+<!-- Data analysis intro -->
+
+After coding documents, categories and values, we run analyses comparing diverse data models. The analysis was informed by discourse analysis criteria, like the requirement to focus on absences, besides what is visible and present. We thus set three analytical categories: presence, absence and frequency. By focusing on presence and absence, we intended to address two sets of questions:
+
+1. whether a category or value used in one system is also present in another system.
+2. whether some categories are native or peculiar to a specific system.
+
+By focusing on frequency, we aimed to address a third set of questions:
+
+1. in which systems specific categories and values occur more frequently.
+
+<!-- Introduction to graph and transformation of data -->
+
+Our operationalization of the three sets of questions was informed by graph theory, used co-occurrence analysis and produced graph visualizations.[^notation] Such combination of techniques has proven useful to visualize graph relationships and structures to help reason about complex networks [@huGraphVisualization2019]. The model that these techniques use represents networks as a set of nodes and a set of links. We decided to associate nodes with the data entities we coded as categories, documents, groups, whereas links correspond to relationships of presence between nodes. Coherently with the three sets of questions reported above, links are created when a category, value, or code group occurs in a document (group). The entire set of nodes and links results in a co-occurrence network. Figure \@ref(fig:code) shows the whole process in pseudocode and using the notations introduced in the supplemental material.
+
+[^notation]: Since the method described here is cross-disciplinary, we also take a cross-disciplinary approach to writing. The supplemental material is used to define concepts from the surrounding text in a formal way for readers that are familiar with notations and definitions of graph theory. The main sources consulted for the graph theory concepts and notation are @cormenIntroductionAlgorithms2009 and @newmanNetworks2018.
+
+Our own analysis is primarily interested at the presence, absence, and frequency of code groups across document groups — corresponding to data models implemented by a system that may be spread over multiple documents. To make such analysis possible we added supplementary links based on relationships between nodes. It follows, for example, that when a category is present in a code group and that category is used in a document group, we can add a link between a code group and the document group. These indirect links then made it possible to start our analyses at the level of document or code groups.
+
+```{r echo=FALSE}
+capFigCode <- ifelse(usePlaceholderFigures, placeholderCaption, "Pseudo code for creating the network and deriving direct and indirect occurrence relationships.")
+```
+
+```{r code, echo=FALSE, fig.cap=capFigCode}
+if (usePlaceholderFigures) {
+  knitr::include_graphics("figures/placeholder.eps")
+} else {
+  knitr::include_graphics("figures/pseudo-code/pseudo-code-cut.pdf")
+}
+```
 
 ### Indications of presence, absence, and frequency
 
-## Comparing data models of information systems for population management at the European border
+In order to support a discursive analysis approach — in particular, the ability to trace invisibilities and absences by comparison, we analysed subgraphs through set and graph theory to compute insights about presence/absence. In set and graph theory, _union_ refers to the overall set that includes items from two separate sets. For example, the union of the separate sets `{'first name', 'surname', 'age'}` (hereafter referred to as A) and `{'surname', 'age', 'nationality'}` (B) is the set `{'first name', 'surname', 'age', 'nationality'}`. Next to union, other operators from set theory such as _intersection_ and _difference_ are adequate to support a discourse analysis approach. The intersection of two sets is a set containing only elements that are part of both sets. The resulting intersection set from the previous example would therefore be `{'surname', 'age'}`. A set difference results in the set of elements that are in one set, but not in the other. Using the operations from set theory on our graph model allowed us to analyse complex relationships of presence and absence of categories among different data models.[^table]
+
+[^table]: In the tool published at `r anonymize("<http://processingcitizenship.eu>")` we provide a specific interface to conduct these kinds of set operations. After selecting the data models to include in the analysis and the appropriate set operations, we generate the results in the form of visualizations, as well as of a table which can then be exported to a file for further data analysis.
+
+```{r echo=FALSE}
+capFigVenn <- ifelse(usePlaceholderFigures, placeholderCaption, "The different set operations.")
+```
+
+```{r venn, echo=FALSE, fig.cap=capFigVenn}
+if (usePlaceholderFigures) {
+  knitr::include_graphics("figures/placeholder.eps")
+} else {
+  knitr::include_graphics("figures/venn-diagram/venn-diagram.pdf")
+}
+```
+
+Transforming data originally coded for qualitative analysis by means of CAQDAS to a co-occurrence network allowed us to further visualize relations of presence and absence and their frequency using special layout algorithms.[^cytoscape] Additionally, the network can also be analysed using mathematically defined measures that can indicate significant nodes, groups of nodes, or network structures. Techniques developed for graph visualization helped us to make qualitative observations about relationships and structures in the network. However, such observations became more difficult with larger networks. For this reason, we additionally needed measures to quantitatively express such indications [@newmanNetworks2018; @huGraphVisualization2019].
+
+A class of visualization algorithms commonly used for co-occurrence networks are force-directed graph drawing algorithms. These kinds of algorithms use models from physics to metaphorically represent density of connection [@huGraphVisualization2019]. The position of nodes in the drawing space is determined through forces of attraction and repulsion between nodes. In this way, nodes occurring more often together are visualized as closer, while nodes which occur less frequently together are visualized as more distant. Such a spatialized visualization is known to help comprehend data [@kitchinCodeSpaceSoftware2011, p. 257-258]. The spatialization creates a spatial structure where no intrinsic structure necessarily exists, and made it possible to visually analyse, in our case, frequency, presence, and absence of categories in the co-occurrence network.
+
+[^cytoscape]: We use Cytoscape.js, an open-source Javascript graph theory library [@franzCytoscapeJsGraph2016]. As it is a Javascript library, we could easily combine other web technologies, allowing our tool and results to be easily made shareable and publishable on the web. The generated network can also be exported for use in other tools such as Gephi.
+
+Visually, indications of categorical frequency can be observed from the position of nodes in the visualization generated using the force-directed graph layout algorithm (Figure \@ref(fig:intersection)). The layout shows clusters of categories that occur more often together. Categories that are used infrequently, or are unique to a system will be positioned separately from such clusters. This metaphorical spatial representation is expressed numerically through the concept of _centrality_. Measures for centrality identify the most important nodes according to some definition of importance [@newmanNetworks2018]. In our case, we mainly defined importance of categories based on their frequency in systems, or when a category served as a bridge between two different systems in the network.
+
+```{r echo=FALSE}
+capFigIntersection <- ifelse(usePlaceholderFigures, placeholderCaption, "This visualisation of a network containing the Eurodac and SIS systems was generated by the tool using the force-directed graph drawing algorithm. ")
+```
+
+```{r intersection, echo=FALSE, fig.cap=capFigIntersection}
+if (usePlaceholderFigures) {
+  knitr::include_graphics("figures/placeholder.eps")
+} else {
+  knitr::include_graphics("figures/network-sis-eurodac.png")
+}
+```
+
+Two centrality measures useful to elaborate indications of categorical frequency are _degree centrality_ and _betweenness centrality_. Degree centrality is a straightforward indicator that measures the importance of a node based on the number of links. A high degree centrality of nodes for code groups can indicate that these categories are used often by multiple systems. A low degree centrality can indicate that a category is particular to a system. Betweenness centrality in comparison derives the importance of node based by the number of times it can be considered to form a bridge and potentially connect parts of the network. For example, in Figure \@ref(fig:betweenness) the node 'date of birth' can serve as a bridge on the path in the graph from node 'surname' from one system to the node 'nationality' of another system. In this way, these centrality measures allow us to find indications of important categories even if the network becomes too complex to analyse visually.
+
+```{r echo=FALSE}
+capFigBetweenness <- ifelse(usePlaceholderFigures, placeholderCaption, "Network of categories. The node for the category 'date of birth' will have a different centrality measures depending on if it determined by degree or betweenness centrality.")
+```
+
+```{r betweenness, echo=FALSE, fig.cap=capFigBetweenness}
+if (usePlaceholderFigures) {
+  knitr::include_graphics("figures/placeholder.eps")
+} else {
+  knitr::include_graphics("figures/betweenness-centrality/betweenness-centrality.pdf")
+}
+```
+
+In the next section we illustrate the actual functioning of the method by analysing some data models of information systems for border management.
+
+<!--chapter:end:sections/04-method.Rmd-->
+
+## Illustrating potential uses: Information systems for population management at the European border {#potential-uses}
+
+To illustrate the use of the OE and validate it, we report here a comparative analysis of data models utilized in national and international information systems for population management, that jointly work to support registration and identification practices at border zones in Europe.
 
 ### Data collection
 
+The data models used to design the method and tool proposed in this paper were selected to answer the questions reported in \@ref(data-analysis), which in turn were informed by our three principles:
+
+1. is a category or value used in one system also present in another system? In the context of population management, this question was intended to highlight differences and absences between systems run by diverse authorities, and therefore their diverse scripts, the expectations and imaginaries about populations;
+2. are some categories native or peculiar to a specific system? This question was meant to identify categories proper of a specific system, in order to distinguish its mission;
+3. in which systems do specific categories and values occur more frequently? With this question we meant to identify which categories are mostly used on diverse databases (e.g., among national and international ones).
+
+Data models were collected during fieldwork conducted in the context of the `r anonymize("Processing Citizenship")` project at border zones in Europe.[^data-collection] Data collection included desk research of European regulations, technical documents made available by European and national authorities, and systems screenshots collected at border zones in the Hellenic Republic from March to September 2018.
+
+[^data-collection]: Data models were collected at different locations and in different European countries. Given linguistic constraints and the Project's task plan organized as a matrix, some documents were collected by other researchers employed as collaborators in the Project, besides the Authors: `r anonymize("A. Bacchi, E. Frezouli, Y. Lausberg, C. Loschi, L. Olivieri, A. Pettrachin, S. Scheel")`. The authors wish to thank these collectors, who have neither substantially contributed to the methodological proposal that is object of this paper, nor to its writing. The method and tool here proposed are designed and released Open Access for open and free use by the other `r anonymize("Processing Citizenship")` researchers, as well as by the broader scientific community and public.
+
+<!-- EU systems -->
+
+The comparison included three information systems developed by European Commission agencies: Eurodac, the Schengen Information System (SIS) and the Visa Information System (VIS). All three systems have specific aims in supporting policing tasks related to undocumented migration, cross-border crime and travel. Eurodac (_European Dactyloscopy_) aims to support the identification of asylum seekers through fingerprints, and to determine the Member State which is responsible for processing their asylum applications in the context of the Dublin System.[^dublin] The database was established in 2003 to store fingerprint and other basic data of asylum seekers.
+
+[^dublin]: The Dublin System (Regulation No. 604/2013; also known as the Dublin III Regulation) establishes the criteria and mechanisms for determining which EU Member State is responsible for examining an asylum application.
+
+The purpose of the Schengen Information System (SIS II) is to support external border control and law enforcement cooperation in the European Union. It stores alerts which contain information on persons and objects, and information/instructions on what to do when such persons or objects are encountered. This information can then be exchanged between law and border enforcement authorities through the SIRENE network. Finally, the Visa Information System (VIS) allows for the exchange of visa data (including personal data and biometrics) to support a common EU visa policy. Checks on the VIS data are done in the context of identification procedures at borders. Furthermore, data in VIS can be used by asylum authorities to determine which EU Member State is responsible for examining the asylum application.
+
+<!-- National systems -->
+
+Concerning national systems, we compared the Hellenic Register of Foreigners (HRF) and the German Register of Foreigners (GRF). The HRF is the main system used at border zones in Greece to identify and register persons who arrive at the border without the required documents. The system is used to support different tasks during the identification and asylum procedures: from retrieving migrants' biographic and biometric data, to conducting screening and asylum interviews, to assessing health conditions. Users of the systems therefore include police, administrative personnel, and asylum officers.
+
+The GRF is a German database which contains a large amount of personal information of foreigners in Germany who have or had a residence permit, as well as those who seek or have sought asylum or are recognized asylum seekers [@bundesverwaltungsamtbvaAuslanderzentralregister]. This central register is accessed by various partner authorities and organisations in fields such as asylum, migration, border control. The data sent to the GRF during the first registration is described in the XAusländer standard, a data exchange format which formalizes and enables data exchange between the immigration authorities in Germany [@StandardXAuslaender]. According to the description of the standard's motivation, it aims to facilitate exchange of such data between authorities in Germany, in order to reduce data re-entry, and to enable reuse of such data by the authorities.
+
 ### Data coding
+
+We coded categories and values using in vivo coding. In the case of data models for migration and population management, exemplary categories are 'country of origin', 'profession', 'family name'. Category values are possible states associated with a category: 'flight attendant', 'teacher', 'chef' are all possible values of the category 'profession'.
+
+Code harmonization allowed grouping codes which refer to similar categories of data among the different documents. Each such code group (e.g., 'language') gathers together similar categorical codes (e.g., 'mother tongue', 'native language', 'communication language'). This step allowed comparing which types of categories of data are present and absent within each system.
+
+Document grouping was also needed to run co-occurrence analysis for authorities, in order to obtain the presence, absence, and frequency of categories. To provide an example, the data models implemented by the Hellenic Register of Foreigners were collected through multiple screenshots and interviews. Being images, each screenshot constitutes a separate document. Therefore, grouping the individual screenshot documents and the interview transcriptions in one document group allowed obtaining the whole data model as a unit of analysis.
 
 ### Application
 
+To test the OE method we adopted two research questions which are crucial to the `r anonymize("Processing Cizenship's")` project.[^application] First, how do diverse national and European authorities differ in their expectations and imaginaries about migrants? Second, what do such different scripts share? These two questions answer the need to account for different ways of enacting migrant's identities at different scales, despite the European Commission's effort to harmonize migration management. The hypothesis leading the first question assumes that obstacles in the standardization of migration management can depend on diverse expectations and imaginaries about border crossers and populations at large. The second question hypothesizes that among categories that are common between authorities there are some categories which may have the potential to connect identities across systems.
+
+[^application]: Testing the validity of the method being the goal of this section, we refrain from systematically reporting results and analyzing them in light of the questions. Such endeavour is addressed by `r anonymize("Pelizza and Van Rossem (under review)")`.
+
+<!-- CASE 1 -->
+
+To answer these research questions, we operationalized the method in two ways. First, by using the analytical tools of presence and absence. Second, by using the analytical tools of frequency and centrality. In order to operationalize the first question, we identified authorities and their systems as the independent variable. Consequently, the original question was more operationally rephrased as: which groups of categories (code groups) are present in some systems and related data models, but not in others? As above specified in sections \@ref(review) and \@ref(principles), this re-phrasing assumes one of the basic methodological intuition of discourse analyses, namely the need to pay attention to what is discarded.
+
+<!-- ```{r code = readLines("./analysis/presence_matrix_authorities.R"), echo = FALSE}
+``` -->
+
+<!-- ```{r echo=FALSE}
+capTabAuthorities <- ifelse(usePlaceholderFigures, placeholderCaption, "Presence of code groups for EU (Eurodac, SIS, VIS), Greek (HRF), German (GRF), and their relative degree and betweenness centrality.")
+``` -->
+
+<!-- ```{r authorities, ft.align="center", tab.cap=capTabAuthorities, echo = FALSE}
+if (usePlaceholderFigures) {
+  placeholder <- c("")
+  df <- data.frame(placeholder)
+  flextable(df)
+} else {
+  ft
+}
+``` -->
+
+Figure \@ref(fig:network) and \@ref(tab:authorities) summarize the results of operationalizing the two questions.[^gephi] The visualization of the network provides an overview of the characteristics of the different data models and their categories of data (see Figure \@ref(fig:network)). At the edges of the network are categories particular to each authority. Between nodes representing the authorities are categories that are present in both of their data models. Finally, in the centre of the visualization are those categories shared by all three authorities.
+
+[^gephi]: For the visualization, the network generated by the OE was exported to make use of the Gephi tool for adding the colours and other post-processing.
+
+In \@ref(tab:authorities), each row corresponds to a code group, while the columns for the three authorities indicate if the code group is present (blue) or absent (void) in the authorities' data models. The EU column is based on a combination of the Eurodac, SIS II, and VIS data models. The Greek column refers to the Hellenic Registry of Foreigners (HRF) and the German column to the German Registry of Foreigners (GRF). Rows are sorted based on the code group's overall frequency in all selected systems. Categories of common data are therefore at the top of the table and include, among others, 'nationality', 'surname', 'data of birth', 'sex'. At the bottom of the table are more specific categories and code groups such as data related to integration or law enforcement, which appear only in one or few systems. This table indeed allows us to see which categories are absent in some systems, like data related to language spoken, family situation, or civil status.
+
+```{r echo=FALSE}
+capFigNetwork <- ifelse(usePlaceholderFigures, placeholderCaption, "A visualization the network of categories present for the three authorities. Colour coding is used to highlight some of the characteristics of the network.")
+```
+
+```{r network, echo=FALSE, fig.cap=capFigNetwork}
+if (usePlaceholderFigures) {
+  knitr::include_graphics("figures/placeholder.eps")
+} else {
+  knitr::include_graphics("figures/network-eu-hrf-grf.pdf")
+}
+```
+
+<!-- CASE 2 -->
+
+The second research question can be operationalized through measures of centrality. The outcome of computing the betweenness centrality measure can be found in the last column of \@ref(tab:authorities), while degree centrality (frequency) is shown in the first column. The numbers computed through the betweenness measure are in this table represented as a line range to show their relative centrality. For the example, categories common to all three authorities such as 'nationality', 'surname', 'date of birth' and 'sex' show differences in their betweenness centrality. This is explained by the fact that while some categories occur frequently, the nodes for these categories may be more or less important in connecting different parts of the network.
+
 ### Discussion
 
+One of the main goals of the OE was to allow for systematic comparison of diverse information systems, also by harmonizing non-homogeneous data formats. The coding scheme we developed successfully allowed us to compare diverse data model formats, even when developed by different organizations, for different purposes, and in different formats and languages. In this way, the homogeneous comparison of data models (\@ref(tab:authorities)) makes visible which categories are required by one authority and not by another. For example, we observed that only national systems collect data such as 'ethnicity', 'family status', 'temporary accommodation'. Through the coding schemes it is also possible to see that not all authorities employ the same granularity. This is true, for example, of name categories such as 'name: earlier/other names' which do not appear in the HRF. The method also allows comparing values, and hence seeing differences in the granularity of values (e.g., category 'education level'). We observed, for example, that the German data model is much more specific than the Hellenic for categories such as 'education level' or 'marital status'.
+
+The analysis can, for this reason, uncover the scripts, possibilities and limitations, and thus the imaginaries of diverse authorities about people on the move. The exemplary analyses show how national and European authorities differ in their scripts about migrants. Authorities can differ in the type and granularity of the data they collect, and in the amount of control the systems allow in adapting for local circumstances. These differences can help further analyse how, for example, migrants are enacted as persons in need of integration (a category only included in the GRF, see also `r anonymizeQuotation("(Pelizza and Van Rossem under review)")`), or how their family relations are enacted (the HRF seems to focus on parent's data; the GRF family data can include children, parents, spouse, life partners; and for the EU systems these kinds of data are not present). At the same time, there are constants in the way authorities enact migrants. Yet, despite these constants, measures of centrality reveal that some categories (such as 'date of birth', 'nationality') could be more important than others to possibly connect identities existing in multiple systems.
+
+The analysis can furthermore help understand how forms of resistance and adaptation can be accounted for. For example, the HRF reports categories like 'mother tongue', 'communication language', 'languages (other)'. This last category seems to suggest that the data model allows for some control for mismatching declarations `r anonymizeQuotation("(Pelizza and Van Rossem under review)")`, such as when the language of an applicant for some reason is not in the list of available languages. In the GRF we also observed the use of a particular data type for date of birth which may be incomplete. From fieldwork, we know that this may prevent situations where only a person's year of birth is known and a dummy day and month might otherwise be entered into the system. In general, the OE is tasked with providing a method and a tool to comparatively single out scripts about populations, their expected or intended identities. As `r anonymizeQuotation("(Pelizza and Van Rossem under review)")` have shown, actual people exert resistance not in a vacuum, but against the backdrop of these scripts. Script analysis can thus constitute the first analytical step to ethnographically uncover forms of resistance in use.
+
+Finally, the method allows us to recognize some of the material properties of data models. For example, in the data model of the HRF there exists a possibility to associate different person's through the category 'members of the case' and the use of internal identification numbers. Or, we can see how categories are arranged in relation to each other. For example, we can spot temporal alignments such as 'date of application' and 'date of exit'. Or alignments of the route a person has taken through categories such as 'previous country of usual staying' and 'date of entry in Greece'. Such materialities enable and constrain how data can be created and used.
+
+All in all, these illustrative analyses confirm that the method proposed complies to a satisfactory extent with the research goals and design principles. The analysis can give indications of where to focus our attention, but may need to be combined with further data to turn thin into thick descriptions. For example, by complementing the analysis of individual categories with fieldwork observation. One example can be enlightening. The table and visualization shows that HRF does not have actual fingerprint data as a category. Fieldwork observation has revealed that the system does not directly collect fingerprints, but it recurs to an extension of the Eurodac system `r anonymizeQuotation("[@pelizzaSensingEuropeanAlterity2021]")`. We therefore decided to further group such categories of data which refer to other systems as 'linking data' in order to understand how the EU systems link to Member States’ systems, or vice versa. Based on this analysis we observed that only the national systems in our comparison have links to systems of international organizations.
+
+<!--chapter:end:sections/05-application.Rmd-->
+
 ## Conclusions
+
+In this paper we outlined a novel methodology which integrates a number of insights from early classification, infrastructure and script studies and extends their methods and analytical depth to account for contemporary data infrastructures. By so doing, we hope to trigger a systematic discussion on how to extend those early theoretical and epistemological insights at the semantic level to contemporary developments in digital methods and for data infrastructures for population management. To do so, we conclude by validating the OE method and tool in light of the features of existing methods discussed in section \@ref(review). The OE is inspired by earlier studies of classifications and infrastructures which aimed to make visible the otherwise inconspicuous work that informational representations, classifications, and standards do in shaping and segment the world. The OE builds on this tradition and supports analysis of differences and absences; it also provides quantitative comparative results that can inform further discourse analysis. Indeed, the element of distinction of our method is that by harmonizing non-homogeneous data formats it systematically pursues comparison of data models across diverse information systems. Such comparison makes it possible to detect meaningful differences and absences in the scripts embedded in data models.
+
+We illustrated the use of this method to comparatively analyse data models used in information systems aimed at identifying and registering people at borders. This gives insights into, and allows comparison of, authorities' expectations and imaginaries about populations that are assimilated into scripts. Two research questions guided this analysis to compare the enactments of migrants by different European authorities. Our first findings show some constants and differences in the way authorities enact migrants. The assumptions that are made about them, and which possibilities are excluded by design, give some indications on the imaginaries and division of labour between authorities involved in population management. The findings thus showed the usefulness of our method as a result of combining strong points from both discourse and network analysis.
+
+Furthermore, the OE method provides the possibility to account for resistance. The results obtained through the OE can indeed constitute the first element of critical analyses that may be furthered by recurring to ethnographic observation of the actual use of information systems. The discursive analysis of 'thin' data models can thus be used for detecting differences and absences between systems. The scripts found can later be used turning these observations into 'thicker' descriptions.
+
+Ultimately, the method can contribute to current debates about intervening into the politics of data and data-driven forms of governance. Although current developments in digital sociology mostly draw on user-generated contents, interventions into data need to examine extant structures such as the data models underlying the information representations of various systems, as well. The OE constitutes a method that goes back to the technicalities of information infrastructures rather than focusing on high-level textual contents.
+
+All in all, the method presented in this paper shows that there is still much potential for innovative methodological contributions to the analysis of information systems' data models. However, some caution must be taken when interpreting the results of the analyses. Following @venturiniWhatWeSee2021a, we reflected on how the network and visualizations we created should not just show connected complexity, but help us understand structures of networks. These authors rightly noted that ambiguities in network analysis and visualizations can actually be considered a strength, and we agree that this encourages further and deeper analysis on the ambiguity of the empirical data. The method therefore can support a discursive analysis of information systems' data models, but it is not specifically designed to give definitive answers. In this way, we see our approach of assembling different methodological approaches and traditions as what @marresDigitalSociologyReinvention2017 call an 'interface method'. With this concept they urge paying close attention to the process of assembling different methods and how tensions arising can in fact also be productive. As any other quali-quantitative analysis, care should be taken at the different steps. Especially the coding and code grouping steps are crucial to obtain reliable results. The evidence obtained through the Ontology Explorer could be integrated with other observations, such as from further fieldwork.
+
+Yet we are aware of the method's limitations. The method can only give indications of where to focus attention. The above-mentioned indications of differences in how migrants are enacted still need to be further analysed and triangulated with other kinds of evidence, for example with qualitative evidence drawn from fieldwork, as it is being conducted in the broader `r anonymize("Processing Citizenship")` project. Another limitation of the method is that results are also dependent on structured coding processes. Flaws in coding the documents or grouping the codes may lead to errors or blind spots. One source of uncertainty in this process is the selection of which data models are compared, and to what extent the models are representative of EU and MS authorities' expectations and imaginaries.
+
+Future work will concentrate on applying the method to more in depth and differentiated analyses of data models used by authorities responsible for border and migration control. More broadly, we also plan to further develop this method in other fields of application and expand the software tools so that they can serve as a base for future studies aiming to employ qualitative and quantitative methods for comparative analyses of data models.
+
+<!--chapter:end:sections/06-summary.Rmd-->
+
+## Old section for re-use {-}
+
+The role of the ELISE matching in the INDiGO architecture is to provide a service which allows users in the different processes to "fuzzy" search for customers and organizations. Fuzzy search in this context means that a query will not look for exact matches. Instead, the ELISE matching calculates points based on different search criteria and, based on these points, determines an overall score for each customer or organization in the database — representing the likelihood that, respectively, a person or organization matches the query. That is, for each record in the database a match score will be calculated but only the customers or organizations with the highest score the best matches will be returned as search results by ELISE. Figure \@ref(fig:datamodels) shows the categories of data which are available for searching.[^ontologyexplorer]
+
+
+```{r datamodels, fig.cap="Network showing the categories of data available in the Indigo search and the Indigo data model.", fig.alt="test"}
+knitr::include_graphics("figures/oe-indigo-data-models.png")
+```
+
+The discussion in Section on the architecture of the INDiGO describes how the system is connected to the MK, and more specifically the BVV system. Using a method developed in [@vanrossemOntologyExplorerMethodForthcoming] we can visualize and analyse the categories of data that are available in the INDiGO search compared to the search for the BVV (Figure \@ref(fig:search)). As can be seen in the Figure there are many similarities in the categories of data. However, there are differences in the way the search works — which complicate the use of the tools.
+
+An often mentioned suggestion from the interviewees was therefore to integrate these searches somehow. Users now always need to query the two systems when looking for a person's record. One participant therefore mentioned that it could be more efficient if it would be possible to have a single search that could show matches from both systems at the same time. This would make sense since, as mentioned previously, the interactions between the BVV and IND systems are important to establish the identity of a person. Another improvement could be to perhaps take into account that these two searches work differently and more closely align the two, or by possibly hiding this complexity behind a single interface.
+
+```{r search, fig.cap="Network showing the fields available for search in INDiGO compared to the BVV."}
+knitr::include_graphics("figures/oe-indigo-bvv-search.png")
+```
+
+### D6 Article section {-}
+
+<!-- * Introduction: empirically describing semantic classification systems. -->
+
+One approach to recover scripts of alterity is to empirically analyse data models of systems that aim to represent and classify people on the move. As discussed previously, comparative analysis of different such classification systems enables identifying which data are present or missing in data models. The empirical analysis presented in this section will hence attempt to characterize several such systems in this way. The findings will then serve as a starting point to further explain, in next sections, how such systems can enact persons as migrants, travellers, criminals.
+
+<!-- * Research questions, analytical categories:
+  + Independent variable: systems, authorities; -->
+
+The empirical analysis pays specific attention to the presence, absence, and frequency of categories of data. The guiding idea is that comparing multiple systems' data models foregrounds the categories of data which are present and which are missing, thus bringing out assumptions, possibilities, and constraints that inform representations of people on the move. Furthermore, taking account of the frequency of jointly occurring categories of data is assumed to make evident which categories are central to otherwise distinct systems. In short, we apply this analysis to compare and characterize both different systems and different authorities.
+
+<!-- Therefore, on one hand, we set EU systems — Eurodac, SIS, VIS — as independent variables in the analysis to characterize their data models. Likewise, we analyse differences and similarities in categories of data between EU and EU Member State authorities — in this case, through the Hellenic Republic and its Register of Foreigners. -->
+
+<!-- * Short explanation of the OE method; -->
+
+For operationalizing the comparative analysis, we made use of the 'Ontology Explorer' [@vanrossemOntologyExplorerMethodForthcoming], a method and tool developed to examine information systems' data models. By following the method's process for coding categories of data, heterogeneous descriptions of systems' data models become comparable. Subsequently, the tool represents these models as a network, making analysis possible through predefined queries and visualizations. In this way, the method and tool facilitate empirically observing possibilities and constraints in the design of systems and their data models.
+
+<!-- to detect similarities and differences between systems through comparison  -->
+
+First, we identified the Eurodac, SIS and VIS systems as independent variables to examine the commonalities and distinctions of these EU systems. Using the method and tool, we can then observe that, for a person, only few categories of data are, in fact, shared between the three systems: biometric fingerprint data and a categorical variable representing their sex. In addition, all system have in common that they have data native to the system (e.g., the date on which data were inputted) and that they reference or link to other systems — i.e., EU, MS, or other information systems. If we look only at the SIS and VIS systems, we can see that they have more data in common, including expected biographical data about persons such as their date and place of birth, nationality, names. These two systems furthermore include extra biometric data: a photo of a person's face.
+
+Each of the EU systems also has categories of data that are distinct compared to the other systems. For example, Eurodac's data model has categories of data for information related to the asylum procedure, such as the date and place of registration where a person's application was first examined. Distinctive to the SIS system are various categories of data that provide supplementary and undocumented information, such as different names or aliases a person might use. Noteworthy too is the system's possibility to describe a person's physical and behavioural characteristics, such as to indicate if a person is violent or armed. Finally, the VIS has the most extensive categories of data to capture a person's biographical data and their travel. For example, data related to their family, occupation, residence, education. Information about a person's travel includes data regarding their travel documents, travel itinerary, and personal ties in Europe.
+
+<!-- * Results from the analysis:
+  + What is particular between the EU systems?
+  + What is particular between EU and the GR system? -->
+
+```{r network-eu-xka, echo=FALSE, fig.cap="The network generated through the Ontology Explorer and visualized as a force-directed network with the help of the tool Gephi for layouting and colour coding."}
+if (usePlaceholderFigures) {
+  knitr::include_graphics("figures/placeholder.eps")
+} else {
+  knitr::include_graphics("figures/eu_xka.pdf")
+}
+```
+
+Adding a Member State's system — the HRF — and comparing the two authorities makes evident other assumptions of their respective data models. Above all, the HRF has many categories of data in common or closely related to those shared by EU systems, as well as data described above that are particular to only one system. It is also clear that some data, such as data about criminal offences or prior travel intentions, are not present in this system. And even between common categories, some differences can be observed. Data about a person's occupation or residence, for example, show a contrast between the two authorities.  Whereas the VIS seems concerned with the person's _current_ situation, the HRF covers _previous_ information about a person's life. In addition, the HRF has supplemental data about persons, which reflect differences of concerns. Such information includes someone's knowledge of languages, how they can be contacted, their family and civil status. Further notable are the inclusion of rather sensitive data regarding a person's ethnicity, religion, and vulnerabilities.
+
+<!-- Another differences for the HRF can be observed regarding the use of fingerprint data. In contrast to the EU system, here only a reference for fingerprints is kept. -->
+
+<!-- * Concluding remarks regarding the analysis:
+  + Polities emerging as durable through materiality.
+  + Focus on what is distinct. -->
+
+To sum up, empirically analysing data models of information systems that aim to represent and classify people on the move, shows differences and commonalities that only become visible by comparing similar systems and their data models. These characteristics of the systems can also be seen by visualizing the network of the different data models and their categories of data (see Figure \@ref(fig:network-eu-xka)). From top to bottom, the visualization then captures the main aspects of the analysis. At the top of the network are data particular to the EU systems. In the middle are data shared by two or more systems, with data shared by all in the very centre. Colour coding and grouping is furthermore used to distinguish between which systems categories of data co-occur. Finally, at the bottom of the figure, are those data particular to the HRF. In following sections, these findings will be used to theorize how these characteristics of the systems can enact people in specific ways.

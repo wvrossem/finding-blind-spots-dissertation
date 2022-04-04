@@ -1,0 +1,9 @@
+# List of other publications {-}
+\chaptermark{List of other publications}
+
+Pelizza, A., & **Van Rossem, W.** (2021). Sensing European alterity: An analogy between sensors and hotspots in transnational security networks. In N. Klimburg-Witjes, N. Pöchhacker, & G. C. Bowker (Eds.), Sensing security: Sensors and the making of transnational security infrastructures. Mattering Press.
+
+Pelizza, A., & **Van Rossem, W.** (Under review). The scripts of alterity: Security subjects, users and material publics. Science, Technology, & Human Values.
+
+\normalsize
+\setlength{\parindent}{1.5em}

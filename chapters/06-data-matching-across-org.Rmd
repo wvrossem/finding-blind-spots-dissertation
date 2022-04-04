@@ -1,19 +1,86 @@
 # Data matching across organizations and agencies {#ch-dm-across-org}
 
+\chaptermark{Data matching across organizations}
+
+__Abstract__
+
+\noindent
+
+_Enter abstract here_
+---
+
+\vspace*{\fill}
+\noindent
+_Possibly insert citation here._
+\newpage
+
 ## Introduction
 
-## Background
+What we know about the sociotechnologies of identification is strongly related to how we know the technologies and practices involved.[^paraphrase] Every year, authorities need to identify millions of people crossing the EU external border; people migrating to and from the EU, visiting as tourists, or seeking asylum. Authorities will link and cross-check personal data from different databases to help identify people. For example, to verify identities for visa applications, to detect identity fraud by linking identities across national and international policing systems, or to match flight passengers' personal data against government watch lists. But, what do we know about the systems that carry more and more weight in establishing someone's identity, and how do we know them?
 
-### Literature nexus of user-designer-technology
+[^paraphrase]: In this sentence I paraphrase the more general insight of @pollockSoftwareOrganisationsBiography2009: "What we know about technologies, their innovation processes and outcomes is closely bound up with how we know them." (p. 51)
 
-### Biography of Artefacts and Practices
+Researchers can bring in to focus different moments in the lifecycle of technologies of identification thus giving specific perspectives on the technologies and their related practices. Moving backwards in time we might focus on different moments and locales: from operation and maintenance of sociotechnical systems of identification to initial phases of their conception. At airports, for instance, we might observe the choreography required between border agents and devices to identify travellers with automated borders systems using their biometric passports [e.g., @lisleManyLivesBorder2019]. Shifting attention to back office systems supporting border management might foreground everyday activities to maintain and operate large information systems and difficulties of dealing with incomplete or inaccurate to identify persons [e.g., @bellanovaControllingSchengenInformation2020]. Or, the processes of developing systems could be traced by following actors and reviewing proposals: from initial steps policymaking in establishment of policy such as the EU "smart borders" package [@bigoJusticeHomeAffairs2012; @jeandesbozSmarteningBorderSecurity2016] to the design of a something like the EU Visa Information System [@glouftsiosDesigningDigitalBorders2019]. Selecting between one or more of these moments in lifecycle of a socio-technology of identification (e.g., planning, analysis, design, procurement, implementation, operation, maintenance) and disregarding others will unavoidably lead to partial descriptions [@pollockEInfrastructuresHowWe2010].
 
-## Research questions & research approach
+Those moments are not self-contained, but rather they contain interconnected and contingent aspects of the lifecycle of socio-technologies of identification. For example, research design focusing on practices of biometric identification might miss how various actors mediate and intertwine with identification, just as EU Member State fingerprinting software are made to comply with US standards [@pelizzaProcessingAlterityEnacting2019]. Alternatively, taking proposals and technical design specifications as a starting point of inquiry might miss the intricacies of adopting technologies to particular locales. Taking into account all moments and actors is of course impossible, so researchers need to weigh and make explicit their choices through an understanding of the field and the research objectives.
 
-## Empirical findings
+In this article I first review strand of research that have scrutinized sociotechnologies of identification in contexts of EU migration and border management. While many scholars have highlighted materiality and performativity of devices and practices, they tend to stay rather implicit on their methodological choices in their accounts (see also Figure in Annex). I therefore compare these strand of research with key principles and concepts formulated by the "biographies of artifacts and practices" (BOAP) framework. I argue that this framework provides useful heuristics to understand such methodological choices. Correspondingly, I present fieldwork findings through a few key "biographical moments" [@glaserBiographyAlgorithmPerforming2021] of a software package that is entangled in identification at EU and Member States. These moments are also not aimed to provide a complete picture, but rather as examples of what might be gained by taking into account lesser known aspects of the lifecycle of sociotechnologies of identification.
 
-### The MITRE Multi-cultural Name Matching Challenge
+## Method
 
-### Nexus between technology suppliers and integrators (EU-VIS)
+Findings draw on fieldwork (periodically from June 2020 until August 2021) at a supplier of a software package for matching data for identification in fields of migration, borders, security. The research aimed to examine different episodes of the development and deployments of the data matching software at EU and Member State systems. As such, the research was thought to provide insights into the heterogeneous set of actors involved in practices of identifying and circulating data about people on the move at the European border [@pelizzaProcessingAlterityEnacting2019].
 
-## Discussion
+Practically, I joined the company named WCC to investigate the design, use, and evolution of a software product dealing with data matching and data deduplication. As a temporary member of the team, I visited their headquarters in The Netherlands, had access to relevant documentation, carried out individual interviews with people from the company and the customers, and attended some of the team's joint meetings. The research focused on the development and deployment of WCC's software system called the "ELISE ID platform" (ELISE) at the immigration and naturalization service of the Netherlands and the central system of the EU Visa Information System. Data collected included: (1) field notes, document analysis on the package for data matching, (2) interviews with developers, sales, consultants at the supplier, (3) interviews with personnel from immigration agency of the Netherlands which purchased and uses the software package in their systems, and (4) participant observations at industry events. For analysing the fieldwork data, I followed standard methods for inductive coding and developing themes.
+
+## Findings
+
+Three biographical sketches in the lifecycle of the data matching software package can show some of the interconnected and contingent aspects of socio-technologies of identification. A first moment is the translation and generification of the software package across contexts and domains. The software for searching and matching data is in fact not only used for practices of identification in migration and border control such as the Visa Information System. The software is also deployed at public and private employment services to match job seekers with vacancies, and by government agencies involved identity and security. Work is therefore required to translate and making generic such data matching across contexts and domains, leading to tensions in the development of the product. Some software functionalities, such as two-way matching between records, are actually not used in identity and security contexts. Such tensions can also be seen in the process of deploying and configuring ELISE at EU-VIS where advanced matching features are not used due to exact pre-defined requirements for the search to allow integration with Member State systems. This stands in contrast with the system at the IND where much more customization and discussions between the supplier and the customer to set up a suitable implementation could happen.
+
+<!-- ### 2. Travelling data matching software -->
+
+The previous moment is related to a second moment in the lifecycle of the tool: how the software travellers between organizations. For example, over time new version of the ELISE system were developed with new data matching possibilities. Customers then would have a choice to upgrade their current version of the package and receive new updates. In this way, new knowledge and features about data matching could get transported across organizations. On the other hand, software suppliers also deal with issues when some features cannot easily be transported. This was visible during discussions on a problem with a new version of a component to query and resolve duplicates in the databases of the IND. The question that arose was if a custom-made solution should be built or a more standardized one that could be further sold at other customers. However, the problem faced was the difficulty of defining what can be considered a duplicate identity. Every customer will have its own definition and so the solution would not be easily transferrable.
+
+<!-- ### 3. Performing and defining data matching -->
+
+A last moment in the lifecycle of the package is how the company and its employees define and perform data matching expertise and how this feeds into procurement processes. For example, WCC often flaunts its success as one of the three "Top Tier Vendors" [-@WCCWinsTop2011] of the MITRE challenge. The MITRE Corporation, a non-profit research organization for the US federal government, launched a challenge for individuals, companies, and researchers to develop the best possible "multicultural name matching" software. They did in fact score well [@WCCWinsTop2011], which further helped secure a partnership with Accenture to use ELISE for the central EU VIS system as a component to search and match for someone's visa data using alphanumeric data. Moreover, this challenge shaped the second mentioned moment, as ELISE was updated with new name matching functionalities. Other examples of performing as "thought leaders" in data matching can be seen in the sales and pre-sales activities of WCC. For instance, performing their authority in data matching expertise at industry conferences (eu-LISA), or their strategies regarding competitors. In this way, they perform a role in defining future data matching solutions such for the interoperability of EU systems.
+
+<!-- vendor-neutrality, comparing with other PNR/API systems). -->
+
+## Conclusion
+
+In this article I have argued for the need for research on the materiality and performativity of identification to be more reflective and explicit of their methodological choices. Much research tends to focus on either theoretical debates about the systems or localist studies of practices of identification. Through the three biographical sketches I attempted to show the value of expanding the analytical focus. For instance, by taking into account other actors and moments in the lifecycle of devices that are rarely features, such as software suppliers and their role in processes of procuring or deploying systems. Importantly, the findings show how systems and practices of identification are rarely self-contained; software suppliers circulate and re-use the software packages, influencing practices of identification across many domains and locales.
+
+## Annex
+
+### List of key principles and concepts from BOAP
+
+The following list of principles from @hyysaloMethodMattersSocial2019 will be used as heuristics to understand what is missing from current debates on sociotechnologies of identification border and migration management:
+
+* BOAP studies must have sufficient spatial and temporal reach.
+* Innovation as taking place within ecologies of interconnected actors.
+* Focus on moments and sites in which various actors interlink and affect each other.
+* Pursue research at multiple temporal and spatial scales.
+* Different temporalities and spans of change are seen as multiple enacted contexts.
+* Paying attention to materiality.
+* Balanced and empirically adequate accounts of the different actors.
+* Detailed dynamics of sociotechnical change.
+
+### Quantitative analysis of classifying related research
+
+This Annex includes some results from quantitative analysis to classify related research using scientometrics methods. Figure \@ref(fig:co-occurrence) shows the results of a co-occurrence analysis of abstracts and titles of 84 articles from 7 journals that feature the topics of migration, borders, (biometric) identification, and information systems or databases.[^web-of-science] Not many of the paper mention their method explicitly in the abstract. When authors do, often co-occurring words are fieldwork, documents, literature (see the blue cluster).
+
+[^web-of-science]: Web of Science Core Collection. The included journals were "Mobilities", "Geopolitics", "International Sociology", "Science, Technology, & Human Values", "Social Studies of Science", "Security Dialogue", "Critical Studies on Security", "Big Data & Society".
+
+```{r co-occurrence, echo=FALSE, fig.cap="A co-occurrence map based on text data using VOSViewer."}
+knitr::include_graphics("figures/co-occurrence-map.png")
+```
+
+Figure \@ref(fig:eu-systems) shows a similar map for co-occurence of words based on a Scopus query for 93 social science articles mentioning specifically the EU information systems of Justice and Home Affairs in their titles.[^scopus] Again, not many articles mention their method in the abstract, except for a few related mentions such "case study", "case" and "comparison" (see the red cluster).
+
+A further manual analysis that looks at the content of the articles will therefore be required to classify the articles according to their employed methods.
+
+```{r eu-systems, echo=FALSE, fig.cap="A co-occurrence map based on text data using VOSViewer."}
+knitr::include_graphics("figures/eu-systems.png")
+```
+
+[^scopus]: Full Scopus query: `( TITLE-ABS-KEY ( "visa information system"  OR  "eurodac"  OR  "schengen information system"  OR  "entry exit system (EES)"  OR  "Travel Information and Authorisation System"  OR  "European Criminal Records Information System"  OR  "*smart borders* package" )  OR  TITLE-ABS-KEY ( "european search portal"  OR  "multiple identity detector"  OR  "common identity repository"  OR  "shared biometric matching service" )  OR  TITLE-ABS-KEY ( ( "Area of Freedom Security and Justice" OR  schengen )  AND  ( database  OR  "information system" ) ) )  AND  ( LIMIT-TO ( SUBJAREA ,  "SOCI" ) )`

@@ -1,7 +1,51 @@
 # Introduction {#ch-intro}
 
+<!-- _The first chapter of the thesis, which introduces your PhD project. The filler-text below was created with the [postmodernism generator](http://www.elsewhere.org/journal/pomo)._ -->
+
+\chaptermark{Introduction}
+
+---
+
 ## Thesis aims and objectives
 
 ## Research questions
 
+```{r research-questions, echo=FALSE, ft.align="center"}
+path = file.path(TABLES_PATH, "research-questions.csv")
+data = read.csv(path, header = TRUE)
+
+# block_table(data, header = TRUE, properties = pt)
+
+knitr::kable(data, format = "latex", longtable = TRUE, booktabs = TRUE)
+```
+
 ## Outline of the thesis
+
+## Old sections for possible re-use {-}
+
+### Invisibility of border crossings {-}
+
+> Vignette on topic of invisibility of border crossings
+
+> "We need to know who is crossing our borders ... By November, we will propose a European travel information system --- an automated system to determine who will be allowed to travel to Europe. This way we will know who is travelling to Europe before they even get here." [President of the European Commission J.C. @junckerStateUnion20162016]
+
+<!-- [Vignette to set the topic: invisibility of border crossing] -->
+
+In the last decade, numerous sociotechnical developments have been under way to make visible _who_ is travelling to Europe. Such developments mainly concern data infrastructures used to monitor and control mobility and borders in Europe, and to make border crossing more and more known to European authorities. The above-mentioned forthcoming _European Travel Information and Authorisation System_ (ETIAS), for example, will require people who currently benefit from visa free travel to the Schengen area to pre-register and undergo additional security checks prior to their travel. Another upcoming information system — the Entry-Exit System (EES) — is being developed by European agencies to register entry, exit and refusal of entry data of all third country nationals crossing the external borders of the Schengen area. As a final example, Eurosur was developed with an aim to make visible entire groups of populations crossing the Mediterranean Sea through the use, among others, of drones, satellites, radars, sensors, and transnational databases [@vanreekumDrawingLinesEnacting2017]. These three examples show a preoccupation of European policymakers to tackle presumed invisible phenomena of border crossing at the external and internal borders of Europe. To this end, the most recurrent solutions put in place by authorities tend to make border crossers visible on information systems before they reach the border [@pelizzaIdentificationTranslationArt2021a].
+
+<!-- [Further develop the topic of invisibility].  -->
+
+Studies on visibility at the border show how "technologies of vision" [@harawaySituatedKnowledgesScience1988] aim to make people on the move and their movements known to authorities performing border policing [@vanreekumDrawingLinesEnacting2017; @follisVisionTransterritoryBorders2017; @tazzioliSpyTrackArchive2018]. Such scholarship is also having a major impact is sensitizing scholarly and public opinions to the performative potential of sociotechnologies of bordering [@dijstelbloemSurveillanceSeaTransactional2017].
+
+Yet the scholarship shows the tendency to primarily refer to the (in)visibility of humans only. Less attention has been given to the invisibility of those data infrastructures that allow making human mobility, migration and borders visible. This is a key aspect, though. People on the move become visible through infrastructures that are not neutral, but enact them in certain ways. Therefore, discussing the invisibility of humans cannot avoid discussing the invisibility of those data infrastructures that define how they become visible.
+
+<!-- [Setting the importance of making visible those infrastructures]  -->
+
+As infrastructure studies have amply shown, infrastructures tend to become invisible [e.g. @starStepsEcologyInfrastructure1996], and this is even more evident of digital data infrastructures of bordering and security. We thus suggest that renewed efforts are needed to make visible data infrastructures of border security. This is needed in two respects. First, it is needed by people on the move. Not only does data-based border crossers' identification represent them in different fashions, but it also enacts them in specific ways, with long-term consequences for their future life chances [@amelinaTransnationalizingInequalitiesEurope2016]. The semantic architectures through which this happens should be open to public scrutiny. Second, it is needed by European integration scholars focusing on migration management. Studying how people on the move are enacted through various data systems run by diverse authorities allows comparing identification practices adopted by EU agencies and Member States. It thus constitutes an opportunity to follow the co-production of people and polities [@pelizzaProcessingAlterityEnacting2019].
+
+Despite these needs, most critical studies on the "data politics" [@ruppertDataPolitics2017] of policing practices tend to be unsatisfactory in the methods employed to make data infrastructures visible. We suggest that there is much potential for systematic approaches that make data infrastructures visible. In this paper we propose a method in which visibility proceeds by comparison. In this, we follow the intuition of semiotics and early STS, according to which meaning can be more aptly revealed through comparisons, such as breakdowns, diachronic differences and controversies [@latourReassemblingSocialIntroduction2005]. We propose a methodology to compare the semantic aspects of digital infrastructures of border security. Notably, the paper proposes a method and a tool to semantically compare diverse information systems used to identify people on the move at borders.
+
+<!-- [Set the field of study of ontologies]  -->
+
+Our method and tool draw on studies about ontologies and classification which thrived in the late 1990s, epitomized by the well-known study by Bowker and Star about the processes of creating classification systems, and their effects on work practices [-@bowkerSortingThingsOut1999]. This early work is still enjoying great diffusion, which speaks for its enduring topicality. Yet not many methodological contributions have been produced in the last twenty years to further develop the analysis of information systems' ontologies and data models. Nor, to our knowledge, have convincing applications of this type of analysis been developed in studies of technologies of migration and border control.
+

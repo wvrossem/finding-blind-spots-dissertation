@@ -1,0 +1,115 @@
+---
+title: ""
+author: ""
+output:
+  bookdown::pdf_book:
+    fig_caption: yes
+    toc: false
+header-includes:
+  - \usepackage{algorithm2e}
+---
+
+<!-- ## Pseudocode -->
+
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\SetAlgoLined
+\SetKwInOut{Input}{Input}
+\Input{The sets of Categories, Documents, CodeGroups, and DocGroups\\
+$Categories=\{cat_1, cat_2, ..., cat_n\}$\\
+$Documents=\{doc_1, doc_2, ..., doc_m\}$\\
+$CodeGroups=\{codeGroup_1, codeGroup_2, ..., codeGroup_o\}$\\
+$DocGroups=\{docGroup_1, docGroup_2, ..., docGroup_p\}$
+}
+\Input{The mappings of categories to documents, of categories to code groups, and of documents to document groups\\
+$Occurrence: (category \subseteq Categories) \mapsto (document \subseteq Document)$\\
+$CodeGroup: (category \subseteq Categories) \mapsto (codeGroup \subseteq CodeGroups)$\\
+$DocGroup: (doc \subseteq Documents) \mapsto (docGroup \subseteq DocGroups)$
+}
+
+\BlankLine
+
+\KwResult{A directed graph: $G=(Nodes,Links)$ with elements as nodes, and direct and indirect links}
+
+\BlankLine
+
+$Nodes \longleftarrow Codes \cup Documents \cup CodeGroups \cup DocGroups$\;
+$Links \longleftarrow \emptyset$\;
+
+\BlankLine
+
+\ForEach{$category \in Categories$}{
+  \nl\If{$(category \mapsto document) \in Occurrence$}{
+    $Links \leftarrow Links \cup (category, document)$
+  }
+
+  \nl\If{$(category \mapsto codeGroup) \in CodeGroup$}{
+    $Links \leftarrow Links \cup (category, codeGroup)$
+  }
+}
+
+\BlankLine
+
+\ForEach{$document \in Documents$}{
+  \nl\If{$(document \mapsto docGroup) \in DocGroup$}{
+    $Links \leftarrow Links \cup (document, docGroup)$
+  }
+}
+
+\BlankLine
+
+\ForEach{$category \in Categories$}{
+  \nl\If{$(category \mapsto document) \in Occurrence$ {\bf and} $(document \mapsto docGroup) \in DocGroup$}{
+    $Links \leftarrow Links \cup (category, docGroup)$
+  }
+
+  \BlankLine
+
+  \nl\If{$(category \mapsto document) \in Occurrence$ {\bf and} $(document \mapsto docGroup) \in DocGroup$ {\bf and} $(category \mapsto codeGroup) \in CodeGroup$}{
+    $Links \leftarrow Links \cup (codeGroup, docGroup)$
+  }
+}
+
+\BlankLine
+
+\Return{$G=(Nodes,Links)$}
+
+\end{algorithm}
+
+<!-- \begin{algorithm}[H]
+\DontPrintSemicolon
+\SetAlgoLined
+\KwResult{Graph}
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\Input{The graph from set one $G=(Nodes,Links)$.}
+\Output{The project as a graph.}
+\BlankLine
+
+\end{algorithm} -->
+
+<!-- Create a new $node$ object\;
+  $node.type \longleftarrow DetermineType(el)$\;
+  $node.name \longleftarrow el.name$\;
+  $Nodes \cup node$\; 
+  
+  \Switch{$node.type$}{
+    \uCase{code}{\;
+    }
+  }
+  
+  -->
+
+<!-- \ForEach{$el \in Elements$}{
+  Create a new $node$\;
+  node.type \longleftarrow DetermineType(el)\;
+  node.name \longleftarrow el.name\;
+  $N \cup node$
+}
+
+\ForEach{$rel \in Relations$}{
+  Create a new $link$\;
+  link.source \longleftarrow DetermineSource(rel)\;
+  link.target \longleftarrow DetermineTarget(rel)\;
+  $L \cup link$
+} -->

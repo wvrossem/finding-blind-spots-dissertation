@@ -1,6 +1,8 @@
 # Research design and methods {#ch-method}
 
-## Research objectives: Applying and testing the conceptual framework for tracing data matching in transnational security data infrastructures
+\chaptermark{Research design and methods}
+
+## Research objectives: The conceptual framework as a heuristic for tracing data matching in transnational security data infrastructures
 
 <!-- To research this topic I took advantage of well established methods from the areas of Human–Computer Interaction (HCI), Computer Supported Collaborative Work (CSCW) and sociotechnical research to investigate the relations between the technologies, users, and organizations. Hence, I employed methods such as document analysis and user interviews for data collection and data analysis. Furthermore, these methods informed each other at different points throughout the duration of the research. -->
 

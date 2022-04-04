@@ -1,5 +1,7 @@
 # Conclusions {#ch-conclusions}
 
+\chaptermark{Conclusions}
+
 ## Summary of empirical findings
 
 ## Contributions to existing literature

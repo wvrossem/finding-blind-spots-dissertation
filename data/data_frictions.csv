@@ -1,0 +1,19 @@
+Color,Name,Groundedness,Density,Groups,Number of Groups,Comment,Creator,Creation Date,Modifier,Modification Date
+●,data frictions: dummy values,1,0,Data frictions,1,"When it is not clear who a person is, dummy values for a name such ""who is this"" may be entered.",Wouter Van Rossem,12/4/2020,Wouter Van Rossem,12/4/2020
+●,data frictions: foreign names,1,0,Data frictions,1,Employees at the phone may have to transcribe a name based on what a person tells them. Non-Dutch names may in those cases may be entered incorrectly in the search fields.,Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: historical data: name changes,1,0,Data frictions,1,Someone’s name may have changed compared to what is present in the database.,Wouter Van Rossem,12/4/2020,Wouter Van Rossem,12/5/2020
+●,data frictions: incorrect information,1,0,Data frictions,1,For example a wrongly spelled name.,Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: information wrong in the system,1,0,Data frictions,1,"Information may have been entered wrongly in the system, this can make it difficult to find a person back again later.",Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: lack of information,1,0,Data frictions,1,There may be a lack of information that is provided in for example documents sent regarding a case.,Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: maiden name,1,0,Data frictions,1,"Someone may be using at one point their maiden name, and their husband’s surname at other occasions.",Wouter Van Rossem,12/4/2020,Wouter Van Rossem,12/5/2020
+●,data frictions: mispronunciations,1,0,Data frictions,1,There may be some difficulties that arise due to misunderstanding of pronunciations of a name.,Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: missing letter(s) in name,2,0,Data frictions,1,For example when typing the query.,Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: misspelled name,3,0,Data frictions,1,Different spellings of names could occur at several points of the processes.,Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: multiple languages,1,0,Data frictions,1,,Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: number switched,1,0,Data frictions,1,"Identification numbers are often used and can be the easiest way to find a person, but there may still be mistakes with the data used to query such as numbers switched.",Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: only first letter of first name,1,0,Data frictions,1,"For example when someone has to process a postal document, but first letter of first name was used.",Wouter Van Rossem,12/4/2020,Wouter Van Rossem,12/5/2020
+●,data frictions: transcribing name,1,0,Data frictions,1,"Can be an issue when inputting the data for the first registration, or when trying to query for a person in the database.",Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: typos,1,0,Data frictions,1,Typos may also occur when registering or querying for a person.,Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
+●,data frictions: unknown data,1,0,Data frictions,1,See dummy values.,Wouter Van Rossem,12/4/2020,Wouter Van Rossem,12/4/2020
+●,data frictions: unknown date of birth,2,0,Data frictions,1,"When the (full) date of birth is not known of person, for example the day and month may be set to a fix date (1st of January of 1st of July of Year X).",Wouter Van Rossem,12/3/2020,Wouter Van Rossem,12/4/2020
+●,data frictions: wrong data inserted/created,1,0,Data frictions,1,"In general wrong data may have been entered at first registration, which would make later search queries more difficult or lead to the creation of duplicates.",Wouter Van Rossem,11/30/2020,Wouter Van Rossem,12/1/2020
