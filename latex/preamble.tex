@@ -1,6 +1,25 @@
-\shorttitle{Ontology analysis}
-\affiliation{x}
+%%% to allow custom headings
+\usepackage{titlesec}
+% to change titles font family
+\usepackage{titling}
 
-\usepackage[english]{babel}
-\usepackage{ragged2e}
-\justifying
+
+%%% declare fonts and set some formats
+% fontspec to use non-latex with xetex
+\usepackage{xunicode}
+\usepackage{fontspec}
+\usepackage{xltxtra}
+
+\setmainfont{Alegreya Sans}
+\setsansfont[Ligatures=TeX]{Alegreya Sans}
+
+% font declaration and title settings
+% \newfontfamily\headingfont[]{Alegreya}
+% \titleformat{\chapter}[display]
+%   {\huge\headingfont}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+% \titleformat*{\section}{\LARGE\headingfont}
+% \titleformat*{\subsection}{\Large\headingfont}
+% \renewcommand{\maketitlehooka}{\headingfont}
+
+\usepackage{setspace}
+\onehalfspacing

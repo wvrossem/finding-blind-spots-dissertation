@@ -7,8 +7,10 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+    #pandoc_args: [ "--csl", "apa.csl" ] # download the citation style of your choice from
     download: ["pdf", "epub"]
 bookdown::markdown_document2:
+  toc: true
   fig_caption: yes
   base_format: officedown::rdocx_document
   reference_docx: "style/template.docx"
@@ -30,13 +32,16 @@ bookdown::word_document2:
   reference_docx: "style/template.docx"
   keep_tex: no
 bookdown::pdf_book:
-  fig_caption: yes
-  toc: false
+  template: style/template.tex
+  keep_tex: no
+  latex_engine: xelatex
   includes:
     in_header: "latex/preamble.tex"
     before_body: "latex/before_body.tex"
-  pandoc_args: --top-level-division=section
-  highlight_bw: yes
-  keep_tex: no
+  #pandoc_args: [ "--csl", "apa.csl" ] # download the citation style of your choice from
+  citation_package: natbib # to use .csl-files to apply same citation style to html and pdf. You can also use a LaTeX package, e.g. biblatex. This provides much more customizability, but it is not as easy to apply a particular style, and it will only work in pdf output. https://www.zotero.org/styles, then fill in here
+  # fig_caption: yes
+  # toc: false
+  # highlight_bw: yes
 bookdown::epub_book: default
 bookdown::bs4_book: default
