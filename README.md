@@ -12,7 +12,7 @@
 
 ## Snippets
 
-```{r figure-name, echo=FALSE, fig.cap="Caption." out.width='80%', fig.asp=.75, fig.align='center'}
+```{r figure-name, echo=FALSE, fig.cap="Caption.", out.width='80%', fig.asp=.75, fig.align='center'}
 knitr::include_graphics("figures/figure.pdf")
 ```
 
