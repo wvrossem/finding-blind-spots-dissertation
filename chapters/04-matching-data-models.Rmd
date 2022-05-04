@@ -334,7 +334,6 @@ Future work will concentrate on applying the method to more in depth and differe
 
 The role of the ELISE matching in the INDiGO architecture is to provide a service which allows users in the different processes to "fuzzy" search for customers and organizations. Fuzzy search in this context means that a query will not look for exact matches. Instead, the ELISE matching calculates points based on different search criteria and, based on these points, determines an overall score for each customer or organization in the database — representing the likelihood that, respectively, a person or organization matches the query. That is, for each record in the database a match score will be calculated but only the customers or organizations with the highest score the best matches will be returned as search results by ELISE. Figure \@ref(fig:datamodels) shows the categories of data which are available for searching.[^ontologyexplorer]
 
-
 ```{r datamodels, fig.cap="Network showing the categories of data available in the Indigo search and the Indigo data model.", fig.alt="test"}
 knitr::include_graphics("figures/oe-indigo-data-models.png")
 ```

@@ -48,4 +48,3 @@ Despite these needs, most critical studies on the "data politics" [@ruppertDataP
 <!-- [Set the field of study of ontologies]  -->
 
 Our method and tool draw on studies about ontologies and classification which thrived in the late 1990s, epitomized by the well-known study by Bowker and Star about the processes of creating classification systems, and their effects on work practices [-@bowkerSortingThingsOut1999]. This early work is still enjoying great diffusion, which speaks for its enduring topicality. Yet not many methodological contributions have been produced in the last twenty years to further develop the analysis of information systems' ontologies and data models. Nor, to our knowledge, have convincing applications of this type of analysis been developed in studies of technologies of migration and border control.
-
