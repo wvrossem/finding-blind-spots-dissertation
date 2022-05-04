@@ -22,7 +22,5 @@ To install all the packages, run the following command:
 
 ```r
 install.packages(c("rmarkdown", "bookdown", "pagedown", "kableExtra", "devtools"))
-devtools::install_github("davidgohel/officer")
-devtools::install_github("davidgohel/officedown")
-devtools::install_github("davidgohel/flextable")
+devtools::install_github(c("davidgohel/officer", "davidgohel/officedown", "davidgohel/flextable"))
 ```

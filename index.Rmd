@@ -83,6 +83,22 @@ bibliography: /Users/woutervanrossem/surfdrive/ZoteroBibtex.bib # bib-file conta
 biblio-style: "style/sage/sageh"
 link-citations: true # make clickable hyperlinks from in-text citations to bibliography at the end
 
+header-includes:
+  - \usepackage{booktabs}
+  - \usepackage{longtable}
+  - \usepackage{array}
+  - \usepackage{multirow}
+  - \usepackage{wrapfig}
+  - \usepackage{float}
+  - \usepackage{colortbl}
+  - \usepackage{pdflscape}
+  - \usepackage{tabu}
+  - \usepackage{threeparttable}
+  - \usepackage{threeparttablex}
+  - \usepackage[normalem]{ulem}
+  - \usepackage{makecell}
+  - \usepackage{xcolor}
+
 subparagraph: yes
 ---
 
@@ -95,6 +111,7 @@ knitr::opts_chunk$set(fig.width=3, fig.height=2)
 library(kableExtra)
 library(flextable)
 library(officer)
+library(pander)
 
 # Set global variables
 DATA_PATH = file.path(getwd(), "data")
