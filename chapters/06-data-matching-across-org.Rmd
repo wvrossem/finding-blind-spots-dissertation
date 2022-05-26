@@ -37,55 +37,6 @@ Several principles and guidelines can be deduced from this scholarship [@hyysalo
 
 For a number of years, researchers in fields such as migration and security studies, International Relations have drawn from concepts, theories, and methods from STS to study sociotechnologies of identification in border and migration control. The question remains of how these authors have integrated those same insights into their research problems and designs. Surveying the landscape of research on sociotechnologies of identification would help in identify prevailing problematizations of sociotechnologies of identification and the methodologies employed by researchers. As a representative case, I am especially interested research investigating the European information systems in the area of Justice and Home Affairs (JHA), and closely related developments. These include systems that, combined, contain millions of personal data on third country nationals to identify persons and control their movements to and within the European Union. As such, these JHA information systems have been widely researched from a multitude of angles.
 
-### Similarities and evolutions in body of literature
-
-One well known way to survey a landscape of research is by analysing the co-occurrences of words in the titles, abstracts, keywords of scientific outputs. Co-occurrence analysis premises that extracted words and phrases can represent specific problems, topics, themes, concepts, and directions of a field of research [@callonTranslationsProblematicNetworks1983; @mingersReviewTheoryPractice2015]. The innovativeness of this approach, pioneered by @callonTranslationsProblematicNetworks1983, is that it provided empirical results to show how researchers are not independent of their socio-political context in defining research problems and applying actions or methodological strategies. In the tradition of what later would be known as actor-network theory, the authors treated scientific outputs as 'literary inscriptions which make use of words as translation operators to define a problem and establish its relationships with a series of other problems' (p. 226). In this way, scientific texts can be conceptualized as 'devices' that channel interest to have a particular effect and possibly transforming the field of research. Analysing co-occurring words (and phrases) in a corpus of scientific outputs can therefore be used to examine translations of research problems and the concepts, theories, methods mobilized. In the next subsection I will follow up on why we may also be interested in differences.
-
-Operationally, a co-occurrence or co-word analysis works as follows. When two terms occur in a same piece of text they are considered related; when this occurs among a collection of pieces this can indicate that these terms are related to certain research topics. Groups of such connected co-occurring terms can further indicate relations between different topics. This network topology can also be visually analysed using different layouting algorithms that position the terms as connected nodes based on their relation to each other. These days, exports from citation and abstract databases can be used in software tools such as VOSViewer[^vosviewer] or Bibliometrix[^bibliometrix] to extract terms, and construct and visualize co-occurrence networks.
-
-[^vosviewer]: <https://www.vosviewer.com/>
-
-[^bibliometrix]: <https://www.bibliometrix.org/home/index.php>
-
-Practically then, querying major citation and abstract databases[^dbs] can be used to get a sizeable corpus of this body of scientific literature. In this case, I found more than three hundred articles mentioning the EU information systems and related developments in the abstracts, titles, keywords of social science articles and books (see Query). The query results include, among others, articles from journals such as the 'Journal Of Ethnic And Migration Studies' (11), 'Security Dialogue' (7), Journal Of Borderlands Studies (6), 'Environment And Planning D Society And Space' (4), 'Geopolitics' (4).  Next, extracting and visualizing commonly co-occurring terms in the titles and abstracts of this corpus gives initial insights into problems, topics, themes, concepts, and directions of this field of research.
-
-[^dbs]: For this analysis, I used the Scopus and Web of Science core collection. The web based services each provide access to multiple databases containing comprehensive citation data for many academic disciplines.
-
-```{text query}
-( 
-  TITLE-ABS-KEY ( "visa information system"  OR  "eurodac"  OR  "schengen information system"  OR  "Travel Information and Authorisation System"  OR  "European Criminal Records Information System"  OR  "smart borders*" ) 
-  OR  TITLE-ABS-KEY ( "entry*exit system"  AND  "EES" )
-  OR  TITLE-ABS-KEY ( "Schengen"  AND  "SIRENE" )
-  OR  TITLE-ABS-KEY ( "european search portal"  OR  "multiple identity detector"  OR  "common identity repository"  OR  "shared biometric matching service" ) 
-  OR  TITLE-ABS-KEY ( "Area of Freedom Security and Justice"  OR  "Justice and Home Affairs"  OR  schengen  OR  "eu-lisa"  OR  "Fortress Europe" ) 
-  OR  TITLE-ABS-KEY ( 
-    ( "EU"  OR  "Europ*" )  AND  ( "migrat* manag*"  OR  "migrat* control"  OR  "migrat* secur*"  OR  "border manag*"  OR  "border control"  OR  "border secur*" ) ) 
-  AND  TITLE-ABS-KEY ( "information system*"  OR  "IT system*"  OR  ict*  OR  "data infra*"  OR  "biometric tech*"  OR  "technolog*" ) )  AND NOT  ( TITLE-ABS-KEY ( "covid*"  OR  pandem*  OR  "smart cit*" OR "pollut*" OR "freight*") 
-)
-```
-
-The process of extracting and grouping co-occurring terms identified three clusters which are frequently present among scientific outputs in the corpus (Figure \@ref(fig:eu-systems)). In the first cluster (leftmost and coloured green in the visualization) there are topics related to the different JHA information systems and their databases: Eurodac, the Schengen Information System, the Visa information, and the forthcoming framework to make these systems interoperable. The size of the nodes — indicating the frequency of the terms — are similar, so all systems seem to receive as much attention in the body of literature. Although, it should be noted that, because systems have been incrementally added over the years, there may be a slight predisposition towards researching the newer systems. In the same cluster we can see that some terms and concerns are more legalistic, such as, with respect to the regulations establishing these systems, or problematizing the systems regarding data protection, privacy, and human rights.
-
-```{r eu-systems, echo=FALSE, fig.cap="A network visualization of co-occuring terms in the titles and abstracts found through a Scopus query for research related to the EU JHA information systems."}
-knitr::include_graphics("figures/vosviewer/co-occurrence-text.png")
-```
-
-The top and middle, blue cluster relates to a common research interest in the biometric identification that are part of the systems. More specifically, the focus is more often on fingerprints — as opposed to other biometric modalities. The links with terms relating to the different systems shows that the biometrics of the Eurodac and Visa Information System are mentioned more frequently. This is likely because, while the Schengen Information System also contains biometric data, its 'Automated Fingerprint Identification System' has only been added rather recently (March 2018).[^sisii] A question would therefore be to what extent research keeps up with new developments to existing systems. By looking at what is missing in these clusters, there seems to be a more general bias in research for addressing the biometric data stored in the system, rather than biographic/alphanumeric data (e.g., name, nationality, date of birth), and possibly equating biometric identification with identification (Figure \@ref(fig:identity)).
-
-[^sisii]: See <https://ec.europa.eu/home-affairs/policies/schengen-borders-and-visa/schengen-information-system_en>.
-
-The rightmost, red cluster then includes different processor, actors, methods, theories of research. For example, there are terms related to the governance, institutions, policies of migration and borders. Terms such as 'migration management' also seem to be often problematized as 'security technology' or 'surveillance technology'. A closely related term 'border regime' is closely connected to the concept of 'power', which seems to indicate problemitizations of power relations. Next, there are terms related to kinds of people affected by the technologies: 'migrant', 'refugee', 'asylum seeker'. What is less problematizated seems to be other kinds of people whose data is also present in the databases: travellers, missing people, criminals. Although the term 'work' is frequently used, the people working with the technologies do not seem to mentioned as frequently. For example, these could include border guards, police officers, visa issuing and migration authorities.
-
-```{r identity, echo=FALSE, fig.cap="A network visualization of co-occuring terms for the term 'identity'."}
-knitr::include_graphics("figures/vosviewer/identity-co-occurrences.png")
-```
-
-The third cluster also includes some terms related to the methods used by the authors (Figure \@ref(fig:eu-systems)). Regularly occurring terms related to the research design include 'case study' (12), 'fieldwork' (12), 'interview' (11).[^thesaurus] Other recurrent words such as 'discourse', 'comparison' seem to suggest they are linked to the method, yet their usages are, on closer inspection, primarily related to other aspects of the research. Important to note is that many abstracts do not mention their method in the abstract. A closer reading would therefore need to take into account the content of the articles to understand their employed methods. It seems that, for the most part, researchers stick to qualitative methods.
-
-[^thesaurus]: During the process to extract key terms, a thesaurus is used to group related terms. For instance, terms such as 'field research', 'field study', 'field work' are considered as synonyms of 'fieldwork'.
-
-[^automatic]: Although possible, it would be difficult to get reliable results from automatic methods to analyse complete articles to, for instance, identify commonly used methods. Text mining methods could be applied to extract and analyse the full text, but it would be difficult to distinguish between mentions of an article's method and those mentioned in other parts of the text (e.g., in a literature review).
-
 ### Differences and particularities in body of literature
 
 Next to similarities, there are many distinctive features of research in the body of literature. In this section I will draw from the principles and guidelines deduced from STS scholarship and on how to study information infrastructures. These concepts can serve as heuristics to highlight key differences and particularities in literature on research related to the EU JHA information systems and their approaches to studying technologies and practices of identification.
