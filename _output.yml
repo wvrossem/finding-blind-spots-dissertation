@@ -26,6 +26,9 @@ bookdown::markdown_document2:
       last_column: false
       no_hband: false
       no_vband: true
+  pandoc_args: [
+    --csl=style/chicago-author-date.csl
+  ]
 bookdown::word_document2:
   toc: false
   fig_caption: yes
@@ -43,5 +46,8 @@ bookdown::pdf_book:
   # fig_caption: yes
   # toc: false
   # highlight_bw: yes
+  pandoc_args: [
+    --csl=style/chicago-author-date.csl
+  ]
 bookdown::epub_book: default
 bookdown::bs4_book: default
