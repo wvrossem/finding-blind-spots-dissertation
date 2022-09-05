@@ -11,7 +11,7 @@ This chapter introduces the methodology of the ‘Ontology Explorer’ (OE), a s
 
 \vspace*{\fill}
 \noindent
-_This chapter draws from: Van Rossem, Wouter, and Annalisa Pelizza. 2022. ‘The Ontology Explorer: A Method to Make Visible Data Infrastructures for Population Management’. Big Data & Society 9 (1): 1–18. https://doi.org/10.1177/20539517221104087._
+This chapter draws from: Van Rossem, Wouter, and Annalisa Pelizza. 2022. ‘The Ontology Explorer: A Method to Make Visible Data Infrastructures for Population Management’. Big Data & Society 9 (1): 1–18. https://doi.org/10.1177/20539517221104087.
 \newpage
 
 ## Introduction
@@ -40,7 +40,7 @@ Our method and tool draw on studies about classification that were popular in th
 
 Another insight further developed by the OE concerns the design and standardization that are essential to information systems that link actors with their imprints [@hansethInscribingBehaviourInformation1997]. People, objects, relations, and actions must all fit into the categories and categorical values foreseen by information systems. In this way, categories used by states to classify their residents, for example, consequently shape relations between states and individuals, such as facilitating or restricting access to benefits [@ruppertCategory2014]. These influences are made durable and thus can have long-lasting effects. Specialists involved in the development of systems are, therefore, not only designing technical systems but making (im)possible certain actions, practices, and relations [@suchmanCategoriesHavePolitics1993].[^designers]
 
-[^designers]: Since the Social Construction of Technology (SCOT) approach to more recent user studies [@hyysaloNewProductionUsers2016], we are well aware the interaction between designers and users plays a key role in the final design. This aspect is indeed addressed in another article under review, while this current chapter aims to propose a method to analyse the final outcomes of such interaction.
+[^designers]: Since the Social Construction of Technology (SCOT) approach to more recent user studies [@hyysaloNewProductionUsers2016], we are well aware the interaction between designers and users plays a key role in the final design. This aspect is indeed addressed in another article under review. The current chapter aims to propose a method to analyse the final outcomes of such interaction.
 
 Overall, methods developed in this tradition have addressed the question of how to retrace the ethical and political work of otherwise unremarkable devices of representation. Researchers have used and combined various makeshift methods – from narrative interviews [@gazanImposingStructuresNarrative2005] to discursive textual analysis [@caswellUsingClassificationConvict2012], and from participant observation [@meershoekConstructionEthnicDifferences2011] to archival and genealogical research [@gassonGenealogicalStudyBoundaryspanning2006] – for the ethnographic and historical studies of information systems [@starStepsEcologyInfrastructure1996] and their classifications. It is necessary to take an interdisciplinary approach and pay close attention to the technical details of classification alongside the effects of classification [@kitchinCodeSpaceSoftware2011].
 
