@@ -21,6 +21,6 @@ knitr::include_graphics("figures/figure.pdf")
 To install all the packages, run the following command:
 
 ```r
-install.packages(c("rmarkdown", "bookdown", "pagedown", "kableExtra", "devtools"))
+install.packages(c("rmarkdown", "bookdown", "pagedown", "kableExtra", "devtools", "pander"))
 devtools::install_github(c("davidgohel/officer", "davidgohel/officedown", "davidgohel/flextable"))
 ```
