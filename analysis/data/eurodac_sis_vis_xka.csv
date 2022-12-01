@@ -1,0 +1,44 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness
+cf_6,System native,code-group,0.7603,48726.645
+cf_7,System pre-existant,code-group,0.7757,32522.9244
+cf_11,asylum,code-group,0.5791,4548.5648
+cf_13,biometrics,code-group,0.695,9953.5856
+cf_14,biometrics: fingerprint data,code-group,0.5007,296.8501
+cf_27,date of exit,code-group,0.4965,31.4706
+cf_41,linking data,code-group,0.7761,46528.055
+cf_44,linking data: MS,code-group,0.6324,640.1428
+cf_58,operator data,code-group,0.5134,320.4535
+cf_62,procedure data,code-group,0.5839,8291.1812
+cf_72,sex & gender,code-group,0.7393,11164.8626
+cf_82,travel: relocation,code-group,0.7217,17941.8079
+cf_9,additional info / comments,code-group,0.5949,3345.8251
+cf_15,biometrics: photograph data,code-group,0.6859,3866.292
+cf_16,birth data,code-group,0.7158,6352.9085
+cf_17,birth data: date of birth,code-group,0.7401,11242.5091
+cf_18,birth data: place of birth,code-group,0.7211,7713.5781
+cf_24,criminal offence data,code-group,0.4946,18.378
+cf_49,name: earlier/other names,code-group,0.5471,5289.7623
+cf_50,name: forename,code-group,0.6901,7482.0087
+cf_52,name: surname,code-group,0.7456,14872.6583
+cf_53,nationality,code-group,0.7456,16540.165
+cf_25,date of application,code-group,0.4928,1.6949
+cf_29,education,code-group,0.7149,9715.8904
+cf_54,occupation data,code-group,0.7149,10713.433
+cf_55,occupation data: current,code-group,0.6353,1117.9533
+cf_59,parents data,code-group,0.7121,5785.8725
+cf_60,personal ties,code-group,0.712,12024.0255
+cf_61,personal ties: in EU,code-group,0.5502,541.5667
+cf_66,residence,code-group,0.6145,7021.8095
+cf_73,stay data,code-group,0.5324,965.3354
+cf_76,travel data,code-group,0.6872,7626.4672
+cf_77,travel document data,code-group,0.6976,14659.9675
+cf_80,travel document: validity: expiration,code-group,0.4965,17.3229
+cf_81,travel document: visa-related data,code-group,0.5031,58.665
+cf_8,Temporary accomodation/housing,code-group,0.5425,2740.763
+cf_22,contact info,code-group,0.5673,1714.0587
+cf_26,date of entry,code-group,0.7129,11116.2022
+cf_34,family status data,code-group,0.596,3774.7328
+cf_37,language,code-group,0.668,5566.2764
+cf_43,linking data: IO,code-group,0.6072,2828.8307
+cf_75,system entry data: place,code-group,0.4617,96.6935
+cf_83,vulnerability,code-group,0.6469,3442.5173

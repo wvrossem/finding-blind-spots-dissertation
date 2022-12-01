@@ -1,0 +1,24 @@
+```{r fig-d, fig.cap="Categories particular to EU"}
+eu <- read.csv(file="../data/eurodac_sis_vis.csv", head=TRUE, sep=",")
+eu <- eu[eu$node_type == "code-group",]
+eu <- eu$node_name
+xka <- read.csv(file="../data/xka.csv",head=TRUE,sep=",")
+xka <- xka[xka$node_type == "code-group",]
+xka <- xka$node_name
+xauslander <- read.csv(file="../data/german_xauslander.csv",head=TRUE,sep=",")
+xauslander <- xauslander[xauslander$node_type == "code-group",]
+xauslander <- xauslander$node_name
+max.len = max(length(eu), length(xka), length(xauslander))
+combined <- data.frame(
+  eu=c(eu, rep("", max.len - length(eu))),
+  xka=c(xka, rep("", max.len - length(xka))),
+  xauslander=c(xauslander, rep("", max.len - length(xauslander))))
+datatable(
+  combined,
+  options = list(dom = 'Pfrtip', columnDefs = list(list(
+    searchPanes = list(show = FALSE), targets = 1:3
+  ))),
+  extensions = c('Select', 'SearchPanes'),
+  selection = 'none'
+)
+```

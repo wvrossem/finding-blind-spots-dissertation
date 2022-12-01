@@ -1,0 +1,67 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness
+pd_4_4,VIS Regulation,document,0.5894,1503.8875
+co_126,a photograph of the applicant,code,0.6464,822.5604
+co_143,application number,code,0.5549,4.5702
+co_153,authority which issued the travel document,code,0.5413,2.1729
+co_154,authority with which the application has been lodged,code,0.5698,11.6571
+co_189,country of birth,code,0.7002,4892.632
+co_195,current employer,code,0.5628,14.4769
+co_196,current nationality,code,0.5609,13.0758
+co_197,current occupation,code,0.5639,23.4743
+co_202,date of birth,code,0.7408,17412.5758
+co_207,date of expiry of the travel document,code,0.5424,8.598
+co_211,date of issue of the travel document,code,0.5424,4.3195
+co_213,date of the application,code,0.556,20.7612
+co_226,details of the person issuing an invitation and/or liable to pay the applicant's subsistence costs during the stay,code,0.5488,8.3184
+co_231,duration of the intended stay,code,0.5012,3.079
+co_277,fingerprints of the applicant,code,0.5416,6.7447
+co_280,first name(s),code,0.5598,13.6008
+co_284,former surname(s),code,0.5642,30.5471
+co_297,intended border of first entry,code,0.4931,1.6949
+co_298,intended date of arrival,code,0.6044,422.6692
+co_299,intended date of depature,code,0.6464,1216.9363
+co_300,intended transit route,code,0.4931,1.6949
+co_312,main destination,code,0.5407,2.706
+co_329,name of school,code,0.5477,3.3541
+co_334,nationality at birth,code,0.5609,6.7809
+co_342,number of the travel document,code,0.5424,4.3195
+co_356,place of birth,code,0.6795,3745.9815
+co_358,place of the application,code,0.5753,96.0821
+co_367,purpose of travel,code,0.5407,2.706
+co_398,residence,code,0.5174,3.8065
+co_406,sex,code,0.7311,14255.4397
+co_411,status information,code,0.5593,13.3395
+co_417,surname,code,0.7353,13566.595
+co_419,surname and first name(s) of the applicant's father and mother,code,0.5584,4.1716
+co_420,surname at birth,code,0.5617,13.9576
+co_442,type of travel document,code,0.5446,15.9534
+co_443,type of visa requested,code,0.4931,1.6949
+cf_6,System native,code-group,0.7603,48726.645
+cf_7,System pre-existant,code-group,0.7757,32522.9244
+cf_13,biometrics,code-group,0.695,9953.5856
+cf_14,biometrics: fingerprint data,code-group,0.5007,296.8501
+cf_15,biometrics: photograph data,code-group,0.6859,3866.292
+cf_16,birth data,code-group,0.7158,6352.9085
+cf_17,birth data: date of birth,code-group,0.7401,11242.5091
+cf_18,birth data: place of birth,code-group,0.7211,7713.5781
+cf_25,date of application,code-group,0.4928,1.6949
+cf_29,education,code-group,0.7149,9715.8904
+cf_41,linking data,code-group,0.7761,46528.055
+cf_49,name: earlier/other names,code-group,0.5471,5289.7623
+cf_50,name: forename,code-group,0.6901,7482.0087
+cf_52,name: surname,code-group,0.7456,14872.6583
+cf_53,nationality,code-group,0.7456,16540.165
+cf_54,occupation data,code-group,0.7149,10713.433
+cf_55,occupation data: current,code-group,0.6353,1117.9533
+cf_59,parents data,code-group,0.7121,5785.8725
+cf_60,personal ties,code-group,0.712,12024.0255
+cf_61,personal ties: in EU,code-group,0.5502,541.5667
+cf_62,procedure data,code-group,0.5839,8291.1812
+cf_66,residence,code-group,0.6145,7021.8095
+cf_72,sex & gender,code-group,0.7393,11164.8626
+cf_73,stay data,code-group,0.5324,965.3354
+cf_76,travel data,code-group,0.6872,7626.4672
+cf_77,travel document data,code-group,0.6976,14659.9675
+cf_80,travel document: validity: expiration,code-group,0.4965,17.3229
+cf_81,travel document: visa-related data,code-group,0.5031,58.665
+df_6,EU: VIS,document-group,0.6593,31439.0242

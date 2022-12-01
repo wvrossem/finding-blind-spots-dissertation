@@ -1,0 +1,289 @@
+---
+title: "RQ1, ontology analysis"
+author: "Processing Citizenship"
+date: "May 2020"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(kableExtra)
+
+def_counter <- 0
+
+inc <- function(x) {
+  eval.parent(substitute(x <- x + 1))
+  x
+}
+```
+
+## Outline
+
+This presentation/workbook gives an overview of the work done for the ontology analysis:
+
+1. Work done for coding and organising the atlas.ti project.
+
+2. Modifications and new features of the ontology analysis tool.
+
+3. Outline of methods and data that can be used to answer the research questions.
+
+## Data coding
+
+We went through all codes not yet associated to a code group:
+
+* Assigning codes to already existing groups.
+
+* Renaming and restructuring existing groups.
+  + For example organising code groups such as `surname` to `name: surname`.
+  + We also created more specific sub-groups. For example, for the code groups `language` we added additional groups `language: reading`, `language: writing`, `language: listening`.
+
+* Creating new code groupings if they could not be grouped in existing structure.
+
+Result is that we can now actually rely on running the analyses based on code groups.
+
+## Ontology analysis tool (1)
+
+```{r, out.width='100%', fig.align='center', fig.cap='New features'}
+knitr::include_graphics('interface.png')
+```
+
+## Ontology analysis tool (2)
+
+```{r, out.width='100%', fig.align='center', fig.cap='New features'}
+knitr::include_graphics('interface_annot.png')
+```
+
+## Data analysis (1)
+
+To do the actual data analysis:
+
+* We reviewed the different proposed methods, questions and hypotheses that were previously formulated.
+
+* For each of these we tried to identify methods and data that can be used to answer the question.
+
+* In many cases this led us to introduce additional specifications of code groups.
+
+## Data analysis (2)
+
+A note on the data used in the following slides. In general the process was a follows:
+
+* Queries were executed in the tool, e.g. intersection of SIS and VIS.
+
+* The output data generated through the graph analysis was downloaded as CSV files.
+
+* These CSV files are directly loaded & processed in generating this presentation.
+
+```{r echo = TRUE}
+diff <- read.csv(file="./data/eurodac_particular.csv",head=TRUE,sep=",")
+```
+
+* Not all output of this kind of code will be shown in the following slides.
+
+## Question `r inc(def_counter)`
+
+> For each system, which categories are peculiar/native?
+
+* **Method**: Using _set difference_ of presence of categories of document group compared to a selection of document groups.
+* **Example**: A comparison of categories native to each EU system, in relation to the other EU information systems.
+
+1. For each system
+
+* $Presence(Eurodac) \setminus (Presence(SIS) \bigcup Presence(VIS))$
+* $Presence(SIS) \setminus (Presence(Eurodac) \bigcup Presence(VIS))$
+* $Presence(VIS) \setminus (Presence(SIS) \bigcup Presence(Eurodac))$
+
+2. Download CSV files
+
+```{r echo = TRUE}
+diff_eurodac <- read.csv(file="./data/eurodac_particular.csv",head=TRUE,sep=",")
+diff_eurodac <- diff_eurodac[diff_eurodac$node_type == "code-group",]
+diff_eurodac <- diff_eurodac$node_name
+```
+
+```{r echo = FALSE}
+diff_sis <- read.csv(file="./data/sis_particular.csv",head=TRUE,sep=",")
+diff_sis <- diff_sis[diff_sis$node_type == "code-group",]
+diff_sis <- diff_sis$node_name
+```
+
+```{r echo = FALSE}
+diff_vis <- read.csv(file="./data/vis_particular.csv",head=TRUE,sep=",")
+diff_vis <- diff_vis[diff_vis$node_type == "code-group",]
+diff_vis <- diff_vis$node_name
+```
+
+3. Combined results in table
+
+```{r echo = TRUE}
+max.len = max(length(diff_eurodac), length(diff_sis), length(diff_vis))
+combined <- data.frame(
+  eurodac=c(diff_eurodac, rep("", max.len - length(diff_eurodac))),
+  sis=c(diff_sis, rep("", max.len - length(diff_sis))),
+  vis=c(diff_vis, rep("", max.len - length(diff_vis))))
+knitr::kable(combined) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
+
+## Question `r inc(def_counter)`
+
+> For each system, what is the link between the applicant and Europe?
+
+<!-- - **METHOD**: Use of the code group: `linking data: EU` -->
+<!-- - **Example**: (not much data available at the moment). -->
+
+<!-- * (Family) ties? -->
+<!-- * New code group: personal relations, job ties, etc. in EU -->
+<!-- * What other ways, are we excluding some? -->
+<!-- * Imagined role of the person -->
+* **Method**: check the presence of a selection of groups code groups that represent links with Europe, such as:
+  + `personal ties: in EU`
+  + `migrant type` and `migration type`: "family reunification"
+  + (future) `occupation` => `employment-interest` (IOM) / "skills"?
+  + education
+  + family reunification
+  + residence
+  + previous link with EU: `date of exit`, `return decision`
+  + temporary visa & stay
+  + ...?
+
+* To get more detailed types of links, we decided to further specify some code groups:
+  + To distinguish between short, longer, and previous links to Europe.
+  + And to distinguish between categories such as current employment vs possible future occupation.
+
+* **Example**: For each EU systems we take the groups of categories present, and filter on the previous selection of code groups.
+
+1. Check data for Eurodac, SIS and VIS & filter on groups
+
+```{r echo = TRUE}
+groups <- c("residence", "education", "date of exit", "personal ties: in EU", "migrant type", "travel document: visa-related data", "occupation data: current", "stay data", "linking data: MS")
+
+links_eurodac <- read.csv(file="./data/eurodac.csv",head=TRUE,sep=",")
+links_eurodac <- links_eurodac[links_eurodac$node_name %in% groups,]
+links_eurodac <- links_eurodac$node_name
+```
+
+```{r echo = FALSE}
+links_sis <- read.csv(file="./data/sis.csv",head=TRUE,sep=",")
+links_sis <- links_sis[links_sis$node_name %in% groups,]
+links_sis <- links_sis$node_name
+```
+
+```{r echo = FALSE}
+links_vis <- read.csv(file="./data/vis.csv",head=TRUE,sep=",")
+links_vis <- links_vis[links_vis$node_name %in% groups,]
+links_vis <- links_vis$node_name
+```
+
+2. Combine results into a table
+
+```{r echo = TRUE}
+max.len = max(length(links_eurodac), length(links_sis), length(links_vis))
+combined <- data.frame(
+  eurodac=c(links_eurodac, rep("", max.len - length(links_eurodac))),
+  sis=c(links_sis, rep("", max.len - length(links_sis))),
+  vis=c(links_vis, rep("", max.len - length(links_vis))))
+knitr::kable(combined) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
+
+## Question `r inc(def_counter)`
+
+> How is the division of labour between EU and MSs, and among MSs architected, with the mediation of IOs?
+
+* **Method**
+  + Comparison of code groups: medical data (+vulnerability), relocation data, asylum, housing, ...
+  + Do we need to introduce more fine grained code group type for labour type?
+* **Ideas**
+  + How can we use linking data, e.g. to give indication of kinds of collaboration?
+  + Intermediary (same category) vs mediator (different).
+  + Can we use extra information from fieldwork?
+* **Example** For each EU systems we take the groups of categories present, and filter on the selection of code groups representing types of labour.
+
+1. Check data for Eurodac, SIS, VIS (and XKA) & filter on groups
+
+```{r echo = TRUE}
+groups <- c("medical data", "vulnerability", "travel: relocation", "asylum", "Temporary accomodation/housing", "criminal offence data")
+
+links_eurodac <- read.csv(file="./data/eurodac.csv",head=TRUE,sep=",")
+links_eurodac <- links_eurodac[links_eurodac$node_name %in% groups,]
+links_eurodac <- links_eurodac$node_name
+```
+
+```{r echo = FALSE}
+links_sis <- read.csv(file="./data/sis.csv",head=TRUE,sep=",")
+links_sis <- links_sis[links_sis$node_name %in% groups,]
+links_sis <- links_sis$node_name
+```
+
+```{r echo = FALSE}
+links_vis <- read.csv(file="./data/vis.csv",head=TRUE,sep=",")
+links_vis <- links_vis[links_vis$node_name %in% groups,]
+links_vis <- links_vis$node_name
+```
+
+```{r echo = FALSE}
+links_xka <- read.csv(file="./data/xka.csv",head=TRUE,sep=",")
+links_xka <- links_xka[links_xka$node_name %in% groups,]
+links_xka <- links_xka$node_name
+```
+
+2. Combine results into a table
+
+```{r echo = TRUE}
+max.len = max(length(links_eurodac), length(links_sis), length(links_vis), length(links_xka))
+combined <- data.frame(
+  eurodac=c(links_eurodac, rep("", max.len - length(links_eurodac))),
+  sis=c(links_sis, rep("", max.len - length(links_sis))),
+  vis=c(links_vis, rep("", max.len - length(links_vis))),
+  xka=c(links_xka, rep("", max.len - length(links_xka))))
+knitr::kable(combined) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
+
+## Question `r inc(def_counter)`
+
+> How does data from some actors become seen as more reliable?
+
+* **Method**: using centrality: more connected nodes gives an indication of categories that are used.
+* **Example**: (closeness) centrality of code groups in union of all code groups of Eurodac, SIS, & VIS:
+
+```{r echo = TRUE}
+ccn <- read.csv(file="./data/eurodac_sis_vis.csv",head=TRUE,sep=",")
+ccn <- ccn[ccn$node_type == "code-group",]
+ccn <- ccn[order(ccn$node_centrality_closeness),]
+ccn <- ccn[order(ccn$node_centrality_closeness, decreasing=TRUE), c("node_name", "node_centrality_closeness")]
+knitr::kable(ccn) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
+
+## Question `r inc(def_counter)`
+
+> How does data become important to link different systems?
+
+* **Method**: centrality: more connected nodes gives an indication of categories that can connect different data models.
+* **Example**: betweenness centrality of code groups of Eurodac, SIS, & VIS:
+
+```{r echo = TRUE}
+bc <- read.csv(file="./data/eurodac_sis_vis.csv",head=TRUE,sep=",")
+bc <- bc[bc$node_type == "code-group",]
+bc <- bc[order(bc$node_centrality_betweenness),]
+bc <- bc[order(bc$node_centrality_betweenness, decreasing=TRUE), c("node_name", "node_centrality_betweenness")]
+knitr::kable(bc) %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+```
+
+## Open questions
+
+* How are links between different actors  mediated through EU, MS, and international organization systems?
+* How do some actors become more important?
+* How do different social-cultural context in which systems were created enact people differently?
+* How are responsibilities between organisations architected?
+* When can data modifications become unknown to other actors that reused the data?
+* How do travel documents become important for identifying persons?
+  + How are id documents and compared to biometrics more/less important for connecting the systems
+
+## Questions and ideas
+
+* Registration data vs application data
+* When and for how long are identities stored
+* Fylakio xls as disinscription, comparison with XKA and others

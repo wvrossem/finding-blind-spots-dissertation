@@ -1,0 +1,46 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness,node_centrality_degree
+pd_47_42,20180801_Samos_EF_Reference Note.pdf,document,0.4375,0,1
+pd_48_43,20180802_Samos_EF_RIS transfer xl file.pdf,document,0.5464,5209.5534,30
+pd_49_44,01082018_Samos_EF_Foreigner Medical Card.pdf,document,0.4375,0,1
+pd_50_45,20180801_Samos_EF_Decision of Reference.pdf,document,0.4375,0,1
+pd_51_46,20180801_Samos_EF_RIS Registration.pdf,document,0.4375,0,1
+pd_52_47,20180801_Samos_EF_Referral to Asylum.docx,document,0.4375,0,1
+pd_53_48,20180801_Samos_EF_FRONTEX table given to RIS.pdf,document,0.5181,16.4585,7
+pd_54_49,20180801_Samos_EF_RIS accommodation xl file.pdf,document,0.4375,0,1
+pd_55_50,20180801_Samos_EF_RIS general xl file.pdf,document,0.4375,0,1
+co_4,Asylum office,code,0.4733,15.0385,4
+co_5,CBI submission in the current calendar month,code,0.4845,0.9779,3
+co_6,DIKA,code,0.5275,6.2943,3
+co_7,Date of lifting of geographical restriction / Date of appointment in the mainland,code,0.4705,2.5437,3
+co_8,Date of list submission at central level,code,0.5275,6.2943,3
+co_9,Destination sites or hotels,code,0.4628,4.7015,3
+co_122,Phone,code,0.4665,1.5606,3
+co_123,UNHCR cash card,code,0.529,14.0284,4
+co_124,Vulnerability,code,0.4937,1.1861,3
+co_134,administration status,code,0.5229,6.1609,3
+co_135,age,code,0.5286,10.2851,4
+co_147,asylum case or residence permit,code,0.4852,10.5086,4
+co_168,cash amount,code,0.4845,0.9779,3
+co_184,comments,code,0.4863,63.5699,4
+co_204,date of entry,code,0.5238,141.3681,5
+co_266,family relation,code,0.4762,4.8825,3
+co_269,father's name,code,0.5956,1347.0719,14
+co_289,group,code,0.4386,0,2
+co_301,language,code,0.6495,1646.6647,11
+co_309,location before transfer,code,0.6192,1276.8476,8
+co_326,mother's name,code,0.5912,948.8875,13
+co_328,name,code,0.5912,1287.1955,13
+co_333,nationality,code,0.6938,4955.0308,16
+co_365,progress registration on group ID,code,0.5275,6.2943,3
+co_366,progress registration on individual ID,code,0.5275,6.2943,3
+co_369,recommendation of provision of services in sites or hotels,code,0.4705,2.5437,3
+co_404,serial no,code,0.5312,55.1827,4
+cf_8,Temporary accomodation/housing,code-group,0.5425,2740.763,9
+cf_22,contact info,code-group,0.5673,1714.0587,9
+cf_26,date of entry,code-group,0.7129,11116.2022,16
+cf_34,family status data,code-group,0.596,3774.7328,14
+cf_37,language,code-group,0.668,5566.2764,18
+cf_43,linking data: IO,code-group,0.6072,2828.8307,12
+cf_75,system entry data: place,code-group,0.4617,96.6935,4
+cf_83,vulnerability,code-group,0.6469,3442.5173,9
+df_9,GR: Samos,document-group,0.6506,130731.3918,61

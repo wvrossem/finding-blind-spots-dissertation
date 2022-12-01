@@ -1,0 +1,53 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness,node_centrality_degree
+co_1,Abweichende Namensschreibweise,code,0,0,0
+co_2,Aliaspersonalie,code,0,0,0
+co_3,Anderer Name,code,0,0,0
+co_13,Früherer Name,code,0,0,0
+co_14,Genanntname,code,0,0,0
+co_15,Grundpersonalien,code,0,0,0
+co_116,Künstlername,code,0,0,0
+co_165,Name nach deutschem Recht,code,0,0,0
+co_166,Nicht definierter Name,code,0,0,0
+co_167,Ordensname,code,0,0,0
+co_259,aufenthalt,code,0,0,0
+co_260,aufenthaltsantrag,code,0,0,0
+co_261,ausweisdokument,code,0,0,0
+co_284,civil status: annulment,code,0,0,0
+co_285,civil status: civil partnership canceled,code,0,0,0
+co_286,civil status: civil partnership dissolved by declaration of death,code,0,0,0
+co_289,civil status: life partner passed away,code,0,0,0
+co_291,civil status: single,code,0,0,0
+co_292,civil status: unknown,code,0,0,0
+co_354,education level: praktikum,code,0,0,0
+co_355,education level: schulbesuch,code,0,0,0
+co_356,education level: sprachkurs,code,0,0,0
+co_357,education level: studium,code,0,0,0
+co_370,ersteinreisedatum,code,0,0,0
+co_380,familienstand,code,0,0,0
+co_403,geburt,code,0,0,0
+co_405,geschlecht,code,0,0,0
+co_409,heimatanschrift,code,0,0,0
+co_440,mbkauskunftssperre,code,0,0,0
+co_458,nameNatuerlichePerson,code,0,0,0
+co_516,religion: buddhismus,code,0,0,0
+co_517,religion: christentum,code,0,0,0
+co_518,religion: hinduismus,code,0,0,0
+co_519,religion: islam,code,0,0,0
+co_520,religion: judentum,code,0,0,0
+co_521,religion: konfessionslos,code,0,0,0
+co_522,religion: konfuzianer,code,0,0,0
+co_523,religion: naturreligionen,code,0,0,0
+co_524,religion: sonstige,code,0,0,0
+co_525,religion: sonstige glaubensgemeinschaften,code,0,0,0
+co_526,religion: unbekannt,code,0,0,0
+co_527,religion: zarathustra-anhänger,code,0,0,0
+co_543,staatsangehoerigkeit,code,0,0,0
+co_561,tod,code,0,0,0
+co_564,"travel document type: Reisedokument (Personalausweis, Grenz- gängerkarte)",code,0,0,0
+co_565,travel document type: Sonstige Passersatzpapiere,code,0,0,0
+co_566,"travel document type: reisepass, nationalpass",code,0,0,0
+co_579,vertreter,code,0,0,0
+co_581,volkszugehoerigkeit,code,0,0,0
+co_606,wohnung,code,0,0,0
+cf_65,religion: values,code-group,0,0,0
+cf_79,travel document type: values,code-group,0,0,0

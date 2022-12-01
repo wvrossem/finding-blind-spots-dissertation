@@ -1,0 +1,67 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness,node_centrality_degree
+co_10,Eurodac code,code,0,0,0
+co_11,Eurodac date,code,0,0,0
+co_17,ID,code,0,0,0
+co_115,Identification no of the doc,code,0,0,0
+co_238,accompanied files,code,0,0,0
+co_242,additional info,code,0,0,0
+co_258,attribute,code,0,0,0
+co_265,bed of alien,code,0,0,0
+co_278,case of relocation,code,0,0,0
+co_293,civil status: unmarried,code,0,0,0
+co_297,communication language,code,0,0,0
+co_300,contact details,code,0,0,0
+co_317,date of departure,code,0,0,0
+co_319,date of entry in Greece,code,0,0,0
+co_337,declared date of birth,code,0,0,0
+co_349,education level: 1-6 years,code,0,0,0
+co_350,education level: 7-9 years,code,0,0,0
+co_351,education level: 9-12 years,code,0,0,0
+co_352,education level: higher,code,0,0,0
+co_353,education level: illiterate,code,0,0,0
+co_372,estimated date of birth,code,0,0,0
+co_373,estimated nationality,code,0,0,0
+co_377,expression of interest for application of international protection,code,0,0,0
+co_378,expression of interest for voluntary return,code,0,0,0
+co_383,family situation,code,0,0,0
+co_384,family ties at the member-state,code,0,0,0
+co_385,father's name,code,0,0,0
+co_404,gender,code,0,0,0
+co_411,identification document,code,0,0,0
+co_424,languages,code,0,0,0
+co_425,languages (other),code,0,0,0
+co_428,last place of staying (country),code,0,0,0
+co_445,member of family,code,0,0,0
+co_446,member of the case,code,0,0,0
+co_451,mother tongue,code,0,0,0
+co_452,mother's name,code,0,0,0
+co_453,mother's surname,code,0,0,0
+co_454,name,code,0,0,0
+co_459,nationality,code,0,0,0
+co_464,no of asylum will,code,0,0,0
+co_466,number of children,code,0,0,0
+co_472,other additional registration,code,0,0,0
+co_477,passport,code,0,0,0
+co_480,photo of the person,code,0,0,0
+co_487,previous country of usual staying,code,0,0,0
+co_489,primary applicant,code,0,0,0
+co_531,residence permit,code,0,0,0
+co_532,restriction of freedom,code,0,0,0
+co_536,sent to Eurodac,code,0,0,0
+co_547,submitted and signed documents in the framework of the asylum process,code,0,0,0
+co_548,submitted documents of decision,code,0,0,0
+co_549,submitted signed documents,code,0,0,0
+co_559,ties,code,0,0,0
+co_567,travel documents,code,0,0,0
+co_573,type of document,code,0,0,0
+co_578,valuables,code,0,0,0
+co_595,vulnerable group,code,0,0,0
+cf_11,application data,code-group,0,0,0
+cf_23,contact info,code-group,0,0,0
+cf_27,date of entry,code-group,0,0,0
+cf_38,language,code-group,0,0,0
+cf_40,language: speaking,code-group,0,0,0
+cf_43,linking data: EU,code-group,0,0,0
+cf_69,residence: previous,code-group,0,0,0
+cf_71,restrictions: movement,code-group,0,0,0
+cf_84,vulnerability,code-group,0,0,0

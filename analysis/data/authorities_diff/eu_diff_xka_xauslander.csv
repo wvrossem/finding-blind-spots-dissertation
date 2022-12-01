@@ -1,0 +1,68 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness,node_centrality_degree
+co_250,application for international protection: Member State of origin,code,0,0,0
+co_251,application for international protection: date,code,0,0,0
+co_252,application for international protection: place,code,0,0,0
+co_328,date of the arrival of the person concerned after a successful transfer,code,0,0,0
+co_329,date on which the data were transmitted to the Central System,code,0,0,0
+co_330,date on which the fingerprints were taken,code,0,0,0
+co_331,date when the decision to examine the application was taken,code,0,0,0
+co_332,date when the person concerned left or was removed from the territory of the Member States,code,0,0,0
+co_333,date when the person concerned left the territory of the Member States,code,0,0,0
+co_390,fingerprint data,code,0,0,0
+co_470,operator user ID,code,0,0,0
+co_500,reference number used by the Member State of origin,code,0,0,0
+cf_15,biometrics: fingerprint data,code-group,0,0,0
+cf_28,date of exit,code-group,0,0,0
+cf_45,linking data: MS,code-group,0,0,0
+cf_59,operator data,code-group,0,0,0
+co_237,a reference to the decision giving rise to the alert,code,0,0,0
+co_239,action to be taken,code,0,0,0
+co_247,aliases,code,0,0,0
+co_262,authority issuing the alert,code,0,0,0
+co_392,fingerprints,code,0,0,0
+co_399,forename(s),code,0,0,0
+co_430,link(s) to other alerts,code,0,0,0
+co_457,name(s) at birth,code,0,0,0
+co_481,photographs,code,0,0,0
+co_482,physical characteristics,code,0,0,0
+co_483,place of birth,code,0,0,0
+co_488,previously used names,code,0,0,0
+co_496,reason for the alert,code,0,0,0
+co_554,surname(s),code,0,0,0
+co_600,"whether the person concerned is armed, violent or has escaped;",code,0,0,0
+cf_25,criminal offence data,code-group,0,0,0
+co_236,a photograph of the applicant,code,0,0,0
+co_253,application number,code,0,0,0
+co_263,authority which issued the travel document,code,0,0,0
+co_264,authority with which the application has been lodged,code,0,0,0
+co_309,current employer,code,0,0,0
+co_310,current nationality,code,0,0,0
+co_311,current occupation,code,0,0,0
+co_321,date of expiry of the travel document,code,0,0,0
+co_325,date of issue of the travel document,code,0,0,0
+co_327,date of the application,code,0,0,0
+co_340,details of the person issuing an invitation and/or liable to pay the applicant's subsistence costs during the stay,code,0,0,0
+co_345,duration of the intended stay,code,0,0,0
+co_393,fingerprints of the applicant,code,0,0,0
+co_396,first name(s),code,0,0,0
+co_400,former surname(s),code,0,0,0
+co_418,intended border of first entry,code,0,0,0
+co_419,intended date of arrival,code,0,0,0
+co_420,intended date of depature,code,0,0,0
+co_421,intended transit route,code,0,0,0
+co_435,main destination,code,0,0,0
+co_455,name of school,code,0,0,0
+co_460,nationality at birth,code,0,0,0
+co_468,number of the travel document,code,0,0,0
+co_485,place of the application,code,0,0,0
+co_495,purpose of travel,code,0,0,0
+co_530,residence,code,0,0,0
+co_544,status information,code,0,0,0
+co_552,surname and first name(s) of the applicant's father and mother,code,0,0,0
+co_553,surname at birth,code,0,0,0
+co_575,type of travel document,code,0,0,0
+co_576,type of visa requested,code,0,0,0
+cf_26,date of application,code-group,0,0,0
+cf_56,occupation data: current,code-group,0,0,0
+cf_81,travel document: validity: expiration,code-group,0,0,0
+cf_82,travel document: visa-related data,code-group,0,0,0
