@@ -1,0 +1,21 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness
+pd_3_3,Eurodac Regulation,document,0.5598,63.5
+co_140,application for international protection: Member State of origin,code,0.5066,0.5
+co_141,application for international protection: date,code,0.5066,0.5
+co_142,application for international protection: place,code,0.5066,0.5
+co_214,date of the arrival of the person concerned after a successful transfer,code,0.6035,1
+co_215,date on which the data were transmitted to the Central System,code,0.5686,0.6667
+co_216,date on which the fingerprints were taken,code,0.5554,0
+co_217,date when the decision to examine the application was taken,code,0.5569,0.5
+co_218,date when the person concerned left or was removed from the territory of the Member States,code,0.5584,1.8333
+co_219,date when the person concerned left the territory of the Member States,code,0.5584,1.8333
+co_274,fingerprint data,code,0.5391,0
+co_344,operator user ID,code,0.5539,1
+co_372,reference number used by the Member State of origin,code,0.6697,0.6667
+cf_11,asylum,code-group,0.578,2
+cf_27,date of exit,code-group,0.4951,0.5
+cf_44,linking data: MS,code-group,0.6312,0.6667
+cf_55,operator data,code-group,0.5116,0
+cf_58,procedure data,code-group,0.5828,1.8333
+cf_75,travel: relocation,code-group,0.7209,0
+df_4,EU: Eurodac,document-group,0.586,216.5

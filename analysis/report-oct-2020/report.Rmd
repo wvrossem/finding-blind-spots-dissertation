@@ -1,0 +1,197 @@
+---
+title: "Ontolog explorer"
+subtitle: "Data analysis worksheet"
+author: "Wouter Van Rossem"
+date: "2020/10/05"
+output: tint::tintHtml
+latexfonts: 
+  - package: newtxmath
+    options: 
+      - cmintegrals
+      - cmbraces
+  - package: ebgaramond-maths
+  - package: nimbusmononarrow
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(kableExtra)
+library(DT)
+
+def_counter <- 0
+
+inc <- function(x) {
+  eval.parent(substitute(x <- x + 1))
+  x
+}
+```
+
+## Introduction
+
+This data analysis worksheet is used to further analyze the data from the ontology explorer method and tool. The worksheet in this way combines some previously formulated proposed methods, questions and hypotheses. For each research question, methods and data are identified that can be used to answer the question. Custom scripts were created (mainly the `R` programming language) to generate tables that can be used to help answer these and further research questions.
+
+In general the process to generate the tables was as follows. First, the latest version of the atlas.ti project was uploaded in the ontology explorer tool. Next, set operations were executed using the ontology explorer to get required data. An example operation would be to take the union of the EU systems (Eurodac, SIS and VIS). Next, the result of this operation (generated through the analysis tab of the ontology explorer) was exported as CSV files using the download functionality. Finally, these CSV files were loaded and further processed by custom scripts. These scripts are embedded in this worksheet and executed when generating HTML document you are reading. For example, the following command loads such a CSV file, making the data available for analysis in this document.
+
+```{r echo = TRUE}
+diff <- read.csv(file="../data/eurodac_particular.csv",head=TRUE,sep=",")
+```
+
+The following sections each start with a research question. Following this research question, we explain how to operationalize this question. We identify the data that can be used and how this data is processed to generate a table which can be used to help answer the research question.
+
+Most of the tables which are generated make it possible to export the data show in the tables to various other formats.
+
+## Data analysis `r inc(def_counter)`
+
+> Which categories of data are particular to each authority?
+
+To operationalize this question we use the set _difference_ of presence of categories of document group represent one authority compared to the presence of categories of the document groups representing the other authorities (using the set _union_ operator). We therefore set each authority as an independent variable. The result of this operation is a set of categories and code groups which are not present in the other document groups. Using a formal set notation these set operations can be represented as follows:
+
+* $Presence(EU) \setminus (Presence(DE) \bigcup Presence(GR))$
+* $Presence(GR) \setminus (Presence(EU) \bigcup Presence(DE))$
+* $Presence(DE) \setminus (Presence(EU) \bigcup Presence(GR))$
+
+### 1. Categories particular to EU
+
+The following table shows the categories and code groups which are only present for the EU systems. The filter makes it possible to select only the categories (codes), the code groups, or both. It is also possible to filter the results using the search pane.
+
+```{r fig-eu, fig.cap="Table for categories and code groups particular to EU."}
+diff_eu <- read.csv(file="../data/authorities_diff/eu_diff_xka_xauslander.csv",head=TRUE,sep=",")
+diff_eu <- diff_eu[c("node_name", "node_type")]
+datatable(data.frame(diff_eu), filter = 'top',
+  extensions = c('Select', 'SearchPanes', 'Buttons'),
+  options = list(
+    pageLength = 10, autoWidth = TRUE,
+    dom = 'BPfrtip',
+    buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+    columnDefs = list(
+      # list(searchPanes = list(show = FALSE), targets = 1:1),
+      list(searchPanes = list(show = FALSE), targets = 1:1),
+      list(searchPanes = list(show = TRUE), targets = 2:2)
+    )
+  ),
+  selection = 'none'
+)
+```
+
+### 2. Categories particular to XKA
+
+The following table shows the categories and code groups which are only present for the Hellenic system (XKA).
+
+```{r fig-xka, fig.cap="Table of categories and code groups particular to XKA."}
+diff_xka <- read.csv(file="../data/authorities_diff/xka_diff_eu_xauslander.csv",head=TRUE,sep=",")
+diff_xka <- diff_xka[c("node_name", "node_type")]
+datatable(data.frame(diff_xka), filter = 'top',
+  extensions = c('Select', 'SearchPanes', 'Buttons'),
+  options = list(
+    pageLength = 10, autoWidth = TRUE,
+    dom = 'BPfrtip',
+    buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+    columnDefs = list(
+      # list(searchPanes = list(show = FALSE), targets = 1:1),
+      list(searchPanes = list(show = FALSE), targets = 1:1),
+      list(searchPanes = list(show = TRUE), targets = 2:2)
+    )
+  ),
+  selection = 'none'
+)
+```
+
+### 3. Categories particular to XAusländer
+
+The following table shows the categories and code groups which are only present for the German XAusländer standard.
+
+```{r fig-xauslander, fig.cap="Table of categories and code groups particular to XAusländer."}
+diff_xauslander <- read.csv(file="../data/authorities_diff/xauslander_diff_eu_xka.csv",head=TRUE,sep=",")
+diff_xauslander <- diff_xauslander[c("node_name", "node_type")]
+datatable(data.frame(diff_xauslander), filter = 'top',
+  extensions = c('Select', 'SearchPanes', 'Buttons'),
+  options = list(
+    pageLength = 10, autoWidth = TRUE,
+    dom = 'BPfrtip',
+    buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+    columnDefs = list(
+      # list(searchPanes = list(show = FALSE), targets = 1:1),
+      list(searchPanes = list(show = FALSE), targets = 1:1),
+      list(searchPanes = list(show = TRUE), targets = 2:2)
+    )
+  ),
+  selection = 'none'
+)
+```
+
+## Data analysis `r inc(def_counter)`
+
+> Which authorities use particular (groups of) categories of data?
+
+To operationalize this question we first get the categories and code groups present in the systems of each authority. We then combine all these categories and code groups into one unique set of values. This set of categories and code groups is further combined with data of the authorities to create an _incidence matrix_. This matrix shows the relationship between a category or code group and an authority. For example, an entry in row "nationality" and column "EU" is 1 if the code group "nationality" is present for "EU" and 0 if they are not. In the outputted table these values are converted to a color: light blue for 1 and grey for 0.
+
+### Code group as independent variable
+
+The following table shows the resulting table from using the described process to create the incidence matrix. The table makes it possible to select one or more code groups as independent variables. Selecting these code groups will show in which authorities' systems they are present.
+
+```{r echo = FALSE}
+node_type <- "code-group"
+```
+
+```{r fig-authorities-1, fig.cap='Presence of code groups for EU (Eurodac, SIS, VIS), Greek (XKA), German (XAusländer)', code = readLines("../presence_matrix_authorities_3.R"), echo = FALSE}
+```
+
+### Code as independent variable
+
+The following table is the same as the previous, except that it allows to select one or more codes as independent variables, which in turn will show in which authorities' systems these code groups are present.
+
+```{r echo = FALSE}
+node_type <- "code"
+```
+
+```{r fig-authorities-2, fig.cap='Presence of code groups for EU (Eurodac, SIS, VIS), Greek (XKA), German (XAusländer)', code = readLines("../presence_matrix_authorities_3.R"), echo = FALSE}
+```
+
+## Data analysis `r inc(def_counter)`
+
+> Which are principal categories of data used among specified authorities?
+
+To operationalize this question we can use the concept of _centrality_, which can give an indication of categories and code groups that can be considered important based on some criteria. For our case, we use the centrality measures of _degree centrality_, _closeness centrality_, and _betweenness centrality_.
+
+### Degree centrality
+
+Degree centrality is a straightforward indicator that measures the importance of a node based on the number links it has. In our case we use our own definition of degree centrality to only take into account the amount links a code or code group has to a document group. For example is the code group "nationality" is connected to "EU" and "XKA" the value is 2.
+
+To calculate these measures we this first get the code groups present in the systems of each authority. We then merge all these code groups into one unique set of values. This set of code groups is furthermore combined with data to create an incidence matrix which shows the relationship between a category or code group and an authority. After creating this matrix we sum the amount of times a code group if present and store this value in the table. Finally, we sort the rows by this sum and add a filter based on the degree amount.
+
+```{r fig-authorities-2, fig.cap='Presence of code groups for EU (Eurodac, SIS, VIS), Greek (XKA), German (XAusländer)', code = readLines("../presence_matrix_authorities_freq.R"), echo = FALSE}
+```
+
+### Closeness and betweenness centrality
+
+A second method to operationalize this question is to see how nodes are positioned in a network. This position may give an indication of categories that can connect different data models. Betweenness and closeness centrality are measures that are rooted in studying communication networks and as such it finds indications of important nodes based on their role in the flow of information in the network. In this approach the importance of a node is for that reason determined based on the path between two nodes. We recall that our graph model is a union of data models as separate graph. Therefore, there can exist a path from a category in one model to another category in a second model, which crosses through a category common between both.
+
+The closeness centrality of a node is then the average length of the shortest path between the node and all other nodes in the graph. Betweenness centrality on the other hand measures the amount of times a node in the network functions as "a bridge" along the shortest path between two other nodes.
+
+The closeness and betweenness centrality measures are calculated using the ontology explorer tool. This is done by creating a network consisting of all nodes in a network of all codes and code groups of the systems under analysis: $Presence(EU) \bigcup Presence(DE) \bigcup Presence(GR)$). These results are then exported and combined in the following table. The table has a row for each code group in the set of code groups present in the systems and the calculated closeness and betweenness centrality values. The rows can be sorted on either centrality measure. In the table, the calculated values are also displayed using a colored bar to show the relative value compared to the other values in the table.
+
+```{r fig-betweenness, fig.cap='Betweenness centrality', echo = FALSE}
+bc <- read.csv(file="../data/eu_xka_xauslander.csv",head=TRUE,sep=",")
+bc <- bc[bc$node_type == "code-group",]
+bc <- bc[!(bc$node_name %in% filter_nodes), ]
+bc <- bc[order(bc$node_centrality_closeness, decreasing=TRUE), c("node_name", "node_centrality_closeness", "node_centrality_betweenness")]
+datatable(bc, extensions = c('Buttons'), options = list(
+  pageLength = 10, autoWidth = TRUE,
+  dom = 'Bfrtip',
+  buttons = c('copy', 'csv', 'excel', 'pdf', 'print')
+)) %>%
+  formatStyle(
+    'node_centrality_betweenness',
+    background = styleColorBar(bc$node_centrality_betweenness, 'lightblue'),
+    backgroundSize = '100% 90%',
+    backgroundRepeat = 'no-repeat',
+    backgroundPosition = 'center'
+  ) %>%
+  formatStyle(
+    'node_centrality_closeness',
+    background = styleColorBar(ccn$node_centrality_closeness, 'thistle'),
+    backgroundSize = '100% 90%',
+    backgroundRepeat = 'no-repeat',
+    backgroundPosition = 'center'
+  )
+```

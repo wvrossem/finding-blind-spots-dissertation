@@ -1,0 +1,28 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness
+pd_3_3,Eurodac Regulation,document,0.5611,189.3496
+co_140,application for international protection: Member State of origin,code,0.508,5.9807
+co_141,application for international protection: date,code,0.508,5.9807
+co_142,application for international protection: place,code,0.508,5.9807
+co_214,date of the arrival of the person concerned after a successful transfer,code,0.605,310.7338
+co_215,date on which the data were transmitted to the Central System,code,0.5698,39.636
+co_216,date on which the fingerprints were taken,code,0.5567,33.6265
+co_217,date when the decision to examine the application was taken,code,0.5582,17.8467
+co_218,date when the person concerned left or was removed from the territory of the Member States,code,0.5596,41.2726
+co_219,date when the person concerned left the territory of the Member States,code,0.5596,41.2726
+co_274,fingerprint data,code,0.5405,9.6986
+co_344,operator user ID,code,0.5552,25.3899
+co_372,reference number used by the Member State of origin,code,0.6707,1682.2833
+co_406,sex,code,0.7311,14255.4397
+cf_6,System native,code-group,0.7603,48726.645
+cf_7,System pre-existant,code-group,0.7757,32522.9244
+cf_11,asylum,code-group,0.5791,4548.5648
+cf_13,biometrics,code-group,0.695,9953.5856
+cf_14,biometrics: fingerprint data,code-group,0.5007,296.8501
+cf_27,date of exit,code-group,0.4965,31.4706
+cf_41,linking data,code-group,0.7761,46528.055
+cf_44,linking data: MS,code-group,0.6324,640.1428
+cf_58,operator data,code-group,0.5134,320.4535
+cf_62,procedure data,code-group,0.5839,8291.1812
+cf_72,sex & gender,code-group,0.7393,11164.8626
+cf_82,travel: relocation,code-group,0.7217,17941.8079
+df_4,EU: Eurodac,document-group,0.5856,3887.0929

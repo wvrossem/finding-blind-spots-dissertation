@@ -1,0 +1,70 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness,node_centrality_degree
+pd_69_64,XAuslaender-1100.pdf,document,0.5733,10407.7991,60
+co_1,Abweichende Namensschreibweise,code,0.4664,3.4797,3
+co_2,Aliaspersonalie,code,0.4664,3.4797,3
+co_3,Anderer Name,code,0.4664,3.4797,3
+co_13,Früherer Name,code,0.4664,3.4797,3
+co_14,Genanntname,code,0.4664,3.4797,3
+co_15,Grundpersonalien,code,0.4664,3.4797,3
+co_116,Künstlername,code,0.4664,3.4797,3
+co_118,Name nach deutschem Recht,code,0.4664,3.4797,3
+co_119,Nicht definierter Name,code,0.4664,3.4797,3
+co_120,Ordensname,code,0.4664,3.4797,3
+co_149,aufenthalt,code,0.4649,5.2901,3
+co_150,aufenthaltsantrag,code,0.4666,5.0972,3
+co_151,ausweisdokument,code,0.535,19.9485,3
+co_173,civil status: annulment,code,0.4605,0.2443,3
+co_174,civil status: civil partnership canceled,code,0.4605,0.2443,3
+co_175,civil status: civil partnership dissolved by declaration of death,code,0.4605,0.2443,3
+co_176,civil status: cohabit,code,0.5216,520.3173,6
+co_177,civil status: divorced,code,0.5216,520.3173,6
+co_178,civil status: life partner passed away,code,0.4605,0.2443,3
+co_179,civil status: married,code,0.5216,520.3173,6
+co_180,civil status: single,code,0.4605,0.2443,3
+co_181,civil status: unknown,code,0.4605,0.2443,3
+co_183,civil status: widower,code,0.5216,520.3173,6
+co_234,education level,code,0.6695,5683.58,12
+co_240,education level: praktikum,code,0.5072,3.5455,3
+co_241,education level: schulbesuch,code,0.5072,3.5455,3
+co_242,education level: sprachkurs,code,0.5072,3.5455,3
+co_243,education level: studium,code,0.5072,3.5455,3
+co_256,ersteinreisedatum,code,0.5099,6.3545,3
+co_260,ethnic group,code,0.5274,712.9014,8
+co_265,familienstand,code,0.4813,6.1479,3
+co_286,geburt,code,0.5258,12.8372,4
+co_288,geschlecht,code,0.5236,6.0633,3
+co_291,heimatanschrift,code,0.535,19.9485,3
+co_313,marital status,code,0.6748,8041.1181,12
+co_315,mbkauskunftssperre,code,0.4806,5.7444,3
+co_332,nameNatuerlichePerson,code,0.5284,18.1283,4
+co_364,profession,code,0.5673,722.5404,8
+co_383,religion,code,0.5986,3332.5583,11
+co_384,religion: buddhismus,code,0.4472,0.1538,3
+co_385,religion: christentum,code,0.4472,0.1538,3
+co_386,religion: hinduismus,code,0.4472,0.1538,3
+co_387,religion: islam,code,0.4472,0.1538,3
+co_388,religion: judentum,code,0.4472,0.1538,3
+co_389,religion: konfessionslos,code,0.4472,0.1538,3
+co_390,religion: konfuzianer,code,0.4472,0.1538,3
+co_391,religion: naturreligionen,code,0.4472,0.1538,3
+co_392,religion: sonstige,code,0.4472,0.1538,3
+co_393,religion: sonstige glaubensgemeinschaften,code,0.4472,0.1538,3
+co_394,religion: unbekannt,code,0.4472,0.1538,3
+co_395,religion: zarathustra-anhänger,code,0.4472,0.1538,3
+co_410,staatsangehoerigkeit,code,0.5258,9.0565,3
+co_428,tod,code,0.4461,0,2
+co_431,"travel document type: Reisedokument (Personalausweis, Grenz- gängerkarte)",code,0.4472,0.5,3
+co_432,travel document type: Sonstige Passersatzpapiere,code,0.4472,0.5,3
+co_433,"travel document type: reisepass, nationalpass",code,0.4472,0.5,3
+co_446,vertreter,code,0.5162,5.2045,3
+co_448,volkszugehoerigkeit,code,0.4648,0.9524,3
+co_473,wohnung,code,0.4863,9.8231,3
+cf_8,Temporary accomodation/housing,code-group,0.5425,2740.763,9
+cf_21,civil status: values,code-group,0.5304,2222.7095,14
+cf_30,education: extent,code-group,0.6587,2499.5192,8
+cf_31,education: extent: values,code-group,0.6796,16192.1057,27
+cf_33,ethnicity,code-group,0.5386,1450.7576,8
+cf_34,family status data,code-group,0.596,3774.7328,14
+cf_64,religion: values,code-group,0.4583,44,13
+cf_78,travel document type: values,code-group,0.4483,2,4
+df_1,DE: Xauslander,document-group,0.6743,265966.3077,84

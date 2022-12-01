@@ -1,0 +1,358 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness,node_centrality_degree
+co_4,Anschrift.anschrift,code,NaN,NaN,NaN
+co_5,Anschrift.letzteFruehereAnschrift,code,NaN,NaN,NaN
+co_6,Asylstatus.asylstatus,code,NaN,NaN,NaN
+co_7,Asylstatus.dublinStaat,code,NaN,NaN,NaN
+co_8,Asylstatus.einreisestaat,code,NaN,NaN,NaN
+co_9,Asylstatus.ereignisdatum,code,NaN,NaN,NaN
+co_10,Asylstatus.geschaeftszeichen,code,NaN,NaN,NaN
+co_12,Aufenthaltsstatus,code,NaN,NaN,NaN
+co_13,Aufenthaltsstatus.aufenthaltsstatusArt,code,NaN,NaN,NaN
+co_14,Aufenthaltsstatus.befristungsdatum,code,NaN,NaN,NaN
+co_15,Aufenthaltsstatus.ereignisdatum,code,NaN,NaN,NaN
+co_16,Aufenthaltsstatus.traegervordruck,code,NaN,NaN,NaN
+co_17,AuslieferungDurchlieferung,code,NaN,NaN,NaN
+co_18,AuslieferungDurchlieferung.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_19,AuslieferungDurchlieferung.ausDurchlieferungArt,code,NaN,NaN,NaN
+co_20,AuslieferungDurchlieferung.ereignisdatum,code,NaN,NaN,NaN
+co_21,AuslieferungDurchlieferung.loeschdatum,code,NaN,NaN,NaN
+co_22,AuslieferungDurchlieferung.zielstaat,code,NaN,NaN,NaN
+co_23,Ausschreibung,code,NaN,NaN,NaN
+co_24,Ausschreibung.anlass,code,NaN,NaN,NaN
+co_25,Ausschreibung.ausschreibendeBehoerde,code,NaN,NaN,NaN
+co_26,Ausschreibung.ausschreibendeBehoerdeAz,code,NaN,NaN,NaN
+co_27,Ausschreibung.ausschreibendeBehoerdeFreitext,code,NaN,NaN,NaN
+co_28,Ausschreibung.ausschreibungArt,code,NaN,NaN,NaN
+co_29,Ausschreibung.fahndungsNr,code,NaN,NaN,NaN
+co_30,Ausschreibung.loeschdatum,code,NaN,NaN,NaN
+co_31,Ausschreibung.ppkNummer,code,NaN,NaN,NaN
+co_32,Aussiedlerangelegenheit.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_33,Aussiedlerangelegenheit.aussiedlerangelegenheitArt,code,NaN,NaN,NaN
+co_34,Aussiedlerangelegenheit.ereignisdatum,code,NaN,NaN,NaN
+co_35,Aussiedlerangelegenheit.loeschdatum,code,NaN,NaN,NaN
+co_41,DeutscheStaatsangehoerigkeit.deutscheStaatsangehoerigkeitArt,code,NaN,NaN,NaN
+co_42,DeutscheStaatsangehoerigkeit.ereignisdatum,code,NaN,NaN,NaN
+co_43,DeutscheStaatsangehoerigkeit.staatsangehoerigkeitsBehoerde,code,NaN,NaN,NaN
+co_44,Einreisebedenken.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_45,Einreisebedenken.befristungsdatum,code,NaN,NaN,NaN
+co_46,Einreisebedenken.einreisebedenkenArt,code,NaN,NaN,NaN
+co_47,Einreisebedenken.ereignisdatum,code,NaN,NaN,NaN
+co_50,Familienverband.azrNummerFamilienmitglied,code,NaN,NaN,NaN
+co_51,Familienverband.familienbeziehungArt,code,NaN,NaN,NaN
+co_52,Familienverband.familiennameFamilienmitglied,code,NaN,NaN,NaN
+co_53,Familienverband.vornameFamilienmitglied,code,NaN,NaN,NaN
+co_55,Fingerabdruck.bkaDNummer,code,NaN,NaN,NaN
+co_56,Fingerabdruck.bkaENummer,code,NaN,NaN,NaN
+co_57,Fingerabdruck.fingerabdruckId,code,NaN,NaN,NaN
+co_58,Fingerabdruck.loeschdatum,code,NaN,NaN,NaN
+co_61,Grundpersonalien,code,NaN,NaN,NaN
+co_62,Grundpersonalien.familienname,code,NaN,NaN,NaN
+co_63,Grundpersonalien.geburtsangaben,code,NaN,NaN,NaN
+co_64,Grundpersonalien.geburtsangaben.geburtsort,code,NaN,NaN,NaN
+co_65,Grundpersonalien.geburtsangaben.geburtsortStaat,code,NaN,NaN,NaN
+co_66,Grundpersonalien.geburtsangaben.geburtsortbezirk,code,NaN,NaN,NaN
+co_67,Grundpersonalien.geburtsangaben.tagDerGeburt,code,NaN,NaN,NaN
+co_68,Grundpersonalien.geburtsname,code,NaN,NaN,NaN
+co_69,Grundpersonalien.geschlecht,code,NaN,NaN,NaN
+co_70,Grundpersonalien.schreibweiseNameNachDtRecht,code,NaN,NaN,NaN
+co_71,Grundpersonalien.staatsangehoerigkeit,code,NaN,NaN,NaN
+co_72,Grundpersonalien.vorname,code,NaN,NaN,NaN
+co_173,IntegrationsUndArbeitsvermittlungsdatean.nerkennung,code,NaN,NaN,NaN
+co_174,IntegrationsUndArbeitsvermittlungsdaten.beginn,code,NaN,NaN,NaN
+co_175,IntegrationsUndArbeitsvermittlungsdaten.beruf,code,NaN,NaN,NaN
+co_176,IntegrationsUndArbeitsvermittlungsdaten.dauer,code,NaN,NaN,NaN
+co_177,IntegrationsUndArbeitsvermittlungsdaten.ende,code,NaN,NaN,NaN
+co_178,IntegrationsUndArbeitsvermittlungsdaten.gradDerSprachkenntnis,code,NaN,NaN,NaN
+co_179,IntegrationsUndArbeitsvermittlungsdaten.integrationsUndArbeitsvermittlungsdatenArt,code,NaN,NaN,NaN
+co_180,IntegrationsUndArbeitsvermittlungsdaten.kursabschluss,code,NaN,NaN,NaN
+co_181,IntegrationsUndArbeitsvermittlungsdaten.kursart,code,NaN,NaN,NaN
+co_182,IntegrationsUndArbeitsvermittlungsdaten.loeschdatum,code,NaN,NaN,NaN
+co_183,IntegrationsUndArbeitsvermittlungsdaten.schulabschluss,code,NaN,NaN,NaN
+co_184,IntegrationsUndArbeitsvermittlungsdaten.schulart,code,NaN,NaN,NaN
+co_185,IntegrationsUndArbeitsvermittlungsdaten.sprache,code,NaN,NaN,NaN
+co_186,IntegrationsUndArbeitsvermittlungsdaten.staat,code,NaN,NaN,NaN
+co_236,Meldestatus.aktenzeichen,code,NaN,NaN,NaN
+co_237,Meldestatus.ereignisdatum,code,NaN,NaN,NaN
+co_238,Meldestatus.meldestatusArt,code,NaN,NaN,NaN
+co_239,Meldestatus.vorherAktenfuehrendeBehoerde,code,NaN,NaN,NaN
+co_244,PassrechtlicheMassnahme.befristungsdatum,code,NaN,NaN,NaN
+co_245,PassrechtlicheMassnahme.dokumentNummer,code,NaN,NaN,NaN
+co_246,PassrechtlicheMassnahme.ereignisdatum,code,NaN,NaN,NaN
+co_247,PassrechtlicheMassnahme.loeschdatum,code,NaN,NaN,NaN
+co_248,PassrechtlicheMassnahme.passrechtlicheMassnahmeArt,code,NaN,NaN,NaN
+co_250,Sicherheitsleistung.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_251,Sicherheitsleistung.ereignisdatum,code,NaN,NaN,NaN
+co_252,Sicherheitsleistung.loeschdatum,code,NaN,NaN,NaN
+co_253,Sicherheitsleistung.sicherheitsleistungArt,code,NaN,NaN,NaN
+co_254,Sicherheitsleistung.vorhaltendeBehoerde,code,NaN,NaN,NaN
+co_255,Straftatverdacht.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_256,Straftatverdacht.loeschdatum,code,NaN,NaN,NaN
+co_257,Straftatverdacht.straftatverdachtArt,code,NaN,NaN,NaN
+co_258,Suchvermerk.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_259,Suchvermerk.befristungsdatum,code,NaN,NaN,NaN
+co_260,Suchvermerk.sichtbarkeitDesSuchvermerks,code,NaN,NaN,NaN
+co_261,Suchvermerk.suchvermerkArt,code,NaN,NaN,NaN
+co_326,UnerlaubteEinreiseUndAufenthalt.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_327,UnerlaubteEinreiseUndAufenthalt.einreisestaat,code,NaN,NaN,NaN
+co_328,UnerlaubteEinreiseUndAufenthalt.ereignisdatum,code,NaN,NaN,NaN
+co_329,UnerlaubteEinreiseUndAufenthalt.loeschdatum,code,NaN,NaN,NaN
+co_330,UnerlaubteEinreiseUndAufenthalt.unerlaubteEinreiseUndAufenthaltArt,code,NaN,NaN,NaN
+co_331,Verpflichtungserklaerung.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_332,Verpflichtungserklaerung.ereignisdatum,code,NaN,NaN,NaN
+co_333,Verpflichtungserklaerung.loeschdatum,code,NaN,NaN,NaN
+co_334,Verpflichtungserklaerung.verpflichtungserklaerungArt,code,NaN,NaN,NaN
+co_335,Verpflichtungserklaerung.vorhaltendeBehoerde,code,NaN,NaN,NaN
+co_336,VerurteilungWegenStraftaten.loeschdatum,code,NaN,NaN,NaN
+co_337,VerurteilungWegenStraftaten.verurteilungWgStraftatenArt,code,NaN,NaN,NaN
+co_340,WeiterePersonalien.abweichendeNamensschreibweise,code,NaN,NaN,NaN
+co_341,WeiterePersonalien.aliaspersonalien,code,NaN,NaN,NaN
+co_342,WeiterePersonalien.andererName,code,NaN,NaN,NaN
+co_343,WeiterePersonalien.ausweispapier,code,NaN,NaN,NaN
+co_344,WeiterePersonalien.familienstand,code,NaN,NaN,NaN
+co_345,WeiterePersonalien.freiwilligeAngabeZurReligion,code,NaN,NaN,NaN
+co_346,WeiterePersonalien.fruehererName,code,NaN,NaN,NaN
+co_347,WeiterePersonalien.herkunftsland,code,NaN,NaN,NaN
+co_348,WeiterePersonalien.personenbeschreibung,code,NaN,NaN,NaN
+co_349,WeiterePersonalien.personenbeschreibung.augenfarbe,code,NaN,NaN,NaN
+co_350,WeiterePersonalien.personenbeschreibung.koerpergroesse,code,NaN,NaN,NaN
+co_351,ZurueckweisungZurueckschiebung.aktenzeichenMeldendeBehoerde,code,NaN,NaN,NaN
+co_352,ZurueckweisungZurueckschiebung.befristungsangabe,code,NaN,NaN,NaN
+co_353,ZurueckweisungZurueckschiebung.ereignisdatum,code,NaN,NaN,NaN
+co_354,ZurueckweisungZurueckschiebung.loeschdatum,code,NaN,NaN,NaN
+co_355,ZurueckweisungZurueckschiebung.zurueckweisungZurueckschiebungArt,code,NaN,NaN,NaN
+co_356,Zustaendigkeit.zustaendigeAufnahmeeinrichtung,code,NaN,NaN,NaN
+co_357,Zustaendigkeit.zustaendigeAufnahmeeinrichtungFreitext,code,NaN,NaN,NaN
+co_358,Zustaendigkeit.zustaendigeAuslaenderbehoerde,code,NaN,NaN,NaN
+co_359,Zustaendigkeit.zustaendigeAuslaenderbehoerdeFreitext,code,NaN,NaN,NaN
+co_360,Zustaendigkeit.zustaendigesBundesland,code,NaN,NaN,NaN
+co_361,Zustaendigkeit.zustaendigesJugendamtEndgueltig,code,NaN,NaN,NaN
+co_362,Zustaendigkeit.zustaendigesJugendamtEndgueltigFreitext,code,NaN,NaN,NaN
+co_363,Zustaendigkeit.zustaendigesJugendamtVorlaeufig,code,NaN,NaN,NaN
+co_364,Zustaendigkeit.zustaendigesJugendamtVorlaeufigFreitext,code,NaN,NaN,NaN
+co_367,ablehnungFeststellungDeutscheStaatsangehoerigkeit,code,NaN,NaN,NaN
+co_391,aussiedlerangelegenheit,code,NaN,NaN,NaN
+co_492,einreisebedenken,code,NaN,NaN,NaN
+co_511,familienverband,code,NaN,NaN,NaN
+co_521,fingerabdruck,code,NaN,NaN,NaN
+co_541,herkunftsland.letzterWohnortHerkunftsland,code,NaN,NaN,NaN
+co_542,herkunftsland.staatLetzterWohnort,code,NaN,NaN,NaN
+co_555,kontakt,code,NaN,NaN,NaN
+co_556,kontakt.hauptEmailadresse,code,NaN,NaN,NaN
+co_557,kontakt.hauptTelefonnummer,code,NaN,NaN,NaN
+co_558,kontakt.weitereEmailadresse1,code,NaN,NaN,NaN
+co_559,kontakt.weitereEmailadresse2,code,NaN,NaN,NaN
+co_560,kontakt.weitereEmailadresse3,code,NaN,NaN,NaN
+co_561,kontakt.weitereEmailadresse4,code,NaN,NaN,NaN
+co_562,kontakt.weitereTelefonnummer1,code,NaN,NaN,NaN
+co_563,kontakt.weitereTelefonnummer2,code,NaN,NaN,NaN
+co_564,kontakt.weitereTelefonnummer3,code,NaN,NaN,NaN
+co_565,kontakt.weitereTelefonnummer4,code,NaN,NaN,NaN
+co_574,lichtbildAllgemein,code,NaN,NaN,NaN
+co_575,lichtbildZuSuchvermerk,code,NaN,NaN,NaN
+co_591,meldestatus,code,NaN,NaN,NaN
+co_611,nichtIdentischMit,code,NaN,NaN,NaN
+co_626,passrechtlicheMassnahme,code,NaN,NaN,NaN
+co_690,sicherheitsleistung,code,NaN,NaN,NaN
+co_696,straftatverdacht,code,NaN,NaN,NaN
+co_700,suchvermerk,code,NaN,NaN,NaN
+co_729,unerlaubteEinreiseUndAufenthalt,code,NaN,NaN,NaN
+co_731,verpflichtungserklaerung,code,NaN,NaN,NaN
+co_733,verurteilungWegenStraftaten,code,NaN,NaN,NaN
+co_750,weiterePersonalien,code,NaN,NaN,NaN
+co_763,zurueckweisungZurueckschiebung,code,NaN,NaN,NaN
+co_764,zustaendigkeit,code,NaN,NaN,NaN
+cf_11,asylum,code-group,0.6547,181.3156,0.0508
+cf_12,asylum: rejection,code-group,0.486,0,0.0169
+cf_14,biometrics,code-group,0.6977,299.8179,0.0847
+cf_16,biometrics: fingerprint data,code-group,0.5837,128.1754,0.0678
+cf_18,biometrics: photograph data,code-group,0.6744,157.8373,0.0678
+cf_19,birth data,code-group,0.6744,157.8373,0.0678
+cf_20,birth data: date of birth,code-group,0.6744,157.8373,0.0678
+cf_21,birth data: place of birth,code-group,0.6744,157.8373,0.0678
+cf_23,citizenship,code-group,0.486,0,0.0169
+cf_26,contact info,code-group,0.6314,68.1353,0.0339
+cf_27,country of origin,code-group,0.486,0,0.0169
+cf_29,criminal offence data,code-group,0.5128,10.5964,0.0339
+cf_34,education,code-group,0.6616,124.5194,0.0508
+cf_35,education: extent,code-group,0.6314,68.1353,0.0339
+cf_39,family status data,code-group,0.6314,68.1353,0.0339
+cf_42,integration,code-group,0.486,0,0.0169
+cf_43,language,code-group,0.6314,68.1353,0.0339
+cf_47,law enforcement,code-group,0.486,0,0.0169
+cf_48,law enforcement: extradition,code-group,0.486,0,0.0169
+cf_49,law enforcement: investigation,code-group,0.486,0,0.0169
+cf_50,law enforcement: unauthorized entry and residence,code-group,0.486,0,0.0169
+cf_52,linking data: EU,code-group,0.6314,68.1353,0.0339
+cf_55,linking data: responsibility,code-group,0.486,0,0.0169
+cf_60,name: earlier/other names,code-group,0.557,39.0485,0.0508
+cf_61,name: forename,code-group,0.557,39.0485,0.0508
+cf_63,name: surname,code-group,0.6744,157.8373,0.0678
+cf_64,name: variations,code-group,0.486,0,0.0169
+cf_65,nationality,code-group,0.6744,157.8373,0.0678
+cf_66,occupation data,code-group,0.6616,124.5194,0.0508
+cf_67,occupation data: current,code-group,0.5407,24.2444,0.0339
+cf_69,occupation data: past,code-group,0.486,0,0.0169
+cf_75,registration status,code-group,0.486,0,0.0169
+cf_76,religion,code-group,0.6314,68.1353,0.0339
+cf_79,residence,code-group,0.6616,124.5194,0.0508
+cf_80,residence: current,code-group,0.486,0,0.0169
+cf_81,residence: previous,code-group,0.6314,68.1353,0.0339
+cf_82,residency request data,code-group,0.486,0,0.0169
+cf_85,sex & gender,code-group,0.6977,299.8179,0.0847
+cf_92,travel document data,code-group,0.6616,124.5194,0.0508
+cf_97,travel: rejection or removal,code-group,0.486,0,0.0169
+co_380,application for international protection: Member State of origin,code,NaN,NaN,NaN
+co_381,application for international protection: date,code,NaN,NaN,NaN
+co_382,application for international protection: place,code,NaN,NaN,NaN
+co_458,date of the arrival of the person concerned after a successful transfer,code,NaN,NaN,NaN
+co_459,date on which the data were transmitted to the Central System,code,NaN,NaN,NaN
+co_460,date on which the fingerprints were taken,code,NaN,NaN,NaN
+co_461,date when the decision to examine the application was taken,code,NaN,NaN,NaN
+co_462,date when the person concerned left or was removed from the territory of the Member States,code,NaN,NaN,NaN
+co_463,date when the person concerned left the territory of the Member States,code,NaN,NaN,NaN
+co_522,fingerprint data,code,NaN,NaN,NaN
+co_618,operator user ID,code,NaN,NaN,NaN
+co_649,reference number used by the Member State of origin,code,NaN,NaN,NaN
+co_688,sex,code,NaN,NaN,NaN
+cf_7,System native,code-group,0.6326,136.5153,0.0678
+cf_8,System pre-existant,code-group,0.6326,136.5153,0.0678
+cf_32,date of exit,code-group,0.3884,0,0.0169
+cf_51,linking data,code-group,0.6326,136.5153,0.0678
+cf_54,linking data: MS,code-group,0.3884,0,0.0169
+cf_70,operator data,code-group,0.3884,0,0.0169
+cf_74,procedure data,code-group,0.6163,104.5549,0.0508
+cf_98,travel: relocation,code-group,0.5756,52.8537,0.0339
+co_366,a reference to the decision giving rise to the alert,code,NaN,NaN,NaN
+co_369,action to be taken,code,NaN,NaN,NaN
+co_377,aliases,code,NaN,NaN,NaN
+co_393,authority issuing the alert,code,NaN,NaN,NaN
+co_446,date of birth,code,NaN,NaN,NaN
+co_524,fingerprints,code,NaN,NaN,NaN
+co_531,forename(s),code,NaN,NaN,NaN
+co_576,link(s) to other alerts,code,NaN,NaN,NaN
+co_604,name(s) at birth,code,NaN,NaN,NaN
+co_609,nationality(ies),code,NaN,NaN,NaN
+co_630,photographs,code,NaN,NaN,NaN
+co_631,physical characteristics,code,NaN,NaN,NaN
+co_632,place of birth,code,NaN,NaN,NaN
+co_637,previously used names,code,NaN,NaN,NaN
+co_645,reason for the alert,code,NaN,NaN,NaN
+co_705,surname(s),code,NaN,NaN,NaN
+co_755,"whether the person concerned is armed, violent or has escaped;",code,NaN,NaN,NaN
+cf_9,additional info / comments,code-group,0.5756,18.5139,0.0339
+co_365,a photograph of the applicant,code,NaN,NaN,NaN
+co_383,application number,code,NaN,NaN,NaN
+co_394,authority which issued the travel document,code,NaN,NaN,NaN
+co_395,authority with which the application has been lodged,code,NaN,NaN,NaN
+co_432,country of birth,code,NaN,NaN,NaN
+co_439,current employer,code,NaN,NaN,NaN
+co_440,current nationality,code,NaN,NaN,NaN
+co_441,current occupation,code,NaN,NaN,NaN
+co_451,date of expiry of the travel document,code,NaN,NaN,NaN
+co_455,date of issue of the travel document,code,NaN,NaN,NaN
+co_457,date of the application,code,NaN,NaN,NaN
+co_470,details of the person issuing an invitation and/or liable to pay the applicant's subsistence costs during the stay,code,NaN,NaN,NaN
+co_475,duration of the intended stay,code,NaN,NaN,NaN
+co_525,fingerprints of the applicant,code,NaN,NaN,NaN
+co_528,first name(s),code,NaN,NaN,NaN
+co_532,former surname(s),code,NaN,NaN,NaN
+co_551,intended border of first entry,code,NaN,NaN,NaN
+co_552,intended date of arrival,code,NaN,NaN,NaN
+co_553,intended date of depature,code,NaN,NaN,NaN
+co_554,intended transit route,code,NaN,NaN,NaN
+co_581,main destination,code,NaN,NaN,NaN
+co_602,name of school,code,NaN,NaN,NaN
+co_607,nationality at birth,code,NaN,NaN,NaN
+co_616,number of the travel document,code,NaN,NaN,NaN
+co_634,place of the application,code,NaN,NaN,NaN
+co_644,purpose of travel,code,NaN,NaN,NaN
+co_679,residence,code,NaN,NaN,NaN
+co_693,status information,code,NaN,NaN,NaN
+co_701,surname,code,NaN,NaN,NaN
+co_703,surname and first name(s) of the applicant's father and mother,code,NaN,NaN,NaN
+co_704,surname at birth,code,NaN,NaN,NaN
+co_726,type of travel document,code,NaN,NaN,NaN
+co_727,type of visa requested,code,NaN,NaN,NaN
+cf_30,date of application,code-group,0.4442,0,0.0169
+cf_71,parents data,code-group,0.593,32.1397,0.0339
+cf_72,personal ties,code-group,0.593,32.1397,0.0339
+cf_73,personal ties: in EU,code-group,0.593,32.1397,0.0339
+cf_87,stay data,code-group,0.4442,0,0.0169
+cf_91,travel data,code-group,0.4442,0,0.0169
+cf_95,travel document: validity: expiration,code-group,0.4442,0,0.0169
+cf_96,travel document: visa-related data,code-group,0.4442,0,0.0169
+co_48,Eurodac code,code,NaN,NaN,NaN
+co_49,Eurodac date,code,NaN,NaN,NaN
+co_74,ID,code,NaN,NaN,NaN
+co_172,Identification no of the doc,code,NaN,NaN,NaN
+co_368,accompanied files,code,NaN,NaN,NaN
+co_372,additional info,code,NaN,NaN,NaN
+co_388,attribute,code,NaN,NaN,NaN
+co_396,bed of alien,code,NaN,NaN,NaN
+co_409,case of relocation,code,NaN,NaN,NaN
+co_418,civil status: cohabit,code,NaN,NaN,NaN
+co_419,civil status: divorced,code,NaN,NaN,NaN
+co_421,civil status: married,code,NaN,NaN,NaN
+co_424,civil status: unmarried,code,NaN,NaN,NaN
+co_425,civil status: widower,code,NaN,NaN,NaN
+co_428,communication language,code,NaN,NaN,NaN
+co_430,contact details,code,NaN,NaN,NaN
+co_447,date of departure,code,NaN,NaN,NaN
+co_449,date of entry in Greece,code,NaN,NaN,NaN
+co_467,declared date of birth,code,NaN,NaN,NaN
+co_478,education level,code,NaN,NaN,NaN
+co_479,education level: 1-6 years,code,NaN,NaN,NaN
+co_480,education level: 7-9 years,code,NaN,NaN,NaN
+co_481,education level: 9-12 years,code,NaN,NaN,NaN
+co_482,education level: higher,code,NaN,NaN,NaN
+co_483,education level: illiterate,code,NaN,NaN,NaN
+co_503,estimated date of birth,code,NaN,NaN,NaN
+co_504,estimated nationality,code,NaN,NaN,NaN
+co_505,ethnic group,code,NaN,NaN,NaN
+co_508,expression of interest for application of international protection,code,NaN,NaN,NaN
+co_509,expression of interest for voluntary return,code,NaN,NaN,NaN
+co_514,family situation,code,NaN,NaN,NaN
+co_515,family ties at the member-state,code,NaN,NaN,NaN
+co_516,father's name,code,NaN,NaN,NaN
+co_536,gender,code,NaN,NaN,NaN
+co_544,identification document,code,NaN,NaN,NaN
+co_568,languages,code,NaN,NaN,NaN
+co_569,languages (other),code,NaN,NaN,NaN
+co_572,last place of staying (country),code,NaN,NaN,NaN
+co_582,marital status,code,NaN,NaN,NaN
+co_592,member of family,code,NaN,NaN,NaN
+co_593,member of the case,code,NaN,NaN,NaN
+co_598,mother tongue,code,NaN,NaN,NaN
+co_599,mother's name,code,NaN,NaN,NaN
+co_600,mother's surname,code,NaN,NaN,NaN
+co_601,name,code,NaN,NaN,NaN
+co_606,nationality,code,NaN,NaN,NaN
+co_612,no of asylum will,code,NaN,NaN,NaN
+co_614,number of children,code,NaN,NaN,NaN
+co_620,other additional registration,code,NaN,NaN,NaN
+co_625,passport,code,NaN,NaN,NaN
+co_629,photo of the person,code,NaN,NaN,NaN
+co_636,previous country of usual staying,code,NaN,NaN,NaN
+co_638,primary applicant,code,NaN,NaN,NaN
+co_641,profession,code,NaN,NaN,NaN
+co_664,religion,code,NaN,NaN,NaN
+co_680,residence permit,code,NaN,NaN,NaN
+co_681,restriction of freedom,code,NaN,NaN,NaN
+co_685,sent to Eurodac,code,NaN,NaN,NaN
+co_697,submitted and signed documents in the framework of the asylum process,code,NaN,NaN,NaN
+co_698,submitted documents of decision,code,NaN,NaN,NaN
+co_699,submitted signed documents,code,NaN,NaN,NaN
+co_710,ties,code,NaN,NaN,NaN
+co_718,travel documents,code,NaN,NaN,NaN
+co_724,type of document,code,NaN,NaN,NaN
+co_730,valuables,code,NaN,NaN,NaN
+co_749,vulnerable group,code,NaN,NaN,NaN
+cf_10,application data,code-group,0.5488,0,0.0169
+cf_25,civil status: values,code-group,0.5488,0,0.0169
+cf_31,date of entry,code-group,0.5488,0,0.0169
+cf_36,education: extent: values,code-group,0.5488,0,0.0169
+cf_38,ethnicity,code-group,0.5488,0,0.0169
+cf_45,language: speaking,code-group,0.5488,0,0.0169
+cf_83,restrictions: movement,code-group,0.5488,0,0.0169
+cf_90,temporary accomodation/housing,code-group,0.5488,0,0.0169
+cf_99,vulnerability,code-group,0.5488,0,0.0169

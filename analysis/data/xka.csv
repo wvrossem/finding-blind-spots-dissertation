@@ -1,0 +1,110 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness,node_centrality_degree
+co_48,Eurodac code,code,NaN,NaN,NaN
+co_49,Eurodac date,code,NaN,NaN,NaN
+co_70,ID,code,NaN,NaN,NaN
+co_168,Identification no of the doc,code,NaN,NaN,NaN
+co_364,accompanied files,code,NaN,NaN,NaN
+co_368,additional info,code,NaN,NaN,NaN
+co_384,attribute,code,NaN,NaN,NaN
+co_392,bed of alien,code,NaN,NaN,NaN
+co_405,case of relocation,code,NaN,NaN,NaN
+co_414,civil status: cohabit,code,NaN,NaN,NaN
+co_415,civil status: divorced,code,NaN,NaN,NaN
+co_417,civil status: married,code,NaN,NaN,NaN
+co_420,civil status: unmarried,code,NaN,NaN,NaN
+co_421,civil status: widower,code,NaN,NaN,NaN
+co_424,communication language,code,NaN,NaN,NaN
+co_426,contact details,code,NaN,NaN,NaN
+co_428,country of birth,code,NaN,NaN,NaN
+co_442,date of birth,code,NaN,NaN,NaN
+co_443,date of departure,code,NaN,NaN,NaN
+co_445,date of entry in Greece,code,NaN,NaN,NaN
+co_463,declared date of birth,code,NaN,NaN,NaN
+co_474,education level,code,NaN,NaN,NaN
+co_475,education level: 1-6 years,code,NaN,NaN,NaN
+co_476,education level: 7-9 years,code,NaN,NaN,NaN
+co_477,education level: 9-12 years,code,NaN,NaN,NaN
+co_478,education level: higher,code,NaN,NaN,NaN
+co_479,education level: illiterate,code,NaN,NaN,NaN
+co_499,estimated date of birth,code,NaN,NaN,NaN
+co_500,estimated nationality,code,NaN,NaN,NaN
+co_501,ethnic group,code,NaN,NaN,NaN
+co_504,expression of interest for application of international protection,code,NaN,NaN,NaN
+co_505,expression of interest for voluntary return,code,NaN,NaN,NaN
+co_510,family situation,code,NaN,NaN,NaN
+co_511,family ties at the member-state,code,NaN,NaN,NaN
+co_512,father's name,code,NaN,NaN,NaN
+co_532,gender,code,NaN,NaN,NaN
+co_540,identification document,code,NaN,NaN,NaN
+co_564,languages,code,NaN,NaN,NaN
+co_565,languages (other),code,NaN,NaN,NaN
+co_568,last place of staying (country),code,NaN,NaN,NaN
+co_578,marital status,code,NaN,NaN,NaN
+co_588,member of family,code,NaN,NaN,NaN
+co_589,member of the case,code,NaN,NaN,NaN
+co_594,mother tongue,code,NaN,NaN,NaN
+co_595,mother's name,code,NaN,NaN,NaN
+co_596,mother's surname,code,NaN,NaN,NaN
+co_597,name,code,NaN,NaN,NaN
+co_602,nationality,code,NaN,NaN,NaN
+co_605,nationality(ies),code,NaN,NaN,NaN
+co_608,no of asylum will,code,NaN,NaN,NaN
+co_610,number of children,code,NaN,NaN,NaN
+co_616,other additional registration,code,NaN,NaN,NaN
+co_621,passport,code,NaN,NaN,NaN
+co_625,photo of the person,code,NaN,NaN,NaN
+co_632,previous country of usual staying,code,NaN,NaN,NaN
+co_634,primary applicant,code,NaN,NaN,NaN
+co_637,profession,code,NaN,NaN,NaN
+co_660,religion,code,NaN,NaN,NaN
+co_676,residence permit,code,NaN,NaN,NaN
+co_677,restriction of freedom,code,NaN,NaN,NaN
+co_681,sent to Eurodac,code,NaN,NaN,NaN
+co_684,sex,code,NaN,NaN,NaN
+co_693,submitted and signed documents in the framework of the asylum process,code,NaN,NaN,NaN
+co_694,submitted documents of decision,code,NaN,NaN,NaN
+co_695,submitted signed documents,code,NaN,NaN,NaN
+co_697,surname,code,NaN,NaN,NaN
+co_706,ties,code,NaN,NaN,NaN
+co_714,travel documents,code,NaN,NaN,NaN
+co_720,type of document,code,NaN,NaN,NaN
+co_726,valuables,code,NaN,NaN,NaN
+co_745,vulnerable group,code,NaN,NaN,NaN
+cf_7,System native,code-group,0.5085,0,0.0169
+cf_8,System pre-existant,code-group,0.5085,0,0.0169
+cf_9,additional info / comments,code-group,0.5085,0,0.0169
+cf_10,application data,code-group,0.5085,0,0.0169
+cf_11,asylum,code-group,0.5085,0,0.0169
+cf_14,biometrics,code-group,0.5085,0,0.0169
+cf_18,biometrics: photograph data,code-group,0.5085,0,0.0169
+cf_19,birth data,code-group,0.5085,0,0.0169
+cf_20,birth data: date of birth,code-group,0.5085,0,0.0169
+cf_21,birth data: place of birth,code-group,0.5085,0,0.0169
+cf_25,civil status: values,code-group,0.5085,0,0.0169
+cf_26,contact info,code-group,0.5085,0,0.0169
+cf_31,date of entry,code-group,0.5085,0,0.0169
+cf_34,education,code-group,0.5085,0,0.0169
+cf_35,education: extent,code-group,0.5085,0,0.0169
+cf_36,education: extent: values,code-group,0.5085,0,0.0169
+cf_38,ethnicity,code-group,0.5085,0,0.0169
+cf_39,family status data,code-group,0.5085,0,0.0169
+cf_43,language,code-group,0.5085,0,0.0169
+cf_45,language: speaking,code-group,0.5085,0,0.0169
+cf_51,linking data,code-group,0.5085,0,0.0169
+cf_52,linking data: EU,code-group,0.5085,0,0.0169
+cf_63,name: surname,code-group,0.5085,0,0.0169
+cf_65,nationality,code-group,0.5085,0,0.0169
+cf_66,occupation data,code-group,0.5085,0,0.0169
+cf_71,parents data,code-group,0.5085,0,0.0169
+cf_72,personal ties,code-group,0.5085,0,0.0169
+cf_73,personal ties: in EU,code-group,0.5085,0,0.0169
+cf_74,procedure data,code-group,0.5085,0,0.0169
+cf_76,religion,code-group,0.5085,0,0.0169
+cf_79,residence,code-group,0.5085,0,0.0169
+cf_81,residence: previous,code-group,0.5085,0,0.0169
+cf_83,restrictions: movement,code-group,0.5085,0,0.0169
+cf_85,sex & gender,code-group,0.5085,0,0.0169
+cf_90,temporary accomodation/housing,code-group,0.5085,0,0.0169
+cf_92,travel document data,code-group,0.5085,0,0.0169
+cf_98,travel: relocation,code-group,0.5085,0,0.0169
+cf_99,vulnerability,code-group,0.5085,0,0.0169

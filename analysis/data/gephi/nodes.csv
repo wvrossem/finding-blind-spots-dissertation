@@ -1,0 +1,80 @@
+id;label;type
+cf_7;System native;code-group
+cf_8;System pre-existant;code-group
+cf_9;additional info / comments;code-group
+cf_11;asylum;code-group
+cf_14;biometrics;code-group
+cf_16;biometrics: fingerprint data;code-group
+cf_18;biometrics: photograph data;code-group
+cf_19;birth data;code-group
+cf_20;birth data: date of birth;code-group
+cf_21;birth data: place of birth;code-group
+cf_22;border crossing data;code-group
+cf_26;contact info;code-group
+cf_29;criminal offence data;code-group
+cf_30;date of application;code-group
+cf_31;date of entry;code-group
+cf_32;date of exit;code-group
+cf_34;education;code-group
+cf_37;education: location;code-group
+cf_39;family status data;code-group
+cf_40;immigration status;code-group
+cf_51;linking data;code-group
+cf_54;linking data: MS;code-group
+cf_60;name: earlier/other names;code-group
+cf_61;name: forename;code-group
+cf_63;name: surname;code-group
+cf_65;nationality;code-group
+cf_66;occupation data;code-group
+cf_67;occupation data: current;code-group
+cf_70;operator data;code-group
+cf_71;parents data;code-group
+cf_72;personal ties;code-group
+cf_73;personal ties: in EU;code-group
+cf_74;procedure data;code-group
+cf_79;residence;code-group
+cf_80;residence: current;code-group
+cf_83;restrictions: movement;code-group
+cf_84;return decision;code-group
+cf_85;sex & gender;code-group
+cf_87;stay data;code-group
+cf_91;travel data;code-group
+cf_92;travel document data;code-group
+cf_94;travel document: date of issue;code-group
+cf_95;travel document: validity: expiration;code-group
+cf_96;travel document: visa-related data;code-group
+cf_98;travel: relocation;code-group
+df_3;EU IS JHA;document-group
+cf_12;asylum: rejection;code-group
+cf_15;biometrics: eye colour;code-group
+cf_17;biometrics: height;code-group
+cf_23;citizenship;code-group
+cf_27;country of origin;code-group
+cf_35;education: extent;code-group
+cf_42;integration;code-group
+cf_43;language;code-group
+cf_47;law enforcement;code-group
+cf_48;law enforcement: extradition;code-group
+cf_49;law enforcement: investigation;code-group
+cf_50;law enforcement: unauthorized entry and residence;code-group
+cf_52;linking data: EU;code-group
+cf_55;linking data: responsibility;code-group
+cf_64;name: variations;code-group
+cf_69;occupation data: past;code-group
+cf_75;registration status;code-group
+cf_76;religion;code-group
+cf_81;residence: previous;code-group
+cf_82;residency request data;code-group
+cf_86;similar identities;code-group
+cf_97;travel: rejection or removal;code-group
+cf_10;application data;code-group
+cf_13;belongings;code-group
+cf_24;civil status;code-group
+cf_25;civil status: values;code-group
+cf_36;education: extent: values;code-group
+cf_38;ethnicity;code-group
+cf_45;language: speaking;code-group
+cf_90;temporary accomodation/housing;code-group
+cf_99;vulnerability;code-group
+df_2;DE: Xauslaender-1.14.0;document-group
+df_11;GR: XKA;document-group

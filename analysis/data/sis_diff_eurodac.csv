@@ -1,0 +1,30 @@
+﻿id,node_name,node_type,node_centrality_closeness,node_centrality_betweenness
+pd_2_2,SIS II Regulation,document,0.5662,134
+co_127,a reference to the decision giving rise to the alert,code,0.5675,0
+co_129,action to be taken,code,0.5524,0
+co_137,aliases,code,0.5025,0.5
+co_152,authority issuing the alert,code,0.5675,0
+co_202,date of birth,code,0.7402,2.6667
+co_276,fingerprints,code,0.5391,0
+co_283,forename(s),code,0.5563,0.6667
+co_308,link(s) to other alerts,code,0.5675,0
+co_331,name(s) at birth,code,0.563,4.8333
+co_336,nationality(ies),code,0.5947,1
+co_354,photographs,code,0.5391,1
+co_355,physical characteristics,code,0.538,0
+co_356,place of birth,code,0.6782,2.6667
+co_361,previously used names,code,0.5025,0.5
+co_368,reason for the alert,code,0.5112,1
+co_421,surname(s),code,0.6575,0.6667
+co_467,"whether the person concerned is armed, violent or has escaped;",code,0.4899,1
+cf_9,additional info / comments,code-group,0.5939,0
+cf_15,biometrics: photograph data,code-group,0.6847,0
+cf_16,birth data,code-group,0.7149,0.6667
+cf_17,birth data: date of birth,code-group,0.7394,0
+cf_18,birth data: place of birth,code-group,0.7203,0
+cf_24,criminal offence data,code-group,0.4933,0
+cf_49,name: earlier/other names,code-group,0.5463,2
+cf_50,name: forename,code-group,0.689,0.6667
+cf_52,name: surname,code-group,0.745,0.6667
+cf_53,nationality,code-group,0.745,0
+df_5,EU: SIS,document-group,0.5951,537.5
