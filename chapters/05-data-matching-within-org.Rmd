@@ -101,8 +101,6 @@ The design and expected uses of the software were looked at using documents abou
 
 By examining the technical documents, it was possible to develop a preliminary understanding of the search and match software's technical operation and the software's deployment at the IND. In addition to technical documents, public communications and reports provided context for IND information system development. The findings of the document analysis were used as a jumping off point for structuring the questions to ask in the interviews.
 
-<!-- ### Interview -->
-
 Following the document analysis, I conducted semi-structured interviews to gain insight into the actual development and use of the search and match tools. Two main groups of themes and interviewees formed the basis of my research. The first group was centred on IND staff whose duties include looking up and matching identities in their databases, which necessitates the use of the ELISE ID platform. The second group was centred on WCC staff who were, more generally, involved in some way or another in the development, deployment, maintenance of the software. This method allowed us to look at how the ELISE software, WCC, and IND all adapted to one another.
 
 Initial contact with the IND organisation was made possible thanks in large part to members of the ID Team. Unfortunately, no in-person interviews could be conducted because of precautions taken in response to the Covid-19 pandemic. For this reason, participants were contacted to schedule an online meeting or phone call. All things considered, a benefit of these online meetings may have been that it was actually simpler to schedule interviews because neither I nor the participants had to travel. On the other hand, not all communication may have come across the same way, which may have made it harder to network and schedule more interviews. Following the initial contacts, a snowball sampling method was used to reach out to additional users willing to contribute to the research. I interviewed five persons from the IND about how they used the search and match tools, and seven people from WCC. Each interview lasted approximately one hour. While I did my best to ensure that a representative cross-section of the IND and WCC was surveyed, I had limited influence over the size of the sample and the respondents' reliance on their networks introduced a bias toward more senior members of the organisations.
@@ -114,9 +112,6 @@ For analysing the fieldwork data, I followed standard methods for coding and ana
 ## Findings
 
 At least two general factors characterise the IND data infrastructure in which re-identification takes place. First, the IND interacts with a variety of other (non)governmental organisations, complicating client re-identification. Second, the technical components of the IND data infrastructure mediate re-identification. This section will begin with an overview of the agency's data infrastructure and its interactions with other organisations. The emphasis of this section will then shift to the development and use of the technical components involved in re-identifying clients.  
-
-<!-- * interactions with other (government) organizational links in the migration chains in which the IND works. -->
-<!-- * interaction between components of the IND systems itself -->
 
 ### (Re-)identification at the IND and beyond
 
