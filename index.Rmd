@@ -112,6 +112,7 @@ knitr::opts_chunk$set(fig.width=3, fig.height=2)
 library(kableExtra)
 library(flextable)
 library(officer)
+library(officedown)
 library(pander)
 
 # Set global variables
