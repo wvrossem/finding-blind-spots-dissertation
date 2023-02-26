@@ -1,4 +1,4 @@
-Number, Research question, Infratructual inversion, Pair, Method, Data collection, Data analysis
+Number, Research question, Infrastructual inversion, Pair, Data collection, Data analysis
 1, "Which types of knowledge about people-on-the-move are inscribed in data models of national and transnational security infrastructures? What does a typology of data for people-on-the-move tell us about how organizations search and match their data?", "Comparing data models", "_(data models `z`, categories of data `x`)_", "Traces of data models", "Mixed (The Ontology Explorer)"
 2, "How do organizations that collect information about people-on-the-move search and match for identity data in their systems? How is data about people-on-the-move matched and linked across different agencies and organizations?", "Data practices", "_(categories of data `x`, data values `y`)_", "Fieldwork WCC & IND", "Thematic coding"
-3, "How does knowledge and technology for matching identity data circulate and travel across organizations?", "Sociotechnical change", "_(data models `z`, data values `y`)_", "Data matching across organizations", "Fieldwork WCC ELISE", "Thematic coding"
+3, "How does knowledge and technology for matching identity data circulate and travel across organizations?", "Sociotechnical change", "_(data models `z`, data values `y`)_", "Fieldwork WCC ELISE", "Thematic coding"
