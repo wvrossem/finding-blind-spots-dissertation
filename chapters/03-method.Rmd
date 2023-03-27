@@ -1,4 +1,4 @@
-# Research design and methods {#ch-method}
+# A conceptual framework for analyzing data matching in transnational infrastructures {#ch-method}
 
 \chaptermark{Research design and methods}
 
@@ -68,7 +68,7 @@ Chapter 6 will therefore draw on the literature and sociotechnical change and in
 
 This section has reviewed infrastructural inversions to provide three methodological strategies for using data infrastructures as research topics and resources. These methods can guide reversing infrastructure's technical aspects of matching and linking identity data, which tend to be background activities. The next step is to combine these three infrastructural inversion strategies into a conceptual model that we can operationalize to simultaneously make visible the technical and institutional dimensions of matching and linking identity data in transnational security infrastructures.
 
-## A conceptual framework for analysing data matching in distributed settings
+## A conceptual framework for analysing data matching in transnational infrastructure
 
 ### Working model for operationalizing the infrastructural inversions
 
