@@ -26,6 +26,10 @@ bookdown::markdown_document2:
       last_column: false
       no_hband: false
       no_vband: true
+    caption:
+      style: Table Caption
+      pre: 'Table '
+      sep: ': '
   pandoc_args: [
     --csl=style/chicago-author-date.csl
   ]
