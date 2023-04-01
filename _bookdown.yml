@@ -15,6 +15,7 @@ rmd_files: [
   "chapters/07-conclusions.Rmd", 
   "appendix/supplement-ontology-explorer.Rmd",
   "appendix/supplement-interview-protocol.Rmd",
+  "appendix/theory.Rmd",
   "chapters/backmatter/summary-Dutch.Rmd",
   "chapters/backmatter/other-publications.Rmd",
   "chapters/backmatter/references.Rmd"]
