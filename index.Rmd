@@ -1,9 +1,9 @@
 --- 
 ### Title page
-title: "Finding blind spots" # The main title of your thesis (not including possible subtitles)
-subtitle: |
-  | Matching identity data in transnational  
-  | security infrastructures and beyond
+title: "Finding blind spots: Investigating identity data matching in transnational security infrastructures and beyond" # The main title of your thesis (not including possible subtitles)
+# subtitle: |
+  # | Investigating identity data matching  
+  # | in transnational security infrastructures and beyond
 # (can also be  omitted if you don't have a subtitle)
 author: "Wouter Rudi Van Rossem" # Your full name (including middle names if applicable)
 date: "" # Your defense date in Dutch: "[weekday] [day in numerics] [name of month] [year]"

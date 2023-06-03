@@ -1,4 +1,4 @@
-# Matching data models of organizations collecting information about people-on-the-move {#ch-data-model-matching}
+# The Ontology Explorer: A method to make visible data infrastructures for population management {#ch-data-model-matching}
 
 \chaptermark{Matching data models}
 

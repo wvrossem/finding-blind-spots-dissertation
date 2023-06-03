@@ -1,4 +1,4 @@
-# Data matching across organizations and agencies {#ch-dm-across-org}
+# Uncovering the long-term development of identification infrastructures: A multi-temporal perspective {#ch-dm-across-org}
 
 \chaptermark{Data matching across organizations}
 
