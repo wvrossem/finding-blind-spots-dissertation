@@ -10,9 +10,27 @@ Systems and infrastructures for identifying and registering mobile populations h
 
 ---
 
-\vspace*{\fill}
-\noindent
+\newpage
+
+<!-- \vspace*{\fill} -->
+<!-- \noindent -->
 <!-- _Possibly insert citation here._ -->
+
+Contribution to research objectives
+: _To investigate the long-term development of identification systems and building of transnational data infrastructures by identifying crucial moments in their lifecycle to explore how data matching expertise travels and circulates._
+: This chapter addresses the research objective by investigating the long-term development of identification systems and the building of transnational data infrastructures. By identifying crucial moments in the lifecycle of these systems, the chapter offers valuable insights into how data matching expertise travels and circulates. The examination of these critical moments allows for a deeper understanding of the processes and dynamics that shape the evolution of identification systems and infrastructures over time. By tracing the trajectory of these technologies and practices, we gain insights into the factors that contribute to their development, adaptation, and dissemination. Understanding the long-term development of these systems is shown to be crucial for comprehending their complexities and the implications they have in various contexts. The chapter's analysis provides a nuanced perspective on the interplay between technological advancements, social forces, and the transnational nature of data infrastructures, enhancing our understanding of their long-lasting effects.
+
+Infrastructural inversion strategy
+: _Third inversion strategy — sociotechnical change_
+: The chapter employs the third infrastructural inversion strategy to analyze the evolution of technology and design over time. This strategy adopts a longitudinal perspective, enabling us to examine the various processes that shape and are shaped by identification systems and infrastructures. Through this sociotechnical lens, the chapter illuminates the intricate relationship between social and technological factors in the development and adaptation of identification technologies. This approach allows for a comprehensive analysis of the socio-political contexts, institutional practices, and technological advancements that influence the trajectory of identification systems. By understanding the multifaceted interactions between technology and organizations, we can gain valuable insights into the complex dynamics of identification infrastructures and their implications in diverse settings.
+
+Contribution to Research Questions
+: _RQ3: How does knowledge and technology for matching identity data circulate and travel across organizations?_
+: The chapter adresses this question by examining the networks, actors, and organizations involved in the development and dissemination of technologies used for matching identity data. By exploring the circulation and travel of knowledge and technology related to data matching, the chapter sheds light on the processes through which data matching expertise is shared and disseminated among different actors and organizations. This analysis provides a deeper understanding of how knowledge about these technologies is transferred and utilized, facilitating a comprehensive perspective on the broader social and political contexts that shape identification practices. By uncovering the pathways through which knowledge and technology circulate, we gain valuable insights into the underlying mechanisms that contribute to the development and application of identification technologies, leading to a broader understanding of their long-term implications.
+
+Contribution to Main Research Question
+: Through its analysis of crucial moments in the lifecycle of identification technologies and the examination of actors involved in their development, the chapter sheds light on the intricate relationship between identification practices, technologies, and transnational commercialized security infrastructures. By uncovering the compromises and adaptations required when building identification infrastructures, the chapter provides insights into how global technologies are adjusted to new contexts. Moreover, it highlights the activities of under-the-radar actors, such as software vendors, whose distribution and reuse of software packages have long-term implications for identification practices and infrastructures. Overall, the chapter deepens our understanding of the complex interplay between identification systems, infrastructures, and the broader security landscape, offering valuable insights into the ways in which practices and technologies are shaped and influenced by transnational commercialized security infrastructures.
+
 \newpage
 
 ## Introduction
