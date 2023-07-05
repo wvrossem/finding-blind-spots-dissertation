@@ -1,0 +1,7 @@
+# Theoretical mapping
+
+Figure \@ref(fig:mapping) provides an overview of the mapping of theoretical concepts that draw from the three research areas: the internationalization and commercialization of identification, the securitization of identification, and the infrastructuring of identification. The figure illustrates how theories and concepts from areas overlap and intersect, and it presents this mapping in the form of a Venn diagram. While the Venn diagram in Figure \@ref(fig:mapping) provides a practical visual reference for understanding how these research areas intersect, it is worth noting that the mapping of theoretical concepts is not perfect. The set diagram should not be taken as a way to map theoretical concepts perfectly. There are complex and nuanced relationships between these areas that a diagram cannot fully capture. Instead, the diagram can serve as a helpful reference that supplements the text that follows.
+
+```{r mapping, echo=FALSE, fig.cap="TODO: The mapping diagram needs to be updated"}
+knitr::include_graphics("figures/theoretical-framework/theoretical-mapping.pdf")
+```

@@ -11,6 +11,7 @@ bookdown::gitbook:
     download: ["pdf", "epub"]
 bookdown::markdown_document2:
   toc: true
+  toc_depth: 2
   fig_caption: yes
   base_format: officedown::rdocx_document
   reference_docx: "style/template.docx"
@@ -39,6 +40,8 @@ bookdown::word_document2:
   reference_docx: "style/template.docx"
   keep_tex: no
 bookdown::pdf_book:
+  toc: true
+  toc_depth: 2
   template: style/template.tex
   keep_tex: no
   latex_engine: xelatex
