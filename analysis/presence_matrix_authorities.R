@@ -1,7 +1,7 @@
 library(flextable)
 
 file_path_data <-
-  "/Users/woutervanrossem/PhD/Writings/2020_Ontology-explorer/analysis/data/"
+  "./analysis/data/"
 
 node_type <- "code-group"
 filter_nodes <-
