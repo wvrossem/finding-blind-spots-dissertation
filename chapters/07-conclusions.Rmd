@@ -14,8 +14,6 @@ Through this research question, the dissertation sought to contribute to a more 
 
 Next, we introduced a novel method and software tool designed to analyze the underlying schemas of information systems in population management. This approach gave us insights into authorities' imaginaries about people on the move and the corresponding intricacies of data interoperability and matching (Chapter 4). We also examined the relationship between identity data matching technologies and routine identification practices, shedding light on the practical implications and challenges organizations encounter when trying to match identity data to re-identify individuals (Chapter 5). Lastly, we investigated the long-term development of identification systems and the establishment of transnational data infrastructures. By identifying crucial moments in the lifecycle of commercial data matching software, we explored how data matching expertise travels and circulates, ultimately influencing the practices and technologies employed in transnational security infrastructures (Chapter 6).
 
-<!-- By addressing these research objectives and conducting empirical investigations, this dissertation provided a comprehensive analysis of the complexities, challenges, and implications surrounding the matching of identity data within transnational commercialized security infrastructures. Through our research, we contribute to the fields of Science and Technology Studies (STS) and migration studies by offering insights into the interplay between data infrastructures, identification systems, and transnational security, thereby advancing our understanding of these practices' societal and organizational impacts. -->
-
 The following section will proceed with a summary of the Chapters' findings, delving deeper into their implications and providing an overview of the key themes and insights that emerged from the research.
 
 ## Overview of the findings
@@ -197,15 +195,3 @@ Reflecting on the research process, we acknowledge certain limitations and areas
 Ethical considerations played a crucial role throughout this study. We navigated the ethical complexities of collaborating with a company operating in the borders and security domain, acknowledging the potential insecurities associated with these practices. However, our research also revealed the value of data matching in streamlining bureaucratic processes and supporting efficient decision-making, emphasizing the importance of balanced perspectives and critical engagement in shaping ethical practices.
 
 In conclusion, this dissertation has contributed to understanding identification systems and data infrastructures by employing a comprehensive research approach. Our findings offer insights into the inner workings of these systems, highlighting the challenges and opportunities for improving their functionality and alignment with user needs. By uncovering the sociotechnical dimensions of identification practices, we have provided a foundation for future research in this field. Ultimately, this work calls for continued interdisciplinary collaboration and critical inquiry to ensure the development of responsible, inclusive, and practical identification systems in an ever-evolving technological landscape.
-
-<!-- NOTES 
-
-* From standardization of surnames to embracing a multiplicity of practices for dealing with uncertainty.
-
--->
-
-
-
-<!-- ## Research journey -->
-
-<!-- My interest in this area developed while reading this communication and the subsequent proposals, feasibility studies, and other reports on interoperability for the EU information systems of Justice and Home Affairs. Early in my research, I decided to delve deeper into these aspects of linking personal data and related data quality problems. For this reason, I decided to title this dissertation "finding blind spots" to capture this alluring and contradictory proposition of a visual metaphor of finding something that one knows is there but cannot see. -->
