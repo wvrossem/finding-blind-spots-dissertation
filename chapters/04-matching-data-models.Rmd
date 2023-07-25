@@ -2,21 +2,24 @@
 
 \chaptermark{Matching data models}
 
-__Abstract__
-
 \noindent
-This chapter introduces the methodology of the “Ontology Explorer” (OE), a semantic method and JavaScript-based open-source tool to analyse data models underpinning information systems. The OE has been devised and developed together with Annalisa Pelizza, who recognised a need to compare data models collected in different formats and used by diverse systems. The OE is distinctive firstly because it supports analyses of information systems that are not immediately comparable and, secondly, because it systematically and quantitatively supports discursive analysis of “thin” data models — also by detecting differences and absences through comparison. When applied to data models underpinning systems for population management, the OE enables the apprehension of how people are “inscribed” in information systems: which assumptions are made about them, and which possibilities are excluded by design. The OE thus constitutes a methodology to capture authorities' own imaginaries of populations and the “scripts” through which they enact actual people. Furthermore, the method allows the comparison of scripts from diverse authorities. This is exemplified by illustrating its functioning with information systems for population management deployed at the European border. Our approach integrates a number of insights from early infrastructure studies and extends their methods and analytical depth to account for contemporary data infrastructures. By doing so, we hope to trigger a systematic discussion on how to extend those early methodical innovations at the semantic level to contemporary developments in digital methods.
+\small
+_The chapter has been co-authored in collaboration with the Principal Investigator (PI) of Processing Citizenship and was initially published in 2022 as an article in Big Data and Society.[^bds-article] The text retains its original form as presented in the article. However, please note that the original article predates some of the other work presented in this thesis, and as a result, there may be certain missing links in the context of the overall research. To address this, following the abstract, this chapter provides supplementary information on the contributions of this work to the dissertation._
+
+[^bds-article]: Van Rossem, Wouter, and Annalisa Pelizza. 2022. “The Ontology Explorer: A Method to Make Visible Data Infrastructures for Population Management”. _Big Data & Society_ 9 (1): 1–18. https://doi.org/10.1177/20539517221104087.
+
 
 ---
 
-\newpage
+__Abstract__
+
+\noindent
+This chapter introduces the methodology of the “Ontology Explorer” (OE), a semantic method and JavaScript-based open-source tool to analyse data models underpinning information systems. The OE has been devised and developed together with Annalisa Pelizza, who recognised a need to compare data models collected in different formats and used by diverse systems. The OE is distinctive firstly because it supports analyses of information systems that are not immediately comparable and, secondly, because it systematically and quantitatively supports discursive analysis of “thin” data models — also by detecting differences and absences through comparison. When applied to data models underpinning systems for population management, the OE enables the apprehension of how people are “inscribed” in information systems: which assumptions are made about them, and which possibilities are excluded by design. The OE thus constitutes a methodology to capture authorities' own imaginaries of populations and the “scripts” through which they enact actual people. Furthermore, the method allows the comparison of scripts from diverse authorities. This is exemplified by illustrating its functioning with information systems for population management deployed at the European border. The approach integrates a number of insights from early infrastructure studies and extends their methods and analytical depth to account for contemporary data infrastructures. By doing so, it triggers a systematic discussion on how to extend those early methodical innovations at the semantic level to contemporary developments in digital methods.
 
 <!-- \vspace*{\fill} -->
 <!-- \noindent -->
 
-This chapter draws on: Van Rossem, Wouter, and Annalisa Pelizza. 2022. “The Ontology Explorer: A Method to Make Visible Data Infrastructures for Population Management”. _Big Data & Society_ 9 (1): 1–18. https://doi.org/10.1177/20539517221104087.
-
----
+\newpage
 
 Contribution to research objectives
 : _To introduce a new method and software tool to analyze the data schemas underpinning information systems in population management._
@@ -37,7 +40,9 @@ Contribution to the main research question
 
 ## Introduction
 
-This chapter details the methodology of the “Ontology Explorer” (OE), a method and a tool devised and developed by the authors to analyse data models which underpin information systems.[^terminology] The OE is a semantic method and JavaScript-based open-source tool that compares data models collected in different formats and used by diverse systems. The OE is distinctive in two respects. Firstly, it supports analyses of information systems that define their own data models, even if these systems are not immediately comparable. Secondly, it systematically and quantitatively supports discursive analysis of “thin” data models, also by detecting differences and absences between systems. To achieve this, the method extracts, analyses, compares and visualizes heterogeneous data models all at once. Applying this structured approach to the data models used by diverse organizations will make it possible to observe differences and similarities in the data models of diverse data infrastructures.[^field]
+This chapter details the methodology of the “Ontology Explorer” (OE), a method and a tool devised and developed by the authors[^authors] to analyse data models which underpin information systems.[^terminology] The OE is a semantic method and JavaScript-based open-source tool that compares data models collected in different formats and used by diverse systems. The OE is distinctive in two respects. Firstly, it supports analyses of information systems that define their own data models, even if these systems are not immediately comparable. Secondly, it systematically and quantitatively supports discursive analysis of “thin” data models, also by detecting differences and absences between systems. To achieve this, the method extracts, analyses, compares and visualizes heterogeneous data models all at once. Applying this structured approach to the data models used by diverse organizations will make it possible to observe differences and similarities in the data models of diverse data infrastructures.[^field]
+
+[^authors]: In collaboration with the Principal Investigator (PI) of Processing Citizenship.
 
 [^field]: To provide an example, such comparison can support the analysis of information systems run by diverse national and transnational institutions to manage mobile populations. This is indeed one of the goals of the “`r anonymize("Processing Citizenship")`” research programme funded by `r anonymize("the European Research Council (ERC), PI prof. A.Pelizza (2017-2023)")`. This chapter is written as part of this programme and presents the methodological solutions devised to answer some of its research questions. While the proposed methodology is already utilized by researchers in the programme, it is also released in the public domain `r anonymize("[@vanrossemOntologyexplorer2021]")`.
 
