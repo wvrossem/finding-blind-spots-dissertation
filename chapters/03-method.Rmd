@@ -82,11 +82,11 @@ The methodological framework explores data matching practices and technologies i
 
 The accompanying table describes the connections between the research question, the infrastructural inversion strategy, and the data collection and analysis techniques (discussed in the following sections).
 
-```{r tab.cap="Methodological model", tab.id = "methodologicalModel", tab.cap.style = "Table Caption", echo=FALSE, ft.align="center"}
+```{r methodological-model, tab.cap="Methodological model", tab.id = "methodologicalModel", tab.cap.style = "Table Caption", echo=FALSE, ft.align="center"}
 path = file.path(TABLES_PATH, "conceptual_model.csv")
 data = read.csv(path, header = TRUE)
 
-block_table(data, header = TRUE, properties = pt)
+pander::pander(data, split.cell = 20, split.table = Inf, caption = "Methodological framework.")
 ```
 
 The methodological framework can be visually represented in a three-dimensional graph, as illustrated in Figure \@ref(fig:method-axes-visualization). This graphical representation resembles a relational model, where data is organized into tables with interrelationships. The three axes of the graph represent distinct data dimensions: _data models_, _data categories_, and _data values_. To better understand these dimensions, we will first explore each axis in more detail, their characteristics, and implications for data matching. After that, subsequent sections will explore the interconnections between these axes and how they correspond to infrastructural inversion strategies.
@@ -216,9 +216,7 @@ In short, the document analysis made it possible to form a first picture of the 
 path = file.path(TABLES_PATH, "documents.csv")
 data = read.csv(path, header = TRUE)
 
-data = data[]
-
-block_table(data, header = TRUE, properties = pt)
+pander::pander(data, split.cell = 20, split.table = Inf, caption = "Summary of main documents consulted.")
 
 # pander(dt)
 
@@ -251,13 +249,11 @@ The Covid-19 pandemic made it tough to have in-person interviews, so much of the
 
 The study hypothesized that users performing different tasks at the IND would use the tools for searching and matching identities differently. For this reason, the participants included members of the IND's various organizational units (for a list of these units, see Table \@ref(tab:ind-departments)). As we will see in Chapter 5, the interviews revealed vast differences in tool use and familiarity. It was, unfortunately, impossible to interview users from each unit. Nevertheless, details about the use of the search and match tools in the other departments surfaced during the interviews. Participants described using the search and match tools at the IND in five interviews, each lasting approximately an hour. Table \@ref(tab:ind-departments) summarizes the various IND units and whether or not the members from the respective units were interviewed.
 
-```{r ind-departments, echo=FALSE, ft.align="center"}
+```{r ind-departments, echo=FALSE, ft.align="center", tab.cap="Summary of IND units and interview participation."}
 path = file.path(TABLES_PATH, "ind-departments.csv")
 data = read.csv(path, header = TRUE)
 
-data = data[]
-
-block_table(data[,c("Org", "Unit", "Incl", "Description")], header = TRUE, properties = pt)
+pander::pander(data, split.cell = 20, split.table = Inf, caption = "Summary of attended events.")
 ```
 
 The research also included interviews with people from the company WCC, which took place concurrently with and after the IND interviews. These interviews followed a looser format than the ones conducted with IND employees. The interviews aimed to illuminate events in the history of their identity-matching software system. The participant's role, projects, and company experiences thus influenced the interview questions and probes. For example, the interview included questions about system development and deployment for people who worked on the IND or EU-VIS projects. This structure also allowed asking people with different profiles about their connections with current and potential customers in the security and identity market. In addition, a few WCC employees present during the fieldwork were invited to participate in an online interview. On the other hand, respondent-driven sampling expanded the number of participants. Based on their profiles, we can divide these participants into two clusters. The first cluster comprises WCC's “ID Team” members who hold consultant, pre-sales, and solutions manager positions. The second group consisted of the more technically minded; among them were a senior software developer and a user experience designer. Participants described their knowledge of building and deploying the company's software in seven interviews, each lasting approximately an hour.
@@ -266,13 +262,11 @@ The number of interviews conducted in this study was lower than initially expect
 
 Participants consented to record the sessions using Processing Citizenship's informed consent form. The form allowed participants to specify how the research would use their provided data while guaranteeing anonymity and confidentiality. For example, per protocol, the recording only included audio with a distorted voice for added anonymity. Furthermore, manual transcription of interviews ensured additional confidentiality by preventing confidential information from being leaked via automated transcription platforms. Table \@ref(tab:interviews) provides an overview of the interviews.
 
-```{r interviews, echo=FALSE, ft.align="center"}
+```{r interviews, echo=FALSE, ft.align="center", tab.cap="Summary of interviews."}
 path = file.path(TABLES_PATH, "interviews.csv")
 data = read.csv(path, header = TRUE)
 
-data = data[]
-
-block_table(data[,c("Nr", "Org", "Date", "Channel", "Language", "Description")], header = TRUE, properties = pt)
+pander::pander(data, split.cell = 20, split.table = Inf, caption = "Summary of interviews.")
 ```
 
 ### Events {#events}
@@ -283,11 +277,11 @@ An illustrative instance highlighting the significance of these events occurred 
 
 Hence, one assumption underlying this study was that recommendations from security and identification experts would reflect diverse perspectives on connecting and utilizing data from multiple sources. While not central to the dissertation, this aspect aligns with the STS literature on "sociotechnical imaginaries," which explores how societal expectations, sociotechnological projects, and social order shape one another [@jasanoffSociotechnicalImaginariesNational2013]. During my fieldwork, I came across an insightful example that I incorporated at the beginning of Chapter 5. This example was presented during an online session and effectively illustrates how security companies emphasize the significance of employing methods for searching and matching data stored in diverse databases, particularly in the context of counterterrorism efforts. The software company shared the case of authorities adding one of the "Boston bombers" to police watch list databases prior to the attack, but with inconsistent and invalid transliteration variations of his name. The security professionals delivering the presentation stressed that the existence of disparate information across databases presents considerable challenges when conducting effective investigations and may lead to potential blind spots for authorities. The work conducted by @trauttmansdorffInfrastructuralExperimentationCollective2021 provides evidence of the impact of such sociotechnical imaginaries on the development of large-scale border security infrastructure. These imaginaries can either facilitate or impede the creation of specific forms of infrastructure, shaping the trajectory of such projects.
 
-```{r fieldwork-events, echo=FALSE, ft.align="center"}
+```{r fieldwork-events, echo=FALSE, ft.align="center", tab.cap="Summary of attended events."}
 path = file.path(TABLES_PATH, "fieldwork-events.csv")
 data = read.csv(path, header = TRUE)
 
-block_table(data, header = TRUE, properties = pt)
+pander::pander(data, split.cell = 20, split.table = Inf, caption = "Summary of attended events.")
 ```
 
 ### Other data {#other-data}

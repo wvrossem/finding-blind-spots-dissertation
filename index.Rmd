@@ -114,6 +114,7 @@ library(flextable)
 library(officer)
 library(officedown)
 library(pander)
+library(dplyr)
 
 # Set global variables
 DATA_PATH = file.path(getwd(), "data")
@@ -125,6 +126,8 @@ pt <- prop_table(
   style = "Table",
   align = "center", 
 )
+
+panderOptions('table.alignment.default', "left")
 
 doAnonymize = FALSE
 usePlaceholderFigures = FALSE
