@@ -14,7 +14,6 @@ rmd_files: [
   "chapters/06-data-matching-across-org.Rmd", 
   "chapters/07-conclusions.Rmd", 
   "appendix/supplement-ontology-explorer.Rmd",
-  "appendix/supplement-interview-protocol.Rmd",
   "appendix/supplement-chapter5.Rmd",
   "appendix/supplement-chapter6.Rmd",
   "chapters/backmatter/summary-Dutch.Rmd",
