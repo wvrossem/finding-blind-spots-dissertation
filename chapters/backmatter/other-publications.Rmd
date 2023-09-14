@@ -1,32 +1,37 @@
-# List of other publications {-}
+# List of other publications {.unnumbered .unlisted}
 
+\addcontentsline{toc}{part}{List of other publications}
 \chaptermark{List of other publications}
 \setlength{\parindent}{0pt}
+\singlespacing
 \small
 
-The contributions below were specified according to the ‘CRediT system’ (Contributor Roles Taxonomy) <https://credit.niso.org/>
+The contributions below were specified according to the ‘CRediT system’ (Contributor Roles Taxonomy).[^credit]
+
+[^credit]: <https://credit.niso.org/>
 
 ---
 
-Pelizza, Annalisa, and **Van Rossem, Wouter**. 2021. ‘Sensing European Alterity: An Analogy between Sensors and Hotspots in Transnational Security Networks’. In Sensing in/Security: Sensors as Transnational Security Infrastructures, edited by Nina Klimburg-Witjes, Nikolaus Pöchhacker, and Geoffrey C. Bowker, 262–86. Manchester, UK: Mattering Press. http://doi.org/10.28938/9781912729111.
+Pelizza A and **Van Rossem W** (2021) Sensing European alterity: An analogy between sensors and hotspots in transnational security networks. In: Klimburg-Witjes N, Pöchhacker N and Bowker GC (eds.) _Sensing in/Security: Sensors as Transnational Security Infrastructures_.
+Manchester, UK: Mattering Press. ISBN 978-1-912729-10-4, pp. 262–286.
 
 * **Pelizza, Annalisa**: Conceptualization, Data curation, Funding acquisition, Formal Analysis, Investigation, Project administration, Supervision, Writing — original draft, Writing — review & editing.
-* **Van Rossem, Wouter**: Data curation, Formal Analysis, Visualization, Writing — original draft (section entitled ‘Separation of concerns as design criterion’), Writing — review & editing.
+* **Van Rossem, Wouter**: Data curation, Formal Analysis, Visualization, Writing — original draft (including section entitled "Separation of concerns as design criterion"), Writing — review & editing.
 
 ---
 
-**Van Rossem, Wouter**. 2021. ‘Ontology-Explorer’. Zenodo. https://doi.org/10.5281/zenodo.4899316.
+**Van Rossem, Wouter**. 2021. "Ontology-Explorer". Zenodo. <https://doi.org/10.5281/zenodo.4899316>.
 
 ---
 
-**Van Rossem, Wouter**, and Annalisa Pelizza. 2022. ‘The Ontology Explorer: A Method to Make Visible Data Infrastructures for Population Management’. Big Data & Society 9 (1): 1–18. https://doi.org/10.1177/20539517221104087.
+Van Rossem W and Pelizza A (2022) The Ontology Explorer: A method to make visible data infrastructures for population management. _Big Data & Society_ 9(1): 1–18. DOI:10.1177/20539517221104087.
 
 * **Van Rossem, Wouter**: Conceptualization, Data curation, Formal Analysis, Investigation, Methodology, Software, Validation, Visualization, Writing — original draft, Writing — review & editing.
 * **Pelizza, Annalisa**: Conceptualization, Data curation, Formal Analysis, Funding acquisition, Methodology, Project administration, Supervision, Writing — original draft, Writing — review & editing.
 
 ---
 
-Pelizza, Annalisa, and **Wouter Van Rossem**. under review. ‘The Scripts of Alterity: Security Subjects, Users and Material Publics’.
+Pelizza A and Van Rossem W (2023) Scripts of alterity: Mapping assumptions and limitations of the border security apparatus through classification schemas. _Science, Technology, & Human Values_ 0(0): 1–33. DOI:10.1177/01622439231195955.
 
 * **Pelizza, Annalisa**: Conceptualization, Data curation, Funding acquisition, Formal Analysis, Investigation, Project administration, Supervision, Writing — original draft, Writing — review & editing.
 * **Van Rossem, Wouter**: Data curation, Formal Analysis, Software, Visualization, Writing — original draft (including sections related to comparative analysis using The Ontology Explorer), Writing — review & editing.
