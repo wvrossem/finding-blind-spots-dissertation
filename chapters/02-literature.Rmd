@@ -114,7 +114,8 @@ Despite its widespread, further research is required to explore the dynamics and
 
 Based on these gaps identified in the literature review, we can now formulate the following main research question:
 
-> How are practices and technologies for matching identity data in migration management and border control shaping and shaped by transnational commercialized security infrastructures?
+Main research question
+: How are practices and technologies for matching identity data in migration management and border control shaping and shaped by transnational commercialized security infrastructures?
 
 This question focuses on the specific contexts of migration management and border control, which concern transnational security infrastructures. The question also highlights the reciprocal relationship between identity data matching practices and technologies and the broader context of transnational security infrastructures. The resulting research question highlights the importance of understanding the interplay between identity data matching, population management, and transnational security infrastructures in migration management and border control. The research question also suggests looking into the implications of these reciprocal relationships for understanding the broader social, economic, and political implications of identity data matching.
 
@@ -122,9 +123,14 @@ This question focuses on the specific contexts of migration management and borde
 
 A range of sub-research questions that delve deeper into the relationship between identification systems and transnational security infrastructures can help to answer our main research question. To this end, the research is structured around three sub-questions that investigate the types of knowledge embedded within data models used by national and transnational security infrastructures (RQ1), the processes and technologies used to search for and match identity data across different organizations (RQ2), and the circulation of knowledge and technology related to matching identity data across organizations (RQ3). In addition, the following sub-questions will address several hypotheses and inquiries regarding the connection between data matching and the internationalization, commercialization, securitization, and infrastructuring of identification that were previously discussed. The three research questions are as follows:
 
-* RQ1: Which types of knowledge and assumptions about people-on-the-move are inscribed in data models of national and transnational security infrastructures? What implications does this have for how organizations can search and match identity data?
-* RQ2: How do organizations that collect information about people-on-the-move search and match for identity data in their systems? How is data about people-on-the-move matched and linked across different agencies and organizations?
-* RQ3: How does knowledge and technology for matching identity data circulate and travel across organizations?
+RQ1
+: Which types of knowledge and assumptions about people-on-the-move are inscribed in data models of national and transnational security infrastructures? What implications does this have for how organizations can search and match identity data?
+
+RQ2
+: How do organizations that collect information about people-on-the-move search and match for identity data in their systems? How is data about people-on-the-move matched and linked across different agencies and organizations?
+
+RQ3
+: How does knowledge and technology for matching identity data circulate and travel across organizations?
 
 The research questions posed in this dissertation aim to investigate how knowledge and data about people-on-the-move are matched and linked in transnational security infrastructures. The first research question (RQ1) seeks to uncover the types of knowledge embedded within data models used by different organizations and authorities — what @pelizzaScriptsAlterityMapping2023 have called “scripts of alterity”. Hence, this research question draws inspiration from the technical process of schema matching used in data matching, to focus on data model's design, and the assumptions about people-on-the-move that can be inferred from designs. Uncovering differences can be useful to bring to light division of work in an international setting, and throw light on how infrastructures shape identities. For instance, identifying records that refer to the same person could be challenging without knowledge of the underlying data models of the datasets being matched because the same person may be represented differently across datasets. By focusing on design, we can compare these assumptions to uncover differences in the division of work in an international setting and shed light on how infrastructures shape identities, thereby illuminating the internationalization of identification through the connections between the information about people-on-the-move gathered by various organizations.
 
