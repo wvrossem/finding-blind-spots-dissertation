@@ -153,9 +153,12 @@ After coding documents, categories and values, we conducted analyses comparing d
 1. Which category or value used in one system is also present in another system?
 2. Are some categories native or peculiar to a specific system?
 
+\setlength{\parindent}{0pt}
 By focusing on frequency, we aimed to address a third question:
 
 3. In which systems do specific categories and values occur most frequently?
+
+\setlength{\parindent}{1.5em}
 
 <!-- Introduction to graph and transformation of data -->
 
@@ -272,8 +275,15 @@ capTabAuthorities <- ifelse(usePlaceholderFigures, placeholderCaption, "Presence
 if (usePlaceholderFigures) {
   placeholder <- c("")
   df <- data.frame(placeholder)
-  flextable(df)
+  ft <- flextable(df)
+  ft
 } else {
+  ft <- width(ft, j = 1, width = 0.7)
+  ft <- width(ft, j = 2, width = 1)
+  ft <- width(ft, j = 3, width = 0.5)
+  ft <- align_text_col(ft, align = "left", header = TRUE, footer = TRUE)
+  ft <- align_nottext_col(ft, align = "left", header = TRUE, footer = TRUE)
+  ft <- theme_booktabs(ft)
   ft
 }
 ```

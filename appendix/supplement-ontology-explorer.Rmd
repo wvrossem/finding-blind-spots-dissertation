@@ -5,7 +5,7 @@
 <!-- \appendixpage* -->
 <!-- \setlength\beforechapskip{-\baselineskip} -->
 
-# Supplement to Chapter 4 — Definitions and notations
+# Supplement to Chapter 4
 
 ```{r include=FALSE}
 def_counter <- 0

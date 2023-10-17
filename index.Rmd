@@ -129,6 +129,9 @@ pt <- prop_table(
 
 panderOptions('table.alignment.default', "left")
 
+set_flextable_defaults(align = "left", part = "all")
+set_flextable_defaults(valign = "top", part = "all")
+
 doAnonymize = FALSE
 usePlaceholderFigures = FALSE
 

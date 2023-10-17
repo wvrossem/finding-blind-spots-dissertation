@@ -180,14 +180,14 @@ The collection of documents on the analysis of data models encompassed the follo
 Regulation (EU) No 603/2013 of the European Parliament and of the Council of 26 June 2013
 : The regulation governing the establishment of Eurodac includes Article 11, which addresses the "Recording of Data." This article outlines the specific data that must be recorded in the Central System.
 
-Regulation (EU) 2018/1862 of the European Parliament and of the Council of 28 November 2018
+Regulation (EU) 2018/1862 of the European Parliament and of the Council of 28 Nov. 2018
 : The regulation pertaining to the establishment, operation, and utilization of the Schengen Information System (SIS) includes Article 20, which addresses "Categories of Data." This article outlines the specific categories of data provided by each Member State and contained within the SIS.
 
 Regulation (EC) No 767/2008 of the European Parliament and of the Council of 9 July 2008
 : The regulation governing the Visa Information System (VIS) and data exchange among Member States concerning short-stay visas contains two pertinent articles. Article 5, titled "Categories of Data," delineates the specific categories of data that must be recorded in the VIS. Concurrently, Article 9, titled "Data upon Lodging the Application," elucidates the categories of personal data recorded from applicants when lodging their visa applications.
 
-XKA and RIS screenshots
-: TODO
+Greek register of foreigners screenshots
+: Screenshots of the ALKYONI system, used in the Hellenic Republic for managing asylum applications, were captured by fellow members of the Processing Citizenship project during their fieldwork. These screenshots offer a detailed view of the system's interface and functionalities, particularly in relation to the registration and identification of asylum seekers in Greece.
 
 XAusländer Version 1.14.0
 : The XAusländer standard is a protocol based on XML (eXtensible Markup Language) that facilitates the electronic exchange of identity data among various authorities within Germany's immigration administration. This standard is accessible through the website of the "Koordinierungsstelle für IT-Standards" (Coordination Office for IT Standards). Section "2.2 Das Informationsmodell" (2.2 The Information Model) within the standard elaborates on the specifics of the information model for individuals.
@@ -214,33 +214,23 @@ The accompanying table provides an overview of the documents that were consulted
 path = file.path(TABLES_PATH, "documents.csv")
 data = read.csv(path, header = TRUE)
 
-# pander::pander(data, split.cell = 20, split.table = Inf, caption = "Summary of main documents consulted.")
-
 kbl(data, booktabs = T, caption = "Summary of main documents consulted.") %>%
   kable_styling(latex_options = c("striped"), full_width = F, font_size = 11) %>%
   row_spec(0, bold = T) %>%
-  column_spec(1, width = "20%") %>%
-  column_spec(2, width = "10%") %>%
-  column_spec(3, width = "10%") %>%
-  column_spec(4, width = "50%")
+  column_spec(1, width = "9em") %>%
+  column_spec(2, width = "4em") %>%
+  column_spec(3, width = "3em") %>%
+  column_spec(4, width = "15em")
 
-# pander(dt)
-
-# kbl(data)
-
-# kbl(dt, booktabs = T) %>%
-  # kable_styling(latex_options = c("striped", "scale_down"))
-
-# block_table(data[,c("Document", "Author", "Year", "Description")], header = TRUE, properties = pt)
-# ft <- flextable(data)
-# ft <- add_header_row(ft,
-#   colwidths = c(4, 2),
-#   values = c("Document", "Author", "Year", "Description")
-# )
-# ft <- autofit(ft)
-# ft <- theme_vanilla(ft)
-# ft <- set_caption(ft, caption = "Documents")
-# ft
+ft <- flextable(data)
+ft <- width(ft, j = 1, width = 1.5)
+ft <- width(ft, j = 2, width = 0.5)
+ft <- width(ft, j = 3, width = 0.5)
+ft <- width(ft, j = 4, width = 2.5)
+ft <- theme_zebra(ft)
+ft <- fontsize(ft, size = 10, part = "all")
+ft <- set_caption(ft, caption = "Summary of main documents consulted.")
+ft
 ```
 
 ### Interviews {#interviews}
@@ -257,7 +247,14 @@ The interview approach was guided by the hypothesis that differences in data mat
 path = file.path(TABLES_PATH, "ind-departments.csv")
 data = read.csv(path, header = TRUE)
 
-pander::pander(data, split.cell = 20, split.table = Inf, caption = "Overview of IND departments.")
+ft <- flextable(data)
+ft <- width(ft, j = 1, width = 2.2)
+ft <- width(ft, j = 2, width = 0.7)
+ft <- width(ft, j = 3, width = 2.5)
+ft <- theme_vanilla(ft)
+ft <- fontsize(ft, size = 10, part = "all")
+ft <- set_caption(ft, caption = "Summary of IND units and interview participation.")
+ft
 ```
 
 The second group of interviews, conducted concurrently with and following the IND interviews, centred on delving into the sociotechnical evolution of the ELISE data matching software to unveil broader shifts within the realm of identification. These interviews primarily involved discussions with staff members from WCC with experience within the identity domain. The interviews were designed to uncover significant milestones in the history of their data matching software system. Given the diversity in participants' roles, projects, and experiences within the company, the interviews followed a more flexible format than those conducted with IND employees, allowing for tailored discussions based on each individual's background and expertise. For instance, when interviewing individuals involved in projects like the EU-VIS, the questions were honed to delve deeper into these areas. In cases where less information was available about the interviewee, the conversation typically began by exploring their connections with current and potential customers in the security and identity market, gradually steering the discussion towards sociotechnical changes. Seven interviews were conducted in this group, each spanning approximately an hour.[^wccsample] The participants comprised individuals in various roles, including consultancy, pre-sales, solutions management, software development, and user experience design.
@@ -274,7 +271,19 @@ The number of interviews conducted in this study was lower than initially expect
 path = file.path(TABLES_PATH, "interviews.csv")
 data = read.csv(path, header = TRUE)
 
-pander::pander(data, split.cell = 20, split.table = Inf, caption = "Summary of interviews.")
+selected_columns <- c("Date", "Org", "Channel", "Language", "Description")  # Replace with your desired column names
+subset_data <- data[, selected_columns]
+
+ft <- flextable(subset_data)
+ft <- width(ft, j = 1, width = 1)
+ft <- width(ft, j = 2, width = 0.5)
+ft <- width(ft, j = 3, width = 0.7)
+ft <- width(ft, j = 4, width = 0.7)
+ft <- width(ft, j = 5, width = 2.5)
+ft <- theme_vanilla(ft)
+ft <- valign(ft, valign = "top", part = "all")
+ft <- set_caption(ft, caption = "Summary of interviews.")
+ft
 ```
 
 ### Events {#events}
@@ -291,14 +300,24 @@ data = read.csv(path, header = TRUE)
 
 colnames(data) <- c("Date and location", "Event name", "Event description")
 
-# pander::pander(data, split.cell = 80, split.table = Inf, caption = "Summary of attended events.", style="multiline")
-
 kbl(data, booktabs = T, caption = "Summary of attended events.") %>%
   kable_styling(latex_options = "striped", full_width = F, font_size = 10) %>%
   row_spec(0, bold = T) %>%
   column_spec(1, width = "7em") %>%
   column_spec(2, width = "10em") %>%
   column_spec(3, width = "20em")
+
+
+ft <- flextable(data)
+ft <- width(ft, j = 1, width = 1)
+ft <- width(ft, j = 2, width = 1.5)
+ft <- width(ft, j = 3, width = 3)
+ft <- theme_vanilla(ft)
+ft <- valign(ft, valign = "top", part = "all")
+ft <- set_caption(ft, caption = "Summary of attended events.")
+ft <- fontsize(ft, size = 9, part = "all")
+ft <- line_spacing(ft, space = 2, part = "all")
+ft
 ```
 
 ### Other data {#other-data}
@@ -317,7 +336,7 @@ The data analysis for the first inversion strategy involved the development of a
 
 The data analysis for the second inversion strategy, focusing on data matching practices, involved utilizing the computer-assisted qualitative data analysis software ATLAS.ti for coding and analyzing the data. This data coding and analysis process was guided by the "Noticing-Collecting-Thinking" (NCT) method by @frieseQualitativeDataAnalysis2014, tailored to the ATLAS.ti software and comprises three interconnected steps. In the "Noticing" step, segments within the documents were labelled with codes. This phase encompassed both deductive codes stemming from research hypotheses regarding crucial aspects of applicant identification through the search and match tools and openness to inductive insights from the data. The deductive codes were primarily built around the three factors of search: query formulation, match computation, and manipulation of search results. Concurrently, new codes emerged based on the data's inductive findings, such as the processes of dealing with duplicate records. In the "Collecting" step, these codes were reviewed and grouped into similar categories. Subsequently, in the "Thinking" step, patterns, processes, and typologies were identified among the developed codes. Throughout the process, there was an iterative movement between the noticing, collecting, and thinking steps, enhancing the depth and richness of the analysis. Figure \@ref(fig:data-analysis) visually represents this recursive data collection process and the application of the NCT steps. Chapter 5 offers practical examples of applying this methodology, including illustrative examples that led to developing the interpretative framework for data matching practices.
 
-```{r data-analysis, echo=FALSE, fig.cap="Data analysis.", out.width="80%", fig.asp=.75, fig.align="center"}
+```{r data-analysis, echo=FALSE, fig.cap="Schematic representation of the data analysis process for the second inversion strategy.", out.width="80%", fig.asp=.75, fig.align="center"}
 knitr::include_graphics("figures/data-analysis.pdf")
 ```
 

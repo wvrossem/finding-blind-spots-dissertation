@@ -1,7 +1,7 @@
-Id, Org, Unit, Incl, Description
-2, IND, "Documentaire Informatievoorziening (DIV)", Yes, "Management, archiving, registration and making available of documents within the organisation."
-3, IND, "Directie Regie Vreemdelingenketen (DRV)", Yes, "This unit is responsible for the registration and startup of procedures. These applications can arrive via paper mail or though digital platform."
-4, IND, "Titels en Identiteit (T&I)", Yes, "T&I handles among others the sharing of information about the right of residence of aliens to partners in the migrationchain, correcting titles, checking automatic messaging between the partners, processing deduplication of clients in the IND databases."
-5, IND, "Keteninformatie & Controle (K&C)", No, "Collects information from various government sources for the various IND processes."
-6, IND, "Handhavingsinformatieknooppunt (HIK)", No, "Collects and registers signals of fraud, abuse and human trafficking and smuggling."
-7, IND, "Beslisteam", No, "Decides on the residence application of the foreign national. They will consult information in the INDiGO system to make an assessment individual circumstances and draw up a binding opinion for the decision."
+Unit, Included, Description
+"Documentaire Informatievoorziening (DIV)", Yes, "Management, archiving, registration and making available of documents within the organisation."
+"Directie Regie Vreemdelingenketen (DRV)", Yes, "This unit is responsible for the registration and startup of procedures. These applications can arrive via paper mail or though digital platform."
+"Titels en Identiteit (T&I)", Yes, "T&I handles among others the sharing of information about the right of residence of aliens to partners in the migrationchain, correcting titles, checking automatic messaging between the partners, processing deduplication of clients in the IND databases."
+"Keteninformatie & Controle (K&C)", No, "Collects information from various government sources for the various IND processes."
+"Handhavingsinformatieknooppunt (HIK)", No, "Collects and registers signals of fraud, abuse and human trafficking and smuggling."
+"Beslisteam", No, "Decides on the residence application of the foreign national. They will consult information in the INDiGO system to make an assessment individual circumstances and draw up a binding opinion for the decision."

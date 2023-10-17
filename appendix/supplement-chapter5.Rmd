@@ -1,4 +1,4 @@
-# Supplement to chapter 5
+# Supplement to Chapter 5
 
 ## Interview protocol {#appendix-protocol}
 

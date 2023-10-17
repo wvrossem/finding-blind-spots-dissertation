@@ -1,17 +1,14 @@
-\backmatter
+`r if (knitr:::is_html_output()) '
+# References {-}
+'`
 
-# Bibliography {-}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Bibliography}
+\chaptermark{Bibliography}
 
-```{=latex}
-\markboth{\MakeUppercase{Bibliography}}{} % have to explicitly state what to put in the heading (bug in bookdown?)
-%format the references so they have a hanging indent. Remove these (and the \endgroup command) if you want regular indentation.
-\begingroup
-\hspace{\parindent}
-\setlength{\parindent}{-0.25in}
+\renewcommand{\bibfont}{\small}
+\singlespacing
+\setlength{\bibsep}{4pt}
+\setlength{\bibhang}{2em}
 \setlength{\leftskip}{0.25in}
-\setlength{\parskip}{0pt}
-```
-
-<div id="refs"></div>
-
-\endgroup
