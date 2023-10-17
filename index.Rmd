@@ -98,7 +98,10 @@ header-includes:
   - \usepackage[normalem]{ulem}
   - \usepackage{makecell}
   - \usepackage{xcolor}
-
+  - \usepackage{xurl}
+  - \usepackage{doi}
+  - \usepackage{ragged2e}
+  - \usepackage{setspace}
 subparagraph: yes
 always_allow_html: true
 ---
