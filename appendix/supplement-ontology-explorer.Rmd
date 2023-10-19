@@ -43,3 +43,29 @@ The presence of all categories in a document group node $n_x$ is a set of all ca
 ## Definitions `r inc(def_counter)` — Intersection and difference
 
 The absence of categories between a $docGroup_1$ and $docGroup_2$ is the set of categories present in the second document group minus the set of categories present in the first. In our notation: $Absence(docGroup_1, docGroup_2) = \left\{ Categories(docGroup_2) \setminus Categories(docGroup_1)\right\}$. The categories that are common between those same two document groups are determined using the intersection of the sets of categories that are present in either: $CommonCodes(docGroup_1, docGroup_2)=docGroup_1 \cap docGroup_2$. This operation is not limited to two sets. The intersection between more sets can be notated as $\bigcap_{i=1}^n Presence(docGroup_i)$.
+
+## Table presence of code groups for authorities
+
+```{r code = readLines("./analysis/presence_matrix_authorities.R"), echo = FALSE}
+```
+
+```{r echo=FALSE}
+capTabAuthorities <- ifelse(usePlaceholderFigures, placeholderCaption, "Presence of code groups for EU (Eurodac, SIS, VIS), Greek (HRF), German (GRF), and their relative degree and betweenness centrality.")
+```
+
+```{r authorities, ft.align="center", tab.cap=capTabAuthorities, echo = FALSE}
+if (usePlaceholderFigures) {
+  placeholder <- c("")
+  df <- data.frame(placeholder)
+  ft <- flextable(df)
+  ft
+} else {
+  ft <- width(ft, j = 1, width = 0.7)
+  ft <- width(ft, j = 2, width = 1)
+  ft <- width(ft, j = 3, width = 0.5)
+  ft <- align_text_col(ft, align = "left", header = TRUE, footer = TRUE)
+  ft <- align_nottext_col(ft, align = "left", header = TRUE, footer = TRUE)
+  ft <- theme_booktabs(ft)
+  ft
+}
+```

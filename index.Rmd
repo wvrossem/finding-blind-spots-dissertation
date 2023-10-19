@@ -1,6 +1,6 @@
 --- 
 ### Title page
-title: "Finding blind spots: Investigating identity data matching in transnational security infrastructures and beyond" # The main title of your thesis (not including possible subtitles)
+title: "Finding blind spots: Investigating identity data matching in transnational commercialized security infrastructures and beyond" # The main title of your thesis (not including possible subtitles)
 # subtitle: |
   # | Investigating identity data matching  
   # | in transnational security infrastructures and beyond
@@ -122,6 +122,9 @@ library(dplyr)
 # Set global variables
 DATA_PATH = file.path(getwd(), "data")
 TABLES_PATH = file.path(getwd(), "tables")
+
+# Determine the output format
+OUTPUT_FORMAT = knitr::opts_knit$get("rmarkdown.pandoc.to")
 
 # Default properties for officer tables
 pt <- prop_table(
