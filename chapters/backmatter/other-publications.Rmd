@@ -38,3 +38,4 @@ Pelizza A and Van Rossem W (2023) Scripts of alterity: Mapping assumptions and l
 
 \normalsize
 \setlength{\parindent}{1.5em}
+\thispagestyle{plain}
