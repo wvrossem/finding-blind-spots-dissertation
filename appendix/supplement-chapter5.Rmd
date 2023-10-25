@@ -45,11 +45,27 @@
 
 ## Search strategies {#appendix-protocol}
 
-```{r tab.cap="Examples of search strategies", tab.id = "strategies", tab.cap.style = "Table Caption", echo=FALSE, ft.align="center"}
+Table \@ref(tab:strategies) presents the search strategies derived from the analysis of interview data. These strategies are grounded in the descriptions provided by individuals within the IND, outlining their methods for potential applicant re-identification.
+
+```{r strategies, tab.cap="Examples of search strategies", tab.cap.style = "Table Caption", echo=FALSE, ft.align="center"}
 path = file.path(DATA_PATH, "search_strategies.csv")
 data = read.csv(path, header = TRUE)
 
 data$Code = substring(data$Name, first=34)
 
-block_table(data[,c("Code", "Comment")], header = TRUE, properties = pt)
+# block_table(data[,c("Code", "Comment")], header = TRUE, properties = pt)
+
+data = data[,c("Code", "Comment")]
+
+if (OUTPUT_FORMAT == "docx") {
+  ft <- flextable(data)
+  ft <- set_caption(ft, caption = "")
+  ft
+} else if (OUTPUT_FORMAT == "latex") {
+  kbl(data, booktabs = T, caption = "") %>%
+    kable_styling(latex_options = c("striped"), full_width = F) %>%
+    row_spec(0, bold = T) %>%
+    column_spec(1, width = "10em") %>%
+    column_spec(2, width = "25em")
+}
 ```
