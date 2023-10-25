@@ -9,3 +9,5 @@
 /.vscode/
 finding-blind-spots.Rmd
 .directory
+*.drawio.bkp
+finding-blind-spots.tex
