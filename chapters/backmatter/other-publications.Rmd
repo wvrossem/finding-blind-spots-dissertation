@@ -12,7 +12,7 @@ The contributions below were specified according to the ‘CRediT system’ (Con
 
 ---
 
-Pelizza A and **Van Rossem W** (2021) Sensing European alterity: An analogy between sensors and hotspots in transnational security networks. In: Klimburg-Witjes N, Pöchhacker N and Bowker GC (eds.) _Sensing in/Security: Sensors as Transnational Security Infrastructures_.
+Pelizza A and Van Rossem W (2021) Sensing European alterity: An analogy between sensors and hotspots in transnational security networks. In: Klimburg-Witjes N, Pöchhacker N and Bowker GC (eds.) _Sensing in/Security: Sensors as Transnational Security Infrastructures_.
 Manchester, UK: Mattering Press. ISBN 978-1-912729-10-4, pp. 262–286.
 
 * **Pelizza, Annalisa**: Conceptualization, Data curation, Funding acquisition, Formal Analysis, Investigation, Project administration, Supervision, Writing — original draft, Writing — review & editing.
@@ -20,7 +20,7 @@ Manchester, UK: Mattering Press. ISBN 978-1-912729-10-4, pp. 262–286.
 
 ---
 
-**Van Rossem, Wouter**. 2021. "Ontology-Explorer". Zenodo. <https://doi.org/10.5281/zenodo.4899316>.
+Van Rossem, Wouter. 2021. "Ontology-Explorer". Zenodo. <https://doi.org/10.5281/zenodo.4899316>.
 
 ---
 
