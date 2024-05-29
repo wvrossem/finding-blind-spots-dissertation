@@ -315,10 +315,10 @@ $endif$
 \huge\textbf{\textsc{$if(title)$$title$$else$[… Title Doctoral Thesis…]$endif$}}\par
 $if(subtitle)$
 % \vspace{\baselineskip}
-\large\textsc{$subtitle$}\par
+\Large\textsc{$subtitle$}\par
 $endif$
 \vfill % this space will be whatever is left on the page
-\Large \textsc{dissertation}\par
+\large \textsc{dissertation}\par
 \vspace{\baselineskip}
 \linespread{1.3}{\normalsize to obtain\\
 the degree of doctor at the University of Twente,\\
@@ -331,7 +331,7 @@ on $if(date)$$date$$else$Monday the 15\textsuperscript{th} of July 2024$endif$ a
 {\normalsize by}\par
 % \vspace{\baselinesekip}
 {\normalsize\textbf{$if(author)$$author$$else$[…given names in full…] [… surname…]$endif$}}\par
-\vspace{\baselineskip}
+% \vspace{\baselineskip}
 % {\large born on $if(birthplace)$$birthplace$$else$[…place of birth…]$endif$}
 \normalsize born on the 7\textsuperscript{th} of August, 1989\\
 in Brussels, Belgium
@@ -363,7 +363,7 @@ $endif$
 \setlength{\parskip}{\baselineskip} % add space between paragraphs
 \setlength\parindent{0pt} % no indents
 $if(funder)$
-The investigations in this thesis were supported by $if(grant)$a $grant$ from $endif$
+The investigations in this dissertation were supported by $if(grant)$a $grant$ from $endif$
 $if(funder)$$funder$.$endif$
 $endif$
 
@@ -379,9 +379,7 @@ $if(printing)$Printed by: $printing$$endif$$if(layout)$\\ Lay-out: $printing$$en
 % An online version of this thesis is available at $thesis_url$$if(license)$, licensed under a $license$.$endif$
 % $endif$
 
-© 2024 $if(author)$$author$$else$[…given names in full…] [… surname…]$endif$, The Netherlands. All rights reserved. No parts of this thesis may be reproduced, stored in a retrieval system or transmitted in any form or by any means without permission of the author.
-Alle rechten voorbehouden. Niets uit deze uitgave mag worden vermenigvuldigd, in enige vorm of op enige
-wijze, zonder voorafgaande schriftelijke toestemming van de auteur.
+© 2024 $if(author)$$author$$else$[…given names in full…] [… surname…]$endif$, Enschede, The Netherlands and Bologna, Italy. This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}. No parts of this dissertation may be reproduced, stored in a retrieval system or transmitted in any form or by any means for commercial purposes without permission of the author. If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 \endgroup
 
 %%%%%%%%%%%%%%%%%%
@@ -392,17 +390,18 @@ wijze, zonder voorafgaande schriftelijke toestemming van de auteur.
 
 \textbf{Graduation Committee}\\
 
-\begin{tabular}{@{}ll}
+% \begin{tabular}{@{}ll}
+\begin{tabular}{p{0.3\linewidth}p{0.7\linewidth}}
 Chair / Secretary: & prof. dr. T. Bondarouk \\
 & \\
 Promotor: & prof. dr. S. Kuhlmann \\
-          & \textit{Universiteit Twente, BMS, Knowledge, Transformation \& Society} \\
+          & \textit{University of Twente, BMS, Knowledge, Transformation \& Society} \\
 & \\
 Co-promotors: & prof. dr. A. Pelizza \\
-              & \textit{Università di Bologna} \\
+              & \textit{University of Bologna, Department of Philosophy, and Aarhus University, Department of Digital Design and Information Studies} \\
 & \\
               & prof. dr. ir. M. van Keulen \\
-              & \textit{Universiteit Twente, EEMCS, Datamanagement \& Biometrics} \\
+              & \textit{University of Twente, EEMCS, Datamanagement \& Biometrics} \\
 & \\
 Committee Members: $for(members)$
 & $if(members.title)$ $members.title$$else$ […full title…]$endif$$if(members.initials)$ $members.initials$$else$ […initials…]$endif$$if(members.surname)$ $members.surname$$else$ […surname…]$endif$ \\
