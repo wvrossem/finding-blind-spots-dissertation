@@ -25,12 +25,41 @@
 \setsansfont[Ligatures=TeX]{Alegreya Sans}
 
 % font declaration and title settings
-% \newfontfamily\headingfont[]{Alegreya}
+% \newfontfamily\headingfont[]{Alegreya Sans SC}
 % \titleformat{\chapter}[display]
-%   {\huge\headingfont}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
-% \titleformat*{\section}{\LARGE\headingfont}
-% \titleformat*{\subsection}{\Large\headingfont}
+%   {\huge\headingfont}{\chaptertitlename\ \thechapter}{20pt}{\Large}
+% \titleformat*{\section}{\large\headingfont}
+% \titleformat*{\subsection}{\normalsize\headingfont}
 % \renewcommand{\maketitlehooka}{\headingfont}
 
 \usepackage{setspace}
 \onehalfspacing
+
+% Define page style
+\usepackage{fancyhdr}
+\fancypagestyle{myheader}{%
+    \fancyhf{} % Clear header and footer
+    \renewcommand{\headrulewidth}{0.2pt} % Header rule
+    \renewcommand{\footrulewidth}{0pt} % Footer rule
+    \fancyhead[RO, LE]{\thepage}
+    % % \fancyhead[RO]{\nouppercase{\leftmark}\hspace{5mm}\thepage} % Chapter title on the left of even pages (in bold)
+    % % \fancyhead[LE]{\hspace{5mm}\textit{\rightmark}}
+
+    % \fancyhead[LE]{\textbf{\thepage\hspace{5mm}\rightmark}} % Page number and section title on left even pages
+    % \fancyhead[RO]{\textbf{\leftmark\hspace{5mm}\textbf{\thepage}}} % Chapter title and page number on right odd pages
+
+    % % \fancyhead[LO]{\nouppercase{\bfseries\rightmark}} % Section title on the left of odd pages (in bold)
+
+    \fancyhead[LE,RO]{\textbf{\thepage}} % Page number on the left of even pages and right of odd pages
+    \fancyhead[RE]{\textbf{\nouppercase{\leftmark}}} % Chapter title on the right of even pages (in bold)
+    \fancyhead[LO]{\textbf{\nouppercase{\rightmark}}} % Section title on the left of odd pages (in bold)
+}
+
+% Redefine \chaptermark to only include chapter number
+% \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter}{}}
+
+% Redefine \sectionmark to make section titles italic in the header
+% \renewcommand{\sectionmark}[1]{\markright{\textit{#1}}}
+
+% Apply page style to the document
+\pagestyle{myheader}

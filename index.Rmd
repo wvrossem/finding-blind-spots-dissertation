@@ -1,6 +1,7 @@
 --- 
 ### Title page
-title: "Finding blind spots: Investigating identity data matching in transnational commercialized security infrastructures and beyond" # The main title of your thesis (not including possible subtitles)
+title: "Finding blind spots"
+subtitle: "Investigating identity data matching in transnational commercialized security infrastructures and beyond" # The main title of your thesis (not including possible subtitles)
 # subtitle: |
   # | Investigating identity data matching  
   # | in transnational security infrastructures and beyond
@@ -8,7 +9,7 @@ title: "Finding blind spots: Investigating identity data matching in transnation
 author: "Wouter Rudi Van Rossem" # Your full name (including middle names if applicable)
 date: "" # Your defense date in Dutch: "[weekday] [day in numerics] [name of month] [year]"
 aula: # set to true if your defense is in the Aula; set to false/omit if it is in the Agnietenkapel
-time: "" # time of your defense (a 24h time, e.g. "14.00")
+time: "12.45" # time of your defense (a 24h time, e.g. "14.00")
 birthplace: "Brussel" # your place of birth, in Dutch
 country_of_birth: "België" # if your birthplace is not in the Netherlands, fill in the country as well (in Dutch). Omit otherwise!
 
@@ -20,13 +21,15 @@ funder: "the European Research Council (ERC) under the European Union's Horizon 
 
 # This paragraph begins with "This thesis was typeset using (R) Markdown, \LaTeX\ and the \verb+bookdown+ R-package"
 # and is optionally followed by:
-ISBN: "" # optional, otherwise this bit is omitted
-printing: "" # optional, otherwise this bit is omitted
-cover: "" # optional, otherwise this bit is omitted
+ISBN1: "isbn1" # optional, otherwise this bit is omitted
+ISBN2: "isbn2" # optional, otherwise this bit is omitted
+printing: "Ipskamp printing" # optional, otherwise this bit is omitted
+cover: "Wouter Rudi Van Rossem" # optional, otherwise this bit is omitted
+DOI: "doi"
 
 # Can be skipped entirely, but if you define THESIS_URL, this will read: 
 # "An online version of this thesis is available at THESIS_URL [,licensed under a LICENSE.]
-thesis_url: ""
+thesis_url: "url"
 license: "to-be-determined license" # optional, otherwise this bit is omitted
 
 ### Committee
@@ -37,7 +40,7 @@ promotores:
 - title: prof. dr. # either "prof.dr" for full professors, or "dr." for others
   initials: S.
   surname: Kuhlmann
-  affiliation: University of Twente
+  affiliation: Universiteit Twente, BMS, Knowledge, Transformation & Society
 # - title: prof. dr.
 #   initials: H.
 #   surname: Jones
@@ -49,38 +52,51 @@ copromotores:
 - title: prof. dr. 
   initials: A.
   surname: Pelizza
-  affiliation: University of Bologna 
-- title: dr. ir.
+  affiliation: Università di Bologna 
+- title: prof. dr. ir.
   initials: M.
   surname: van Keulen
-  affiliation: University of Twente 
+  affiliation: Universiteit Twente, EEMCS, Datamanagement & Biometrics
 one_copromotor: false # if true the heading will be "Copromotor" (singular), instead of "Copromotores" (assuming there is a copromotor)
 # Fill in each of your committee members below, corresponding to the form you submitted to the graduate school.
 # Copy-paste the 4 subfields (starting with " - title:") as many times as you have committee members.
 members:
 # for example: 
-- title: 
-  initials:
-  surname: 
-  affiliation: 
+- title: dr.
+  initials: K.E.
+  surname: Konrad
+  affiliation: Universiteit Twente, BMS, Knowledge, Transformation \& Society
+- title: prof. dr.
+  initials: M.
+  surname: de Goede
+  affiliation: Universiteit van Amsterdam, Faculty of Humanities
+- title: prof. dr.
+  initials: A.
+  surname: Rotolo
+  affiliation: Università di Bologna, Department of Legal Studies
+- title: prof. dr.
+  initials: R.
+  surname: Williams
+  affiliation: University of Edinburgh, ISSTI
 # Finally, the (Dutch) name of your faculty, e.g. "Faculteit der Maatschappij- en Gedragswetenschappen"
 faculty: Faculty of Behavioural, Management & Social Sciences
 
 ### Book settings
 documentclass: book # default LaTeX book class
-book_size: false # "true" if you want to render a pdf for printing as a book; "false" if you want to print loose pages
+book_size: true # "true" if you want to render a pdf for printing as a book; "false" if you want to print loose pages
            # if book_size is set to false, forces A4 paper size, and the "oneside" classoption
            # if book_size is set to true, forces standard "thesis B5 size" (170mm wide by 240mm high), and the "twoside" classoption
 # geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm" # use this if you want to change the margins
             # 2.5cm equal margins are often recommended by printers (so when book_size: true)
-fontsize: 12pt # 12pt is recommened when book_size is false; 10 or 11pt is recommended when book_size is true
-lang: en-GB # default language for the thesis. Change to en-GB or en-US if you want a specific flavor of English (or to nl for Dutch)
+fontsize: 10pt # 12pt is recommened when book_size is false; 10 or 11pt is recommended when book_size is true
+lang: en-US # default language for the thesis. Change to en-GB or en-US if you want a specific flavor of English (or to nl for Dutch)
 site: bookdown::bookdown_site # to get a "Build" button in RStudio to render the book
 
 indent: true # indent new paragraphs, instead of leaving whitespace
 links-as-notes: false # in the pdf, print hyperlink URLS as footnotes (as they can't be clicked on)
 bibliography: /home/woutervr/Surfdrive/ZoteroBibtex.bib # bib-file containing bibliographic information on all works you want to cite
 biblio-style: "style/sage/sageh"
+biblio-title: "List of references"
 link-citations: true # make clickable hyperlinks from in-text citations to bibliography at the end
 
 header-includes:
@@ -102,6 +118,8 @@ header-includes:
   - \usepackage{doi}
   - \usepackage{ragged2e}
   - \usepackage{setspace}
+  - \usepackage{fancyhdr}
+  - \usepackage{tabularx}
 subparagraph: yes
 always_allow_html: true
 ---

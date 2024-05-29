@@ -2,7 +2,7 @@
 
 \addcontentsline{toc}{part}{Summary in Dutch}
 
-::: {lang=nl}
+<!-- ::: {lang=nl} -->
 
 _Het vinden van blinde vlekken: Onderzoek naar identiteitsdatamatching in transnationale gecommercialiseerde veiligheidsinfrastructuur en verder_
 
