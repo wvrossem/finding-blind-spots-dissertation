@@ -1,6 +1,6 @@
 # The Ontology Explorer: A method to make visible data infrastructures for population management {#ch-data-model-matching}
 
-\chaptermark{}
+\chaptermark{The Ontology Explorer}
 
 \noindent
 \small
@@ -110,6 +110,8 @@ Scripts and their material properties thus shape how informational representatio
 Drawing on a sociotechnical background similar to the one in which script analysis originally emerged, more recent developments have moved away from the technicalities of information infrastructures and prompted issue analysis as a field in need of innovative methodological solutions [@rogersIssueMappingAgeing2015]. Issue analysis mainly relies on social media and web scraping techniques to analyze emerging topics, sentiments, and imaginaries on the web. However, data interventions also need to examine structures of data, such as the data models underlying the informational representations of various systems.
 
 While it is not the aim of this chapter to foreground the epistemic and methodological challenges brought about by the digitization of social life [for a thorough analysis see @marresDigitalSociologyReinvention2017], it is noteworthy that the most common techniques adopted in the growing area of digital sociology combine scraping techniques of homogeneous web data, co-occurrence analysis of their lexicon, and some form of result comparison, usually through visualizations. Yet a number of research goals – like in the analyses of information systems for population management – require methods that go back to the technicalities of information infrastructures rather than focusing on (user-)generated contents. Details of diverse information systems’ data models may need to be systematically compared by harmonizing non-homogeneous data formats to support discursive analysis. For instance, differences and absences in data models may suggest differences in the expectations and imaginaries of diverse authorities towards social actors, and forms of resistance to those expectations. This is what the OE is meant to achieve and makes it distinctive within the field of digital sociology and its current developments.
+
+\sectionmark{Design principles of the OE as a methodology}
 
 ## Design principles of the OE as a methodology: Script, comparison and resistance {#principles}
 
@@ -226,6 +228,8 @@ if (usePlaceholderFigures) {
 In the next section, we illustrate the actual functioning of the method by analyzing some data models of information systems for border management.
 
 ## Illustrating potential uses: Information systems for population management at the European border {#potential-uses}
+
+\sectionmark{Illustrating potential uses}
 
 To illustrate and thus validate the use of the OE, this section provides a comparative analysis of data models utilized in national and international information systems for population management, which jointly work to support registration and identification practices at border zones in Europe.
 

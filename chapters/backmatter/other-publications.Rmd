@@ -1,7 +1,7 @@
 # List of other publications {.unnumbered .unlisted}
 
 \addcontentsline{toc}{part}{List of other publications}
-\chaptermark{List of other publications}
+\chaptermark{Other publications}
 \setlength{\parindent}{0pt}
 \singlespacing
 \small

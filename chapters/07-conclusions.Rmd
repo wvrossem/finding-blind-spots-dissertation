@@ -1,6 +1,6 @@
 # Conclusions {#ch-conclusions}
 
-\chaptermark{}
+\chaptermark{Conclusions}
 
 This concluding chapter summarizes and synthesizes the dissertation’s research on matching identity data in transnational commercialized security infrastructures. Throughout the dissertation, we explored the practices and technologies of matching identity data, aiming to understand the types of knowledge and assumptions inscribed in data models, the technologies organizations used to match identity data, and the circulation of data matching knowledge and technologies across organizations. This last chapter begins by reviewing the previous empirical chapters’ research questions and key findings. Next, the importance of these findings will be interpreted, and their theoretical and practical implications will be discussed. Lastly, the chapter will reflect on the research process and outline potential directions for future research.
 

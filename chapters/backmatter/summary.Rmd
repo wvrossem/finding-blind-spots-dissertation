@@ -1,7 +1,6 @@
-# Summary {-}
+# Summary {.unnumbered .unlisted}
 
 \addcontentsline{toc}{part}{Summary}
-\chaptermark{Summary}
 
 \thispagestyle{plain}
 

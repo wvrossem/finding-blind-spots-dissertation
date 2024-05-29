@@ -1,6 +1,6 @@
 # From registration to re-identification: Exploring the interplay of data matching software in routine identification practices {#ch-dm-within-org}
 
-\chaptermark{}
+\chaptermark{From registration to re-identification}
 
 __Abstract__
 
@@ -68,6 +68,8 @@ The next section of this chapter will commence with a review of the background a
 
 ## Conceptualizing re-identification: Bureaucratic contexts and the dynamics of identity data
 
+\sectionmark{Conceptualizing re-identification}
+
 Many interactions between migrants and public authorities involve forms of identification to establish or verify applicants’ identity in different steps of bureaucratic processes relating to granting asylum, issuing residency permits, naturalization, and so forth. As the literature on street-level bureaucracy has shown, public-service workers in charge do not just carry out relevant policies; they are also actively involved in interpretative work through the discretion workers use [e.g., @lipskyStreetlevelBureaucracyDilemmas2010; @collinsSpaceRulesBureaucratic2016]. What does it mean to regard re-identification practices as part of routine bureaucratic procedures?
 
 ### Re-identification as a bureaucratic practice
@@ -117,6 +119,8 @@ This section has reviewed literature that has been instrumental in conceptualizi
 Additionally, delving into the technical mechanisms of data matching not only uncovers operational intricacies but can also serve as a means to gain insights into the diversity of re-identification processes. Integrating data matching tools within bureaucratic systems with the aim of reducing data friction can inadvertently shift the associated costs. As such, the literature discussed here supports the idea that the re-identification of individuals throughout bureaucratic processes and data infrastructures is a crucial but understudied area of research. An iterative approach to identification underscores that re-identification is not a one-off event but an ongoing, multifaceted process spanning diverse bureaucratic tiers. It encompasses street-level interactions, screen-level engagements, and system-level operations, unfolding across both spatial and temporal dimensions. This approach enables us to hypothesize that data friction is an inherent element within these iterative identification processes, potentially leading to less-than-optimal re-identification outcomes that entail organizational costs. The next section will describe the empirical case and the methods used to investigate re-identification.
 
 ## Case and method: Empirical analysis of the interplay between data matching systems and applicant re-identification {#empirical-case}
+
+\sectionmark{Case and method}
 
 The investigation into re-identification within migration management draws upon data collected through fieldwork conducted in person and remotely between July 2020 and July 2021. While a comprehensive methodological framework is outlined in Chapter 3, this section offers additional specific details tailored to the context of this chapter. Throughout this fieldwork, I established a collaborative partnership with the Dutch company WCC Group, specializing in developing data matching and deduplication software. In the context of this chapter, the focus will be on the software’s use by the Netherlands’ Immigration and Naturalization Service (IND). The IND, entrusted with responsibilities such as processing residency and nationality applications, utilizes the ELISE software for searching and matching applicants’ identity data within the back-office system and also assists in managing data anomalies, such as duplicate records.
 
@@ -212,6 +216,8 @@ Secondly, the IND’s strategies for re-identification are intertwined with the 
 
 ## Putting the design into practice: Investigating the practical application and challenges in the IND’s identification processes
 
+\sectionmark{Practical application and challenges in the identification processes}
+
 ### Friction 1: Navigating diverse re-identification approaches
 
 This section explores scenarios that emerged during the interviews, which are representative of challenges of re-identification within the IND and the migration chain. Firstly, we look at how verifying an individual’s existing record within the migration chain works in practice by focusing on how IND personnel consult and link data from the Basisvoorziening Vreemdelingen (BVV) system. Next, a real-world example will be presented, highlighting a particular challenge in re-identification regarding the automated information processes for residency updates between municipalities in the Netherlands and the IND. Together, these scenarios illuminate a first form of data friction that can emerge between standardized identification practices and the idiosyncrasies of institutional procedures and data matching technologies. This finding underscores the complexities involved in re-identifying applicants across different administrative entities.
@@ -306,6 +312,8 @@ These findings on the practical challenges of calculating matches and the subseq
 
 ## The costs of failed re-identification: Duplicates and the labor of deduplication
 
+\sectionmark{The costs of failed re-identification}
+
 As established in the preceding sections, the interplay between the design of standardized identification practices and the utilization of data matching technologies can introduce forms of data friction in the re-identification process. This section will explore their broader consequences, focusing on a twofold outcome of unsuccessful re-identification: the presence of duplicate records for applicants and the ensuing labor-intensive deduplication process.
 
 ### The deduplication memo and resolving identity duplicates
@@ -365,6 +373,8 @@ What stood out in these discussions was the dual consideration of custom-made so
 Delving into these automated mechanisms not only uncovers the complexities of identifying and managing duplicates but also underscores their entanglement with street-level, screen-level, and system-level bureaucracies. Duplicates often emerge due to failed re-identification, which can occur at any of these three levels. Moreover, the resolution of these duplicates can occur at any of these three levels. Offline deduplication, characterized by periodic reviews of potential duplicate records, aligns more with system-level operations. In contrast, online deduplication operates in real-time, affecting street and screen-level bureaucrats immediately during their daily workflow. Furthermore, the choice between a standardized and customized deduplication approach underscores how identity and duplicate record definitions relate to organizational contexts. Chapter 6 will delve deeper into the intricacies of constructing data matching systems to work across organizations. However, before we proceed, the upcoming section will introduce an analytical tool designed to interpret the diversity of re-identification practices discussed thus far.
 
 ## An interpretative framework for re-identification scenarios based on search input and results
+
+\sectionmark{Interpretative framework for re-identification scenarios}
 
 This section sets out to synthesize the chapter’s findings to address the research question that has guided this chapter’s investigation: “How do organizations that collect information about people-on-the-move search and match for identity data in their systems? How is data about people-on-the-move matched and linked across different agencies and organizations?” As we navigated the multiple facets of re-identification at the IND and the migration chain, these questions can now be answered by synthesizing the findings into a typology of re-identification scenarios. As such, this analysis serves a dual purpose: it unveils the operational intricacies of data matching in migration management’s bureaucratic procedures while delving into the challenges, friction, and complexities that weave through these procedures.
 

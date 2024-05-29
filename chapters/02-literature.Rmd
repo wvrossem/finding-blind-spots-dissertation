@@ -1,6 +1,6 @@
 # Mapping the theoretical landscape: Unraveling the complexity of matching identity data in transnational security infrastructures {#ch-literature}
 
-\chaptermark{}
+\chaptermark{Mapping the theoretical landscape}
 
 This chapter presents a mapping of theoretical concepts based on literature from four broadly defined areas of research, which will be referred to as (1) “the internationalization of identification”, (2) “the commercialization of identification”, (3) “the securitization of identification”, and (4) “the infrastructuring of identification”. By exploring how identification operates in international, commercial, securitized, and infrastructural contexts, we can develop an understanding of the challenges, implications, and potential consequences associated with data matching practices and technologies. This mapping exercise thus lays the groundwork for generating hypotheses and formulating research questions that relate to the role of matching identity data in transnational commercialized security infrastructures.
 
