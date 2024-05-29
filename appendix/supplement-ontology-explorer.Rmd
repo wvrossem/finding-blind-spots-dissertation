@@ -63,9 +63,18 @@ if (usePlaceholderFigures) {
   ft <- width(ft, j = 1, width = 0.7)
   ft <- width(ft, j = 2, width = 1)
   ft <- width(ft, j = 3, width = 0.5)
-  ft <- align_text_col(ft, align = "left", header = TRUE, footer = TRUE)
-  ft <- align_nottext_col(ft, align = "left", header = TRUE, footer = TRUE)
+  ft <- width(ft, j = 4, width = 0.5)
+  ft <- width(ft, j = 5, width = 0.5)
+  ft <- width(ft, j = 5, width = 0.5)
   ft <- theme_booktabs(ft)
+  ft <- fontsize(ft, size = 9, part = "all")
+  ft <- align(ft, align = c("center", "left", "center", "center", "center", "center"), part = "all")
   ft
 }
 ```
+<!-- 
+  ft <- align_text_col(ft, align = "left", header = TRUE, footer = TRUE)
+  ft <- align_nottext_col(ft, align = "left", header = TRUE, footer = TRUE)
+  ft <- align(ft, align = "left", part = "header") 
+  ft <- theme_vanilla(ft)
+  -->
