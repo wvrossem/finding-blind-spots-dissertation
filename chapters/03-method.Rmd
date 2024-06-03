@@ -230,6 +230,7 @@ if (OUTPUT_FORMAT == "docx") {
 } else if (OUTPUT_FORMAT == "latex") {
   kbl(data, booktabs = T, caption = "Summary of main documents consulted.") %>%
     kable_styling(latex_options = c("striped"), full_width = F, font_size = 11) %>%
+    kable_styling(latex_options="scale_down") %>%
     row_spec(0, bold = T) %>%
     column_spec(1, width = "9em") %>%
     column_spec(2, width = "4em") %>%
@@ -265,6 +266,7 @@ if (OUTPUT_FORMAT == "docx") {
 } else if (OUTPUT_FORMAT == "latex") {
   kbl(data, booktabs = T, caption = "Summary of IND units and interview participation.") %>%
     kable_styling(latex_options = c("striped"), full_width = F, font_size = 11) %>%
+    kable_styling(latex_options="scale_down") %>%
     row_spec(0, bold = T) %>%
     column_spec(1, width = "7em") %>%
     column_spec(2, width = "4em") %>%
@@ -304,6 +306,7 @@ if (OUTPUT_FORMAT == "docx") {
 } else if (OUTPUT_FORMAT == "latex") {
   kbl(subset_data, booktabs = T, caption = "Summary of interviews.") %>%
     kable_styling(latex_options = c("striped"), full_width = F, font_size = 11) %>%
+    kable_styling(latex_options="scale_down") %>%
     row_spec(0, bold = T) %>%
     column_spec(1, width = "5em") %>%
     column_spec(2, width = "3em") %>%
@@ -350,6 +353,7 @@ if (OUTPUT_FORMAT == "docx") {
 } else if (OUTPUT_FORMAT == "latex") {
   kbl(data, booktabs = T, caption = "Summary of attended events.") %>%
     kable_styling(latex_options = "striped", full_width = F, font_size = 10) %>%
+    kable_styling(latex_options="scale_down") %>%
     row_spec(0, bold = T) %>%
     column_spec(1, width = "7em") %>%
     column_spec(2, width = "10em") %>%
