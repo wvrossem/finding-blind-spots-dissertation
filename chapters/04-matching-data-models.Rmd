@@ -282,10 +282,10 @@ Figure \@ref(fig:network) and Table \@ref(tab:authorities) summarize the results
 In Table \@ref(tab:authorities), each row corresponds to a code group, while the columns for the three authorities indicate if the code group is present (blue) or absent (void) in the authorities’ data models. The EU column is based on a combination of the Eurodac, SIS II, and VIS data models. The Greek column refers to the HRF and the German column to the GRF. Rows are categorized according to the code group’s overall frequency in all selected systems. Categories of common data are therefore at the top of the table and include, among others, “nationality”, “surname”, “date of birth” and “sex”. At the bottom of the table are more specific categories and code groups such as data related to integration or law enforcement, which only appear in a few systems. This table indeed allows us to see which categories are absent in some systems, like data related to language spoken or civil status.
 
 ```{r echo=FALSE}
-capFigNetwork <- ifelse(usePlaceholderFigures, placeholderCaption, "A visualization the network of categories present for the three authorities. Color coding is used to highlight some of the characteristics of the network.")
+capFigNetwork <- ifelse(usePlaceholderFigures, placeholderCaption, "A visualization of the network of categories present for the three authorities. Color coding is used to highlight some of the characteristics of the network.")
 ```
 
-```{r network, echo=FALSE, fig.cap=capFigNetwork}
+```{r network, echo=FALSE, fig.cap=capFigNetwork, out.width="0.9\\textwidth"}
 if (usePlaceholderFigures) {
   knitr::include_graphics("figures/placeholder.eps")
 } else {
