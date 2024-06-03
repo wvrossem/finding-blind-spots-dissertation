@@ -166,6 +166,8 @@ Furthermore, the interview protocol probed into the generification of software f
 
 The data analysis aimed was to establish links between various data fragments that document the software’s historical development, pinpoint moments of contingency, and construct a narrative that, although fragmented, remains meaningful. Throughout this endeavor, I pursued threads that connected the diverse actors and entities that played roles in the software’s development. The company’s partnership with Accenture was identified through a notable thread of jointly undertaken projects. To create a structured narrative, I initially organized the data fragments around two overarching themes. First, I traced the software’s evolution as it ventured into the identity and security domain, aiming to unveil moments of interpretative flexibility and the contingencies surrounding this transition. Secondly, the investigation extended into the software’s assimilation within the EU-VIS and IND systems. By scrutinizing the configurations tailored for these two distinct systems, I identified these instances as gateway moments capable of shedding light on more expansive transformations within the realm of identification.
 
+\sectionmark{Tracing fields of identification}
+
 ## Tracing fields of identification through the evolution of software for matching data: Interpretative flexibility moments
 
 \sectionmark{Interpretative flexibility moments}
