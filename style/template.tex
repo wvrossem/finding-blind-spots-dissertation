@@ -328,10 +328,11 @@ prof. dr. ir. A. Veldkamp\\ % make sure this is the current rector magnificus
 to be publicly defended
 on $if(date)$$date$$else$Monday the 15\textsuperscript{th} of July 2024$endif$ at $if(time)$$time$$else$[…time…]$endif$ hours \\ }\par %
 \vspace{\baselineskip}
+\vspace*{2cm}
 {\normalsize by}\par
-% \vspace{\baselinesekip}
+\medskip
 {\normalsize\textbf{$if(author)$$author$$else$[…given names in full…] [… surname…]$endif$}}\par
-% \vspace{\baselineskip}
+\medskip
 % {\large born on $if(birthplace)$$birthplace$$else$[…place of birth…]$endif$}
 \normalsize born on the 7\textsuperscript{th} of August, 1989\\
 in Brussels, Belgium
@@ -391,7 +392,7 @@ $if(printing)$Printed by: $printing$$endif$$if(layout)$\\ Lay-out: $printing$$en
 \textbf{Graduation Committee}\\
 
 % \begin{tabular}{@{}ll}
-\begin{tabular}{p{0.3\linewidth}p{0.7\linewidth}}
+\begin{tabular}{p{0.25\linewidth}p{0.6\linewidth}}
 Chair / Secretary: & prof. dr. T. Bondarouk \\
 & \\
 Promotor: & prof. dr. S. Kuhlmann \\
@@ -405,12 +406,11 @@ Co-promotors: & prof. dr. A. Pelizza \\
 & \\
 Committee Members: $for(members)$
 & $if(members.title)$ $members.title$$else$ […full title…]$endif$$if(members.initials)$ $members.initials$$else$ […initials…]$endif$$if(members.surname)$ $members.surname$$else$ […surname…]$endif$ \\
-& \textit{$if(members.affiliation)$ $members.affiliation$$else$ & […affiliation…]$endif$}\\
+& \textit{$if(members.affiliation)$$members.affiliation$$else$ & […affiliation…]$endif$}\\
 & \\
 $endfor$
 
 \end{tabular}
-
 
 % \text{} & Universiteit Twente, BMS, Knowledge, Transformation & Society\\
 

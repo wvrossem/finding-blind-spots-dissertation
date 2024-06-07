@@ -77,7 +77,7 @@ members:
 - title: prof. dr.
   initials: R.
   surname: Williams
-  affiliation: University of Edinburgh, Institute for the Study of Science, Technology \textvisiblespace and Innovation (ISSTI)
+  affiliation: University of Edinburgh, Institute for the Study of Science, Technology and Innovation (ISSTI)
 # Finally, the (Dutch) name of your faculty, e.g. "Faculteit der Maatschappij- en Gedragswetenschappen"
 faculty: Faculty of Behavioural, Management & Social Sciences
 

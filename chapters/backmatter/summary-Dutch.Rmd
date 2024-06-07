@@ -5,12 +5,12 @@
 
 <!-- ::: {lang=nl} -->
 
-_Het vinden van blinde vlekken: Onderzoek naar identiteitsdatamatching in transnationale gecommercialiseerde veiligheidsinfrastructuur en verder_
+\noindent _Het vinden van blinde vlekken: Onderzoek naar identiteitsdatamatching in transnationale gecommercialiseerde veiligheidsinfrastructuur en verder_
 
 \bigskip
 <br>
 
-Deze dissertatie onderzoekt het complexe samenspel tussen datamatching technologieën, identificatiepraktijken en transnationale gecommercialiseerde veiligheidsinfrastructuur, met een specifieke focus op migratie- en grenscontrole. Het onderzoek werd gedreven door nieuwsgierigheid naar de samenhang tussen datamatching van identiteiten en de zogenaamde "blinde vlekken" waarmee autoriteiten worden geconfronteerd bij het identificeren van individuen, zoals wanneer zij te maken hebben met onvolledige gegevens, aliassen en andere onzekerheden. De studie beantwoordt de volgende overkoepelende vraag: Hoe worden praktijken en technologieën voor het matchen van identiteitsgegevens in migratiebeheer en grenscontrole gevormd en beïnvloed door transnationale gecommercialiseerde veiligheidsinfrastructuur?
+\noindent Deze dissertatie onderzoekt het complexe samenspel tussen datamatching technologieën, identificatiepraktijken en transnationale gecommercialiseerde veiligheidsinfrastructuur, met een specifieke focus op migratie- en grenscontrole. Het onderzoek werd gedreven door nieuwsgierigheid naar de samenhang tussen datamatching van identiteiten en de zogenaamde "blinde vlekken" waarmee autoriteiten worden geconfronteerd bij het identificeren van individuen, zoals wanneer zij te maken hebben met onvolledige gegevens, aliassen en andere onzekerheden. De studie beantwoordt de volgende overkoepelende vraag: Hoe worden praktijken en technologieën voor het matchen van identiteitsgegevens in migratiebeheer en grenscontrole gevormd en beïnvloed door transnationale gecommercialiseerde veiligheidsinfrastructuur?
 
 De dissertatie begint met het schetsen van de bestaande literatuur over de verbanden tussen datamatchingtechnologie, die in verschillende sectoren wordt gebruikt, en de associatie met de internationalisering, commercialisering, securitisatie en infrastructurering van identificatie. Dit overzicht duidt op een hiaat in het begrip van hoe datamatching de betekenis van de verbonden gegevens beïnvloedt en de relaties tussen organisaties die het gebruiken vormgeeft. De dissertatie stelt daarom voor om datamatching zowel als onderzoeksonderwerp als als hulpmiddel voor het beantwoorden van specifieke onderzoeksvragen te gebruiken.
 
@@ -20,4 +20,4 @@ Vervolgens duikt de dissertatie in de processen het herhaaldelijk identificeren 
 
 Tot slot onderzoekt deze studie de historische ontwikkeling van een commercieel datamatchingsysteem dat wordt gebruikt voor identificatie- en veiligheidsdoeleinden vanuit een sociotechnisch perspectief. Het hoofdstuk presenteert heuristieken om momenten te identificeren in de ontwikkeling van het systeem die erg afhankelijk waren van de omstandigheden. Zo wordt duidelijk hoe diverse actoren en entiteiten een cruciale rol hebben gespeeld bij het beïnvloeden van het ontwerp van dit systeem, wat heeft geleid tot de evolutie van een oorspronkelijk generiek datamatchingsysteem naar een gespecialiseerd systeem dat wordt gebruikt voor identificatie- en veiligheidsdoeleinden. Het onderzoek belicht zo de interconnecties tussen softwareleveranciers, integratoren en klanten en hoe kennis en technologie voor het matchen van identiteitsgegevens worden verspreid en gedeeld tussen organisaties.
 
-:::
+\thispagestyle{plain}
