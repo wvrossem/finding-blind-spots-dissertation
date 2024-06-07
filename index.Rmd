@@ -115,7 +115,7 @@ header-includes:
   - \usepackage{makecell}
   - \usepackage{xcolor}
   - \usepackage{xurl}
-  - \usepackage{doi}
+  - \usepackage[doipre={DOI:~}]{uri}
   - \usepackage{ragged2e}
   - \usepackage{setspace}
   - \usepackage{fancyhdr}
