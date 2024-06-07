@@ -9,7 +9,7 @@ subtitle: "Investigating identity data matching in transnational commercialized 
 author: "Wouter Rudi Van Rossem" # Your full name (including middle names if applicable)
 date: "" # Your defense date in Dutch: "[weekday] [day in numerics] [name of month] [year]"
 aula: # set to true if your defense is in the Aula; set to false/omit if it is in the Agnietenkapel
-time: "12.45" # time of your defense (a 24h time, e.g. "14.00")
+time: "12:45" # time of your defense (a 24h time, e.g. "14.00")
 birthplace: "Brussel" # your place of birth, in Dutch
 country_of_birth: "België" # if your birthplace is not in the Netherlands, fill in the country as well (in Dutch). Omit otherwise!
 
@@ -30,7 +30,7 @@ DOI: "doi"
 # Can be skipped entirely, but if you define THESIS_URL, this will read: 
 # "An online version of this thesis is available at THESIS_URL [,licensed under a LICENSE.]
 thesis_url: "url"
-license: "to-be-determined license" # optional, otherwise this bit is omitted
+license: "CC BY-NC-SA 4.0" # optional, otherwise this bit is omitted
 
 ### Committee
 # Fill in each of your "promotores" below, corresponding to the form you submitted to the graduate school.
@@ -53,7 +53,7 @@ copromotores:
   initials: A.
   surname: Pelizza
   affiliation: University of Bologna 
-- title: prof. dr. ir.
+- title: dr. ir.
   initials: M.
   surname: van Keulen
   affiliation: University of Twente, EEMCS, Datamanagement & Biometrics
@@ -61,19 +61,22 @@ one_copromotor: false # if true the heading will be "Copromotor" (singular), ins
 # Fill in each of your committee members below, corresponding to the form you submitted to the graduate school.
 # Copy-paste the 4 subfields (starting with " - title:") as many times as you have committee members.
 members:
-# for example: 
+- title: prof. dr.
+  initials: M.
+  surname: de Goede
+  affiliation: University of Amsterdam, Faculty of Humanities
 - title: dr.
   initials: K.E.
   surname: Konrad
   affiliation: University of Twente, BMS, Knowledge, Transformation \& Society
 - title: prof. dr.
-  initials: M.
-  surname: de Goede
-  affiliation: University of Amsterdam, Faculty of Humanities
-- title: prof. dr.
   initials: A.
   surname: Rotolo
   affiliation: University of Bologna, Department of Legal Studies
+- title: prof. dr.
+  initials: R.
+  surname: Torenvlied
+  affiliation: University of Twente, BMS, Public Administration
 - title: prof. dr.
   initials: R.
   surname: Williams
