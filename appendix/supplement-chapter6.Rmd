@@ -15,6 +15,6 @@
   + In the case of security, are there differences and challenges to doing such things as identity matching in domains such as policing vs. migration or travel?
 * Tensions of customizable/generic software for the customer.
   + At the IND, I found that some of the challenges for users to work with the search tools are due to the way ELISE is deployed as a very generic service in the SOA, with few adaptations for the specific context of the IND.
-* I have sometimes heard the WCC solution described as “vendor-neutral”. What is your view on this issue?
+* I have sometimes heard the WCC solution described as “vendor-neutral.” What is your view on this issue?
   + Do you know of cases when proprietary formats or algorithms were an issue?
   + How can software such as ELISE work with different data formats?
