@@ -111,7 +111,7 @@ ft <-
     node_centrality_betweenness = "Betweenness"
   )
 
-color_presence <- "#7d90ae"
+color_presence <- "#858585"
 color_absence <- "white"
 
 ft <- theme_box(ft)
@@ -178,7 +178,7 @@ ft <- compose(
   ft,
   i = ~ is.na(summed),
   j = "node_centrality_betweenness",
-  value = as_paragraph(linerange(
+  value = as_paragraph(minibar(
     value = node_centrality_betweenness,
     max = max(node_centrality_betweenness)
   )),
