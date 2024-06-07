@@ -8,7 +8,7 @@
 \chaptermark{Bibliography}
 
 \renewcommand{\bibfont}{\small}
-\singlespacing
+<!-- \singlespacing -->
 \setlength{\bibsep}{4pt}
 \setlength{\bibhang}{2em}
 \setlength{\leftskip}{0.25in}

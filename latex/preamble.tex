@@ -24,10 +24,10 @@
 \setmainfont{Alegreya}
 \setsansfont[Ligatures=TeX]{Alegreya Sans}
 
-% font declaration and title settings
+% \usepackage{setspace}
+% \onehalfspacing
 
-\usepackage{setspace}
-\onehalfspacing
+% font declaration and title settings
 \newfontfamily\headingfont[]{Alegreya SC}
 \newfontfamily\sectionfont[]{Alegreya}
 \titleformat{\chapter}[display]
@@ -45,7 +45,6 @@
     \renewcommand{\headrulewidth}{0.2pt} % Header rule
     \renewcommand{\footrulewidth}{0pt} % Footer rule
     \fancyhead[RO, LE]{\thepage}
-
 
     % Chapter title on the left of even pages
     \fancyhead[LE]{\textbf{\thepage}\qquad\small\textit{\nouppercase{\leftmark}}}
