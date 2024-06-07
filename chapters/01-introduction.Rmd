@@ -67,6 +67,8 @@ The EU interoperability initiative introduces new components that emphasize the 
 
 Note that the European Commission is not building these systems by itself; it increasingly relies on global information technology suppliers and integrators [@lemberg-pedersenPoliticalEconomyEntry2020; @valdiviaNeitherOpaqueTransparent2022]. A research gap exists in understanding how data matching technologies, which are increasingly developed by commercial entities for global use [see, for example, @leeseStandardizingSecurityBusiness2018; @lemberg-pedersenPoliticalEconomyEntry2020; @valdiviaNeitherOpaqueTransparent2022; @zureikGovernanceSecurityTechnology2004], operate and influence processes of identification in a sensitive domain. The international and commercial dimensions of identification technology mean that there is a growing need to examine how the private sector is involved in developing and implementing these standardizing technologies. As @pollockSoftwareOrganisationsBiography2009 have noted, criticism of standardized software and focus on how poorly such software adapts to different settings is not a sufficient research perspective. The widespread use of standardized identification software requires comprehending how such software is produced and adapted to operate in various contexts, as well.
 
+\sectionmark{Analyzing data matching in transnational data infrastructures}
+
 ## Unpacking the challenge of analyzing data matching in transnational data infrastructures
 
 \sectionmark{Analyzing data matching in transnational data infrastructures}

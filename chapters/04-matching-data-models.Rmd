@@ -115,6 +115,8 @@ While it is not the aim of this chapter to foreground the epistemic and methodol
 
 ## Design principles of the OE as a methodology: Script, comparison and resistance {#principles}
 
+\sectionmark{Design principles of the OE as a methodology}
+
 Following the previous review of methodological approaches, in this section we describe three principles that have guided the development of the OE. First of all, however, we wish to make clear that we are not laying claim to the well-established achievements of others, as the OE is only novel in that it has integrated insights from existing classification and infrastructure studies, discourse analysis, and other strands described in the previous section. What makes the OE distinctive is the greater analytical depth into data infrastructures for population management, and the ad hoc combination of principles, requirements, and solutions.
 
 The first principle followed in the development of the OE assumes that data models, as the actual encoding of an ontology in an information system, can reconstruct the discursive model of a domain that is operative in that system. As was discussed in Section \@ref(review) about data models as scripts, through “infrastructural inversions” [@bowkerSortingThingsOut1999] it is possible to retroactively reconstruct not only the discourse that informed the design of a system, but also expectations and imaginaries about the object of knowledge. In the case of data models underpinning information systems for population management, this means that the way populations are endogenously ordered and classified provides a “meta layer” of data for the observer. By looking at the assumptions that are made about people and examining the possibilities that are excluded by design, the analysis of data models can apprehend how people are inscribed in information systems.
@@ -226,6 +228,8 @@ if (usePlaceholderFigures) {
 ```
 
 In the next section, we illustrate the actual functioning of the method by analyzing some data models of information systems for border management.
+
+\sectionmark{Illustrating potential uses}
 
 ## Illustrating potential uses: Information systems for population management at the European border {#potential-uses}
 

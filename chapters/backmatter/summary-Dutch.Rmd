@@ -1,6 +1,7 @@
 # Nederlandse samenvatting (Summary in Dutch) {.unnumbered .unlisted}
 
 \addcontentsline{toc}{part}{Summary in Dutch}
+\chaptermark{Summary in Dutch}
 
 <!-- ::: {lang=nl} -->
 

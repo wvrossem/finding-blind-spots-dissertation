@@ -4,6 +4,8 @@
 
 \thispagestyle{plain}
 
+\chaptermark{Summary}
+
 This dissertation delves into the intricate interplay between data matching technologies, identification practices, and transnational commercialized security infrastructures, with a specific focus on migration management and border control. The study was driven by a curiosity about the interplay between identity data matching and the “blind spots” faced by authorities in identifying individuals, even when faced with incomplete data, aliases, and other uncertainties. The study sets out to answer the overarching question: How are practices and technologies for matching identity data in migration management and border control shaping and shaped by transnational commercialized security infrastructures?
 
 The dissertation starts by outlining the existing literature on the connections between data matching technology, which is used in various sectors, and its association with the internationalization, commercialization, securitization, and infrastructuring of identification. This overview notes a noticeable gap in understanding how data matching influences the meaning of the interconnected data and shapes relationships between organizations that use it. The dissertation proposes using data matching as both a research topic and a resource for answering specific sub-questions.
