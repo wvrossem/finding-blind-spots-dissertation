@@ -16,31 +16,33 @@ inc <- function(x) {
 }
 ```
 
-## Definitions `r inc(def_counter)` — Graphs, nodes, links
+\raggedright
+
+## Definitions `r inc(def_counter)`: Graphs, nodes, links
 
 We recall that a graph is formally defined as a pair $G=(N, L)$. Where $N$ is a set whose elements are the nodes (also called vertices or points), and $L$ is a set of links (also called edges) which are ordered pairs of distinct nodes. $L$ is a subset of the set of all possible links between nodes, where in our case a node cannot be associated to itself: $L \subseteq\left\{(x, y)|(x, y) \in N^{2} \wedge x \neq y\right\}$. For a link $(x, y)$, $x$ and $y$ are called the _endpoints_ of a link. In our approach, links are _undirected_ and a link represents an occurrence of $x$ in $y$. As a shorthand we write the link between $x$ and $y$ as $l_{xy}$. For example, the link $l_{xy}$ can represent the occurrence of a category 'date of birth' (node $x$) in the document group 'Eurodac' (node $y$). All categories present in the document group have corresponding nodes and links in the graph. In fact, we can treat each data model (i.e., document group) as a separate graph. The complete graph is then in effect the combination of different data models. For each data model as a separate graph $G_{i}$, the combined graph is the disjoint union of graphs: $G=\bigcup_{i \in I} G_{i}$.
 
-## Definitions `r inc(def_counter)` — Attributes
+## Definitions `r inc(def_counter)`: Attributes
 
 In our graph model, nodes are objects composed of attributes that are used to keep metadata of nodes. These attributes are formulated using the notation $n.a$ for an attribute $a$ of a node $n$. The most important metadata kept for a node are $n.name$ and $n.type$, where $name$ is the natural language label of the node. The attribute $type$ can only take a limited set of values: $type \in \{category, categoryValue, codeGroup, document, documentGroup\}$.
 
-## Definitions `r inc(def_counter)` — Graph drawing
+## Definitions `r inc(def_counter)`: Graph drawing
 
 A drawing of a graph $G=(N,L)$ is a collection of points in a two-dimensional space. Each point $p_i$ with coordinates $x$ and $y$ is the position of the node $n_i$ in the layout. Whenever there exists a link $(p_i, p_j) \in L$, a line is drawn between points $p_i$ and $p_j$. The task of the layout algorithm is to find a positioning of points so that specific criteria are optimally met. Examples of commonly used criteria are: nodes should not overlap, neighbouring nodes should be grouped together, the number of crossing link should be minimised. Each algorithm and set of criteria has its own benefits and drawbacks.
 
-## Definitions `r inc(def_counter)` — Degree & neighbourhood
+## Definitions `r inc(def_counter)`: Degree & neighbourhood
 
 For a node $n_j$n the degree is defined as the number of links a node has: $deg(x) = \left|\{ n_{j}: l_{ij} \in L \right\}|$. The set of linked nodes is called the _neighbourhood_ of a node. The neighbourhood $H_{i}$ for a node $n_{j}$ is defined as: $H_{i}=\left\{n_{j}: l_{i j} \in L \vee l_{j i} \in L\right\}$.
 
-## Definitions `r inc(def_counter)` — Betweenness centrality
+## Definitions `r inc(def_counter)`: Betweenness centrality
 
 The betweenness centrality of a node $n$ is defined as $bc(n)=\sum_{s \neq n \neq t} \frac{\sigma_{s t}(n)}{\sigma_{s t}}$. Where $\sigma_{st}$ is the total amount of shortest paths from node $s$ to node $t$ and $\sigma_{st}(n)$ is the amount of those paths that pass through $n$. A path is a sequence of nodes, where each pair of nodes in the sequence is linked. The shortest path is the path between two nodes $s$ and $t$ that traverses the smallest number nodes. The equation for betweenness centrality takes into account that there may be several possible paths from $s$ to $t$, with only some passing through $n$.
 
-## Definitions `r inc(def_counter)` — Presence
+## Definitions `r inc(def_counter)`: Presence
 
 The presence of all categories in a document group node $n_x$ is a set of all category nodes $Categories(x) = \left\{ n_y \in N: (l_{xy} \in L \vee l_{yx} \in L) \wedge n_y.type=category\right\}$. The presence of a category $n_x$ in a document group is the set of nodes of the type document group for which there exist a link between this category and the document group. Formally defined as: $Presence(x, documentGroup)=\left\{ n_y \in N : l_{xy} \in Links \wedge y.type = docGroup\right\}$.
 
-## Definitions `r inc(def_counter)` — Intersection and difference
+## Definitions `r inc(def_counter)`: Intersection and difference
 
 The absence of categories between a $docGroup_1$ and $docGroup_2$ is the set of categories present in the second document group minus the set of categories present in the first. In our notation: $Absence(docGroup_1, docGroup_2) = \left\{ Categories(docGroup_2) \setminus Categories(docGroup_1)\right\}$. The categories that are common between those same two document groups are determined using the intersection of the sets of categories that are present in either: $CommonCodes(docGroup_1, docGroup_2)=docGroup_1 \cap docGroup_2$. This operation is not limited to two sets. The intersection between more sets can be notated as $\bigcap_{i=1}^n Presence(docGroup_i)$.
 
@@ -73,9 +75,5 @@ if (usePlaceholderFigures) {
   ft
 }
 ```
-<!-- 
-  ft <- align_text_col(ft, align = "left", header = TRUE, footer = TRUE)
-  ft <- align_nottext_col(ft, align = "left", header = TRUE, footer = TRUE)
-  ft <- align(ft, align = "left", part = "header") 
-  ft <- theme_vanilla(ft)
-  -->
+
+\justifying
