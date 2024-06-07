@@ -58,3 +58,9 @@
 \pagestyle{myheader}
 
 \raggedbottom
+
+\makeatletter
+\long\def\@makefntext#1{%
+  \parindent 1em\noindent\hb@xt@ 1em{\hss\@makefnmark}~~#1%
+}
+\makeatother
