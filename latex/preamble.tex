@@ -25,17 +25,17 @@
 \setsansfont[Ligatures=TeX]{Alegreya Sans}
 
 % font declaration and title settings
-% \newfontfamily\headingfont[]{Alegreya Sans SC}
-% \titleformat{\chapter}[display]
-%   {\huge\headingfont}{\chaptertitlename\ \thechapter}{20pt}{\Large}
-% \titleformat*{\section}{\large\headingfont}
-% \titleformat*{\subsection}{\normalsize\headingfont}
-% \renewcommand{\maketitlehooka}{\headingfont}
 
 \usepackage{setspace}
 \onehalfspacing
 \newfontfamily\headingfont[]{Alegreya SC}
 \newfontfamily\sectionfont[]{Alegreya}
+\titleformat{\chapter}[display]
+  {\huge\headingfont}{\chaptertitlename\ \thechapter}{20pt}{\Large}
+\titleformat*{\section}{\large\sectionfont}
+\titleformat*{\subsection}{\normalsize\sectionfont}
+\titleformat*{\subsubsection}{\normalsize\sectionfont}
+\renewcommand{\maketitlehooka}{\headingfont}
 
 % Define page style
 \usepackage{fancyhdr}
