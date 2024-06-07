@@ -62,8 +62,9 @@ if (OUTPUT_FORMAT == "docx") {
   ft <- set_caption(ft, caption = "")
   ft
 } else if (OUTPUT_FORMAT == "latex") {
-  kbl(data, booktabs = T, caption = "") %>%
-    kable_styling(latex_options = c("striped"), full_width = F) %>%
+  kbl(data, booktabs = T, caption = "Examples of search strategies") %>%
+    kable_styling(latex_options = c("striped"), full_width = F, , font_size = 10) %>%
+    kable_styling(latex_options="scale_down") %>%
     row_spec(0, bold = T) %>%
     column_spec(1, width = "10em") %>%
     column_spec(2, width = "25em")

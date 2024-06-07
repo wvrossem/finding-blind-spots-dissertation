@@ -67,7 +67,8 @@ if (usePlaceholderFigures) {
   ft <- width(ft, j = 5, width = 0.5)
   ft <- width(ft, j = 5, width = 0.5)
   ft <- theme_booktabs(ft)
-  ft <- fontsize(ft, size = 9, part = "all")
+  ft <- font(ft, fontname = "Alegreya", part = "all")
+  ft <- fontsize(ft, size = 8, part = "all")
   ft <- align(ft, align = c("center", "left", "center", "center", "center", "center"), part = "all")
   ft
 }
