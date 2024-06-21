@@ -12,7 +12,7 @@ There are two compelling reasons for adopting data matching as a methodological 
 
 However, studying data matching presents its own challenges, given its propensity to operate inconspicuously within identification. Consider, for instance, the inconspicuous moments where our financial or travel data is automatically cross-referenced with police watch lists. Infrastructure studies have long been aware of such predicaments and have actively sought methods to bring these background elements to the forefront of analysis.
 
-## “Infrastructural inversions” for matching identity data
+## Infrastructural inversions for matching identity data
 
 Infrastructure studies have provided different methodological strategies to invert the tendency of infrastructures to disappear and to make visible the interconnections between technical minutiae and the politics of knowledge production [e.g., @bowkerScienceRunInformation1994; @bowkerSortingThingsOut1999; @edwardsIntroductionAgendaInfrastructure2009; @monteiroArtefactsInfrastructures2013]. Methods proposed by these authors to invert the tendency of infrastructure to disappear include looking at, among others, moments of breakdown [@starEthnographyInfrastructure1999], tensions in the emergence and growth of infrastructure [@hansethReflexiveStandardizationSide2006], and material aspects [@ribesMaterialityMethodologyTricks2019]. I propose to develop methodological strategies aimed at inverting transnational commercialized security infrastructures to elucidate the links between the intricate technical aspects of data matching and the dynamics of knowledge generation in identification. As indicated by @bowkerSortingThingsOut1999:
 
@@ -183,13 +183,13 @@ Regarding the collection of data models, the research draws on data collected du
 
 The collection of documents on the analysis of data models encompassed the following:
 
-Regulation (EU) No 603/2013 of the European Parliament and of the Council of 26 June 2013
+Regulation (EU) No 603/2013, European Parliament and Council, 26 June 2013
 : The regulation governing the establishment of Eurodac includes Article 11, which addresses the “Recording of Data.” This article outlines the specific data that must be recorded in the Central System.
 
-Regulation (EU) 2018/1862 of the European Parliament and of the Council of 28 Nov. 2018
+Regulation (EU) No 2018/1862, European Parliament and Council, 28 Nov. 2018
 : The regulation pertaining to the establishment, operation, and utilization of the Schengen Information System (SIS) includes Article 20, which addresses “Categories of Data.” This article outlines the specific categories of data provided by each Member State and contained within the SIS.
 
-Regulation (EC) No 767/2008 of the European Parliament and of the Council of 9 July 2008
+Regulation (EC) No 767/2008, European Parliament and Council, 9 July 2008
 : The regulation governing the Visa Information System (VIS) and data exchange among Member States concerning short-stay visas contains two pertinent articles. Article 5, titled “Categories of Data,” delineates the specific categories of data that must be recorded in the VIS. Concurrently, Article 9, titled “Data upon Lodging the Application,” elucidates the categories of personal data recorded of applicants when lodging their visa applications.
 
 Hellenic Register of Foreigners screenshots

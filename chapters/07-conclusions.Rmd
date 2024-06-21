@@ -18,7 +18,7 @@ Chapter 4 introduced a novel method and software tool designed to analyze the un
 
 This section summarizes the key findings of the empirical investigations conducted in the dissertation. The findings are linked to the research objectives, questions, and the use of the methodological framework’s infrastructural inversion strategy.
 
-### Chapter 4: “The Ontology Explorer: A method to make visible data infrastructures for population management”
+### Chapter 4: The Ontology Explorer: A method to make visible data infrastructures for population management
 
 Chapter 4 contributes to the research objective of introducing a new method and software tool to analyze the schemas underpinning information systems in population management. This method and tool, dubbed the “Ontology Explorer” (OE), help achieve this objective by enabling a systematic examination and comparison of non-homogeneous data models used in diverse information systems. The chapter utilizes the OE method, which draws inspiration from schema matching techniques and STS research on classifications and standards, to bring attention to the assumptions embedded in the data models used in information systems for population management.
 
@@ -26,7 +26,7 @@ The infrastructural inversion strategy employed in Chapter 4 compared data model
 
 Chapter 4 aids in answering the main research question by revealing implicit assumptions and patterns within information systems design. The findings indicate different conceptualizations of identity data among authorities involved in population management, which could have implications for matching data across various database systems. For example, the Eurodac system primarily collects fingerprint data and does not include biographical details such as name, date of birth, and nationality. Therefore, the only means of matching data with Eurodac are biometric matching methods or linking data using the Eurodac number. Furthermore, Chapter 4 contributes to Processing Citizenship’s WP1 by introducing the OE, which facilitates the computational analysis of diverse authorities’ assumptions about individuals while serving as a foundational component for critical analyses when integrated with ethnographic observations of the practical utilization of information systems.
 
-### Chapter 5: “From registration to re-identification: Exploring the interplay of data matching software in routine identification practices,”
+### Chapter 5: From registration to re-identification: Exploring the interplay of data matching software in routine identification practices
 
 Chapter 5 contributes to the dissertation’s research objective of examining the relationships between identity data matching technologies and routine identification practices. It addresses Research Question 2 (_How do organizations that collect information about people-on-the-move search and match for identity data in their systems? How is data about people-on-the-move matched and linked across different agencies and organizations?_) through an empirical investigation, centering on the iterative processes of identifying applicants within the Dutch government migration and asylum agency and the role of a data matching system in these processes. Re-identification is introduced to conceptualize the multifaceted iterative identification procedures, including retrieving corresponding identity data from databases and determining whether multiple database records, potentially originating from different organizations, pertain to the same real-world individual.
 
@@ -36,7 +36,7 @@ The chapter’s findings emphasize the various practices of re-identification th
 
 Chapter 5 addresses the main research question by examining the interaction between the re-identification practices of the IND and a commercially developed data matching system. The IND’s use of the commercial data matching system influenced the agency’s re-identification strategies due to the system’s embedded expertise in matching identity data. Additionally, the chapter draws attention to the link between the deduplication process and transnational systems. The IND and partner organizations use data from major European Union information systems, connecting seemingly unrelated records within their databases. These findings underscore re-identification processes and associated technologies are not isolated; they are intricately intertwined with broader commercialized security infrastructures.
 
-### Chapter 6: “Uncovering the long-term development of identification infrastructures: A multi-temporal perspective”
+### Chapter 6: Uncovering the long-term development of identification infrastructures: A multi-temporal perspective
 
 Chapter 6 delved into the evolution of a data matching system and the construction of transnational security infrastructures. The chapter’s findings contribute to the research objective of exploring the evolution of identification systems, identifying contingent moments, and examining how data matching expertise circulates among various organizations. The evolution of a commercial data matching system is thus used to investigate more extensive long-term developments of identification systems and transnational commercialized security infrastructures.
 
