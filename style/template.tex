@@ -271,10 +271,11 @@ $endif$
 
 \vspace*{\drop}
 \begin{center}
-\huge\textbf{\textsc{$if(title)$$title$$else$[… Title Doctoral Thesis…]$endif$}}\par
+\huge\textbf{\uppercase{$if(title)$$title$$else$[… Title Doctoral Thesis…]$endif$}}\par
 $if(subtitle)$
 % \vspace{\baselineskip}
-\Large\textsc{$subtitle$}\par
+\medskip
+\Large\uppercase{$subtitle$}\par
 $endif$
 \vspace{\baselineskip}
 {\Large \textit{$if(author)$$author$$else$[…given names in full…] [… surname…]$endif$}}
@@ -312,13 +313,14 @@ $endif$
 \thispagestyle{empty}
 \vspace*{\drop}
 \begin{center}
-\huge\textbf{\textsc{$if(title)$$title$$else$[… Title Doctoral Thesis…]$endif$}}\par
+\huge\textbf{\uppercase{$if(title)$$title$$else$[… Title Doctoral Thesis…]$endif$}}\par
 $if(subtitle)$
 % \vspace{\baselineskip}
-\Large\textsc{$subtitle$}\par
+\medskip
+\Large\uppercase{$subtitle$}\par
 $endif$
 \vfill % this space will be whatever is left on the page
-\large \textsc{dissertation}\par
+\large \uppercase{dissertation}\par
 \vspace{\baselineskip}
 \linespread{1.3}{\normalsize to obtain\\
 the degree of doctor at the University of Twente,\\
@@ -362,22 +364,29 @@ $endif$
 \small
 \setlength{\parskip}{\baselineskip} % add space between paragraphs
 \setlength\parindent{0pt} % no indents
-$if(funder)$
-The investigations in this dissertation were supported by $if(grant)$a $grant$ from $endif$
-$if(funder)$$funder$.$endif$
-$endif$
+% $if(funder)$
+% The investigations in this dissertation were supported by $if(grant)$a $grant$ from $endif$
+The investigations in this dissertation were conducted within the context of the “Processing Citizenship: Digital registration of migrants as co-production of citizens, territory and Europe” project, which has received funding from the European Research Council under the European Union’s Horizon 2020 research and innovation programme under grant agreement No 714463.
+% $if(funder)$$funder$.$endif$
+% $endif$
+
+\vspace{\baselineskip}
 
 This dissertation was typeset using (R) Markdown, \LaTeX\ and the \verb+bookdown+ R-package. The text is set in Alegreya, a font designed by Juan Pablo del Peral for Huerta Tipográfica.
 
-The cover design was created by Wouter Rudi Van Rossem, featuring Figure 224 “Der gemeine Pfau (Pave cristatus)” from Fitzinger’s “Bilder-atlas zur Wissenschaftlich-populären Naturgeschichte der Vögel in ihren sämmtlichen Hauptformen” (1864), sourced from \url{https://www.biodiversitylibrary.org/page/33050550}."
-% \vspace{\baselineskip}
+\vspace{\baselineskip}
+
+The cover design was created by Wouter Van Rossem, featuring Figure 224 “Der gemeine Pfau (Pave cristatus)” from Fitzinger’s “Bilder-atlas zur Wissenschaftlich-populären Naturgeschichte der Vögel in ihren sämmtlichen Hauptformen” (1864), sourced from \url{https://www.biodiversitylibrary.org/page/33050550}."
+\vspace{\baselineskip}
 % $if(cover)$\\ Cover design: $cover$$endif$
 
-$if(printing)$Printed by: $printing$$endif$$if(layout)$\\ Lay-out: $printing$$endif$$if(ISBN1)$\\ ISBN (print): $ISBN1$$endif$$if(ISBN2)$\\ ISBN (digital): $ISBN2$$endif$$if(DOI)$\\ DOI: $DOI$$endif$$if(thesis_url)$\\ URL: $thesis_url$$endif$
+$if(printing)$Printed by: $printing$$endif$$if(layout)$\\ Lay-out: $printing$$endif$$if(ISBN1)$ ISBN (print): $ISBN1$$endif$$if(ISBN2)$\\ ISBN (digital): $ISBN2$$endif$$if(DOI)$\\ DOI: $DOI$$endif$$if(thesis_url)$\\ URL: $thesis_url$$endif$
 
 % $if(thesis_url)$
 % An online version of this thesis is available at $thesis_url$$if(license)$, licensed under a $license$.$endif$
 % $endif$
+
+\vspace{\baselineskip}
 
 © 2024 $if(author)$$author$$else$[…given names in full…] [… surname…]$endif$, Enschede, The Netherlands and Bologna, Italy. This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}. No parts of this dissertation may be reproduced, stored in a retrieval system or transmitted in any form or by any means for commercial purposes without permission of the author. If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 \endgroup
@@ -391,7 +400,7 @@ $if(printing)$Printed by: $printing$$endif$$if(layout)$\\ Lay-out: $printing$$en
 \textbf{Graduation Committee}\\
 
 % \begin{tabular}{@{}ll}
-\begin{tabular}{p{0.25\linewidth}p{0.6\linewidth}}
+\begin{tabular}{p{0.3\linewidth}p{0.6\linewidth}}
 Chair / Secretary: & prof. dr. T. Bondarouk \\
 & \\
 Promotor: & prof. dr. S. Kuhlmann \\
@@ -400,7 +409,7 @@ Promotor: & prof. dr. S. Kuhlmann \\
 Co-promotors: & prof. dr. A. Pelizza \\
               & \textit{University of Bologna, Department of Philosophy, and Aarhus University, Department of Digital Design and Information Studies} \\
 & \\
-              & prof. dr. ir. M. van Keulen \\
+              & dr. ir. M. van Keulen \\
               & \textit{University of Twente, EEMCS, Datamanagement \& Biometrics} \\
 & \\
 Committee Members: $for(members)$

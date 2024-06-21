@@ -21,15 +21,15 @@ funder: "the European Research Council (ERC) under the European Union's Horizon 
 
 # This paragraph begins with "This thesis was typeset using (R) Markdown, \LaTeX\ and the \verb+bookdown+ R-package"
 # and is optionally followed by:
-ISBN1: "isbn1" # optional, otherwise this bit is omitted
-ISBN2: "isbn2" # optional, otherwise this bit is omitted
-printing: "Ipskamp printing" # optional, otherwise this bit is omitted
+ISBN1: "978-90-365-6176-1" # optional, otherwise this bit is omitted
+ISBN2: "978-90-365-6177-8" # optional, otherwise this bit is omitted
+printing: "" # optional, otherwise this bit is omitted
 cover: "Wouter Rudi Van Rossem" # optional, otherwise this bit is omitted
-DOI: "doi"
+DOI: "978-90-365-6177-8"
 
 # Can be skipped entirely, but if you define THESIS_URL, this will read: 
 # "An online version of this thesis is available at THESIS_URL [,licensed under a LICENSE.]
-thesis_url: "url"
+thesis_url: ""
 license: "CC BY-NC-SA 4.0" # optional, otherwise this bit is omitted
 
 ### Committee
@@ -56,7 +56,7 @@ copromotores:
 - title: dr. ir.
   initials: M.
   surname: van Keulen
-  affiliation: University of Twente, EEMCS, Datamanagement & Biometrics
+  affiliation: University of Twente, EEMCS, Datamanagement \& Biometrics
 one_copromotor: false # if true the heading will be "Copromotor" (singular), instead of "Copromotores" (assuming there is a copromotor)
 # Fill in each of your committee members below, corresponding to the form you submitted to the graduate school.
 # Copy-paste the 4 subfields (starting with " - title:") as many times as you have committee members.
