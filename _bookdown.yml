@@ -19,5 +19,6 @@ rmd_files: [
   "chapters/backmatter/summary.Rmd",
   "chapters/backmatter/summary-Dutch.Rmd",
   "chapters/backmatter/other-publications.Rmd",
-  "chapters/backmatter/references.Rmd"]
+  "chapters/backmatter/references.Rmd"
+]
 clean: ["finding-blind-spots.fff"]

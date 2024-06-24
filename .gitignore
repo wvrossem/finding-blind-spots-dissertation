@@ -11,3 +11,5 @@ finding-blind-spots.Rmd
 .directory
 *.drawio.bkp
 finding-blind-spots.tex
+finding-blind-spots_files
+tables/pc-project.csv
