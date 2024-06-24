@@ -1,4 +1,5 @@
-book_filename: "finding-blind-spots"
+book_filename: "dissertation-van-rossem-2024-finding-blind-spots"
+output_dir: "docs"
 language:
   ui:
     chapter_name: "Chapter "
