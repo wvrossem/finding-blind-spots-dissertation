@@ -53,7 +53,7 @@ copromotores:
   initials: A.
   surname: Pelizza
   affiliation: University of Bologna 
-- title: dr. ir.
+- title: prof. dr. ir.
   initials: M.
   surname: van Keulen
   affiliation: University of Twente, EEMCS, Datamanagement \& Biometrics
@@ -89,7 +89,7 @@ documentclass: book # default LaTeX book class
 book_size: true # "true" if you want to render a pdf for printing as a book; "false" if you want to print loose pages
            # if book_size is set to false, forces A4 paper size, and the "oneside" classoption
            # if book_size is set to true, forces standard "thesis B5 size" (170mm wide by 240mm high), and the "twoside" classoption
-# geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm" # use this if you want to change the margins
+geometry: "inner=25mm, outer=20mm, top=25mm, bottom=20mm, twoside=true" # use this if you want to change the margins
             # 2.5cm equal margins are often recommended by printers (so when book_size: true)
 fontsize: 10pt # 12pt is recommened when book_size is false; 10 or 11pt is recommended when book_size is true
 lang: en-US # default language for the thesis. Change to en-GB or en-US if you want a specific flavor of English (or to nl for Dutch)

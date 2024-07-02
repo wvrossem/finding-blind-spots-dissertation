@@ -6,6 +6,7 @@
 %\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$} %LCR
 $if(book_size)$ % if the book is being rendered for print, force twoside option
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(papersize)$$papersize$paper,twoside,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$} %LCR
+% \documentclass[twoside,openright]{book}
 $else$ % if not, force the oneside and a4paper options, which seem to be the only reasonable defaults
 \documentclass[$if(fontsize)$$fontsize$,$endif$a4paper,oneside,$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$} %LCR
 $endif$
@@ -62,15 +63,16 @@ $endif$
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 $if(book_size)$ % LCR
-\usepackage[paperwidth=170mm,paperheight=240mm]{geometry} % LCR %set to standard thesis size
+\usepackage[paperwidth=170mm,paperheight=240mm, includeheadfoot, asymmetric]{geometry} % LCR %set to standard thesis size
+\geometry{$for(geometry)$$geometry$$sep$,$endfor$}
 $endif$
-$if(geometry)$
-$if(book_size)$ % LCR % if we've already invoked geometry
-\geometry{$for(geometry)$$geometry$$sep$,$endfor$} %LCR % don't call usepackage again
-$else$ %LCR
-\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
-$endif$
-$endif$ %LCR
+% $if(geometry)$
+% $if(book_size)$ % LCR % if we've already invoked geometry
+% \geometry{$for(geometry)$$geometry$$sep$,$endfor$} %LCR % don't call usepackage again
+% $else$ %LCR
+% \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+% $endif$
+% $endif$ %LCR
 \usepackage{hyperref}
 $if(colorlinks)$
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
@@ -287,6 +289,8 @@ $endif$
 % \textit{This page intentionally left blank.}
 % \newpage
 
+\clearpage\shipout\null
+
 %% Page II: Colophon %LCR
 % \clearpage
 % \thispagestyle{empty}
@@ -338,6 +342,8 @@ on $if(date)$$date$$else$Monday, July 15\textsuperscript{th}, 2024$endif$, at $i
 \normalsize born on the 7\textsuperscript{th} of August, 1989\\
 in Brussels, Belgium
 \end{center}
+
+\clearpage\shipout\null
 
 %% Page IV: info on thesis committee %LCR
 \clearpage
@@ -391,6 +397,8 @@ $if(printing)$Printed by: $printing$$endif$$if(layout)$\\ Lay-out: $printing$$en
 © 2024 $if(author)$$author$$else$[…given names in full…] [… surname…]$endif$, Enschede, The Netherlands and Bologna, Italy. This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}. No parts of this dissertation may be reproduced, stored in a retrieval system or transmitted in any form or by any means for commercial purposes without permission of the author. If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 \endgroup
 
+\clearpage\shipout\null
+
 %%%%%%%%%%%%%%%%%%
 
 \clearpage
@@ -409,7 +417,7 @@ Promotor: & prof. dr. S. Kuhlmann \\
 Co-promotors: & prof. dr. A. Pelizza \\
               & \textit{University of Bologna, Department of Philosophy, and Aarhus University, Department of Digital Design and Information Studies} \\
 & \\
-              & dr. ir. M. van Keulen \\
+              & prof. dr. ir. M. van Keulen \\
               & \textit{University of Twente, EEMCS, Datamanagement \& Biometrics} \\
 & \\
 Committee Members: $for(members)$
@@ -423,6 +431,8 @@ $endfor$
 % \text{} & Universiteit Twente, BMS, Knowledge, Transformation & Society\\
 
 % \noindent Faculteit: $if(faculty)$$faculty$$else$[…name faculty…]$endif$
+
+\clearpage\shipout\null
 
 % Dedication page
 \newpage

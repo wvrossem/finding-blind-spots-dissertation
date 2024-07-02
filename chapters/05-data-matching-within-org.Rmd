@@ -10,7 +10,7 @@ In migration management and border control, identifying individuals across data 
 
 ---
 
-\newpage
+<!-- \newpage -->
 
 <!-- \vspace*{\fill} -->
 <!-- \noindent -->

@@ -1,4 +1,6 @@
-# Acknowledgments {-}
+# Acknowledgments {.unnumbered}
+
+\markboth{Acknowledgements}{Acknowledgements}
 
 \pagenumbering{roman}
 \setcounter{page}{11}

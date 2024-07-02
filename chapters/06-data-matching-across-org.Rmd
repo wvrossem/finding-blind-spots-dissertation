@@ -10,7 +10,7 @@ Systems and infrastructures for identifying and registering mobile populations h
 
 ---
 
-\newpage
+<!-- \newpage -->
 
 <!-- \vspace*{\fill} -->
 <!-- \noindent -->
