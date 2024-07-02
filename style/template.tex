@@ -263,11 +263,22 @@ $endif$
 % https://github.com/jgm/pandoc/issues/5801
 \renewcommand{\linethickness}{0.05em}
 
+\usepackage{pdfpages}
+
 %%%%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%
 \begin{document}
 
 %% Page I: the half-title / "Franse pagina" %LCR
 \frontmatter
+
+% Include the book cover as first page
+
+
+$if(print_version)$
+$else$
+\includepdf[pages=1, fitpaper=true]{book-cover/book-cover-2-sides-compressed.pdf}
+$endif$
+
 \thispagestyle{empty}
 \def\drop{.1\textheight}
 
@@ -289,7 +300,9 @@ $endif$
 % \textit{This page intentionally left blank.}
 % \newpage
 
+$if(print_version)$
 \clearpage\shipout\null
+$endif$
 
 %% Page II: Colophon %LCR
 % \clearpage
@@ -343,7 +356,9 @@ on $if(date)$$date$$else$Monday, July 15\textsuperscript{th}, 2024$endif$, at $i
 in Brussels, Belgium
 \end{center}
 
+$if(print_version)$
 \clearpage\shipout\null
+$endif$
 
 %% Page IV: info on thesis committee %LCR
 \clearpage
@@ -397,7 +412,9 @@ $if(printing)$Printed by: $printing$$endif$$if(layout)$\\ Lay-out: $printing$$en
 © 2024 $if(author)$$author$$else$[…given names in full…] [… surname…]$endif$, Enschede, The Netherlands and Bologna, Italy. This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/}. No parts of this dissertation may be reproduced, stored in a retrieval system or transmitted in any form or by any means for commercial purposes without permission of the author. If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 \endgroup
 
+$if(print_version)$
 \clearpage\shipout\null
+$endif$
 
 %%%%%%%%%%%%%%%%%%
 
@@ -432,7 +449,9 @@ $endfor$
 
 % \noindent Faculteit: $if(faculty)$$faculty$$else$[…name faculty…]$endif$
 
+$if(print_version)$
 \clearpage\shipout\null
+$endif$
 
 % Dedication page
 \newpage

@@ -125,6 +125,7 @@ header-includes:
   - \usepackage{tabularx}
 subparagraph: yes
 always_allow_html: true
+print_version: false
 ---
 
 ```{r include=FALSE}
@@ -185,8 +186,8 @@ anonymizeQuotation <- function(text) {
 # Preface {-}
 '`
 
-```{r echo=FALSE, fig.align='center', out.width='390px', out.height='550px', include = knitr::is_html_output()}
-knitr::include_graphics('book-cover/book-cover.png')
+```{r echo=FALSE, fig.align='center', include = knitr::is_html_output()}
+knitr::include_graphics('book-cover/book-cover-2-sides.png')
 ```
 
 ```{r, echo=FALSE, results='asis'}
