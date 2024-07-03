@@ -6,7 +6,7 @@ bookdown::gitbook:
         <li><a href="./index.html">Finding blind spots</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/wvrossem/finding-blind-spots-dissertation/edit/master/%s
+    edit: https://github.com/wvrossem/finding-blind-spots-dissertation/edit/main/%s
     #pandoc_args: [ "--csl", "apa.csl" ] # download the citation style of your choice from
     download: ["pdf", "epub"]
 bookdown::markdown_document2:
