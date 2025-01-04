@@ -3,7 +3,6 @@
 \chaptermark{The Ontology Explorer}
 
 \noindent
-\small
 _The chapter has been co-authored in collaboration with the Principal Investigator (PI) of Processing Citizenship and was originally published in 2022 as an article in Big Data and Society.[^bds-article] The text keeps the original form as presented in the article. Because of its earlier publication, the original article has some missing links to the overall structure of the dissertation, when compared to the other work presented in this dissertation. To enhance the understanding of the chapter’s relevance to the research goals, objectives, and methodological framework of the dissertation, additional information is included in this chapter, following the abstract._
 
 [^bds-article]: Van Rossem, Wouter, and Annalisa Pelizza. 2022. “The Ontology Explorer: A Method to Make Visible Data Infrastructures for Population Management”. _Big Data & Society_ 9 (1): 1–18. <https://doi.org/10.1177/20539517221104087>.
@@ -13,7 +12,6 @@ _The chapter has been co-authored in collaboration with the Principal Investigat
 __Abstract__
 
 \noindent
-
 This chapter introduces the methodology of the “Ontology Explorer” (OE), a semantic method and JavaScript-based open-source tool to analyze data models underpinning information systems. The OE has been devised and developed together with Annalisa Pelizza, who recognized a need to compare data models collected in different formats and used by diverse systems and diverse authorities at national and European level. The OE is distinctive firstly because it supports analyses of information systems that are not immediately comparable and, secondly, because it systematically and quantitatively supports discursive analysis of “thin” data models — also by detecting differences and absences through comparison. When applied to data models underpinning systems for population management, the OE enables the apprehension of how people are “inscribed” in information systems: which assumptions are made about them, and which possibilities are excluded by design. The OE thus constitutes a methodology to capture authorities’ own imaginaries of populations and the “scripts” through which they enact actual people. Furthermore, the method allows the comparison of scripts from diverse authorities. This is exemplified by illustrating its functioning with information systems for population management deployed at the European border. The approach integrates a number of insights from early infrastructure studies and extends their methods and analytical depth to account for contemporary data infrastructures. By doing so, it triggers a systematic discussion on how to extend those early methodical innovations at the semantic level to contemporary developments in digital methods.
 
 ---
